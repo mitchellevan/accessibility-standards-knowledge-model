@@ -56,7 +56,7 @@ We could think of a standard or source as just a large clause, the top-level anc
 
 "Applicability" and "precondition" are quite similar concepts. Open question: are they even different things?
 
-Applicability is useful because it's common for two clauses to differ mainly by what technology they apply to, and otherwise they require essentially the same thing.
+Applicability is useful because it's common for two clauses to differ mainly by what technology they apply to, and otherwise they require the same or similar things.
 
 ## Rationales
 
@@ -71,3 +71,12 @@ I'll start with just a prose "rationale" for each relationship. Over time these 
 * Categories of the character of the rationale
 * Confidence levels
 * Internal-to-the-model or external-to-the model
+
+## What should we call clauses and sources?
+
+Possibilities:
+
+* Clause — No. This would be confusing because the EN has numbered things that are clauses, and other things such as definitions and notes that are not clauses.
+* Source
+* Reference
+* Guideline
