@@ -1,5 +1,4 @@
-# accessibility-standards-knowledge-model
-Accessibility Standards Knowledge Model (ASK-M)
+# Accessibility Standards Knowledge Model (ASK-M)
 
 Accessibility is not a checklist. It's what happens when people can use technology.
 
