@@ -1,9 +1,5 @@
 ## Terms in the formal model
 
-### identifier
-
-An index to a source. An identifier for a source document is typically derived from the name of the document. An identifier for a source within a document is typically based on a numbering system that the document provides.
-
 ### applicability condition
 
 The part of a requirement that says under what conditions the requirement applies. An applicability condition evaluates to true or false. When false, the requirement is not applicable, and an evaluator would report a result such as "not applicable" or "pass" for the requirement.
@@ -11,6 +7,10 @@ The part of a requirement that says under what conditions the requirement applie
 ### expectation
 
 Text that says what should, shall, or must occur for accessibility.
+
+### identifier
+
+An index to a source. The identifier for a source document should resemble the name of the document. Identifiers for source fragments should follow the numbering system in the source document.
 
 ### rationale
 
