@@ -74,5 +74,10 @@ Examples from version 4.1.0:
 | 4 | Functional performance | (none) | 4 | Functional performance | heading |
 | 4.2.1 | Usage without vision | (none) | 4.2.1 | Usage without vision | requirement |
 | 4.2.1 | Usage without vision | Note 1 | 4.2.1_1 | Note 1 | informative |
+| 9 | Web | (none) | 9 | Web | heading |
+| 9.1 | Perceivable | (none) | 9.1 | Perceivable | heading |
+| 9.1.4 | Distinguishable | (none) | 9.1.4 | Distinguishable | heading |
+| 9.1.4.1 | Use of colour | (none) | 9.1.4.1 | Use of colour | requirement; normative |
+| 9.1.4.6 | Void | (none) | 9.1.4.6 | Void | void in the source |
 | Annex B | Relationship between requirements and functional performance criteria | (none) | B | Relationship between requirements and functional performance criteria | heading |
 | B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | (none) | B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | rationale for relationships; informative |
