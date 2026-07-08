@@ -55,24 +55,24 @@ Examples from version 4.1.0:
 
 | Clause or Annex Number in the Source | Name in the Source | Sub-element in the Source | Identifier in the Model | Name in the Model | Purpose for ASK-M |
 |--|--|--|--|--|--|
-| (none) | (none) | (none) | _0.1 | (title page and notices) | reserved |
+| (none) | (none) | (none) | _0.1 | (reserved: title page and notices) | reserved |
 | (none) | Intellectual Property Rights | (none) | _0.2 | Intellectual Property Rights | heading |
 | (none) | Introduction | (none) | _0.5 | Introduction | heading |
 | (none) | Introduction | paragraph 1 | _0.5.1 | (reserved) | reserved |
-| (none) | Introduction | paragraph 2 | _0.5.2 | Introduction: Variety of ICT | example of citing a source fragment |
+| (none) | Introduction | paragraph 2 | _0.5.2 | The present document covers... | example of citing a source fragment |
 | (none) | Introduction | paragraph 3 and list | _0.5.3 | (reserved) | reserved |
 | (none) | Introduction | paragraph 3 and list: paragraph | _0.5.3.0 | (reserved) | reserved |
 | (none) | Introduction | paragraph 3 and list: item 1 | _0.5.3.1 | (reserved) | reserved |
 | (none) | Introduction | paragraph 3 and list: item 5 | _0.5.3.5 | (reserved) | reserved |
 | (none) | Introduction | paragraph 3 and list: item 5: paragraph | _0.5.3.5.0 | (reserved) | reserved |
-| (none) | Introduction | paragraph 3 and list: item 5: sub-item 1 | _0.5.3.5.1 | Introduction: Intention of A.1 | example of citing a source fragment |
-| (none) | Introduction | paragraph 4 | _0.5.4 | Introduction: Consider all | example of citing a source fragment |
-| 1 | Scope | paragraph 3 | 1_3 | Scope: Assistive technology | applicability condition; informative |
+| (none) | Introduction | paragraph 3 and list: item 5: sub-item 1 | _0.5.3.5.1 | Clause A.1 directs users... | example of citing a source fragment |
+| (none) | Introduction | paragraph 4 | _0.5.4 | When the present document is used for most purposes... | example of citing a source fragment |
+| 1 | Scope | paragraph 3 | 1_3 | The present document is not intended... | applicability condition; informative |
 | 3.1 | Terms | (none) | 3.1 | Terms | heading |
-| 3.1 | Terms | (intro paragraph) | 3.1_0 | Terms (Intro) | inclusion by reference: ETSI EG 201 013 |
-| 3.1 | Terms | access space | 3.1_1 | Terms: access space | defined term |
+| 3.1 | Terms | (intro paragraph) | 3.1_0 | For the purposes of... | inclusion by reference: ETSI EG 201 013 |
+| 3.1 | Terms | access space | 3.1_1 | access space | defined term |
 | 4 | Functional performance | (none) | 4 | Functional performance | heading |
 | 4.2.1 | Usage without vision | (none) | 4.2.1 | Usage without vision | requirement |
-| 4.2.1 | Usage without vision | Note 1 | 4.2.1_1 | Usage without vision: Note 1 | informative |
+| 4.2.1 | Usage without vision | Note 1 | 4.2.1_1 | Note 1 | informative |
 | Annex B | Relationship between requirements and functional performance criteria | (none) | B | Relationship between requirements and functional performance criteria | heading |
 | B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | (none) | B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | rationale for relationships; informative |
