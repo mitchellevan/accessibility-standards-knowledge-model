@@ -53,20 +53,26 @@ The source document's own numbering system is called "clauses". Rationale:
 
 Examples from version 4.1.0:
 
--|- Identifier -|- Name -|- Official Clause Number | Official Name -|- Purpose for ASK-M -|-
-
-| 0 sub n.n | (text before the document's own numbering system starts) | (none) | (varies) | TBD if needed
-
-| 1 sub 3 | Scope: assistive technology | 1 | Scope [paragraph] | applicability condition; informative
-
-| 3.1 sub 1 | Terms: access space | 3.1 | Terms [article] | defined term
-
-| 4 | Functional performance | 4 | (same) | heading
-
-| 4.2.1 | Usage without vision | 4.2.1 | (same) | requirement
-
-| 4.2.1 note 3 | Usage without vision: note 1 | 4.2.1 | (same) | informative
-
-| B | Relationship between requirements and functional performance criteria | Annex B (not a "clause") | (same) | heading
-
-| B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | B.1 (not a "clause") | (same) | rationale for relationships; informative
+| Clause or Annex Number in the Source | Name in the Source | Sub-element in the Source | Identifier in the Model | Name in the Model | Purpose for ASK-M |
+|--|--|--|--|--|--|
+| (none) | (none) | (none) | _0.1 | (title page and notices) | reserved |
+| (none) | Intellectual Property Rights | (none) | _0.2 | Intellectual Property Rights | heading |
+| (none) | Introduction | (none) | _0.5 | Introduction | heading |
+| (none) | Introduction | paragraph 1 | _0.5.1 | (reserved) | reserved |
+| (none) | Introduction | paragraph 2 | _0.5.2 | Introduction: Variety of ICT | example of citing a source fragment |
+| (none) | Introduction | paragraph 3 and list | _0.5.3 | (reserved) | reserved |
+| (none) | Introduction | paragraph 3 and list: paragraph | _0.5.3.0 | (reserved) | reserved |
+| (none) | Introduction | paragraph 3 and list: item 1 | _0.5.3.1 | (reserved) | reserved |
+| (none) | Introduction | paragraph 3 and list: item 5 | _0.5.3.5 | (reserved) | reserved |
+| (none) | Introduction | paragraph 3 and list: item 5: paragraph | _0.5.3.5.0 | (reserved) | reserved |
+| (none) | Introduction | paragraph 3 and list: item 5: sub-item 1 | _0.5.3.5.1 | Introduction: Intention of A.1 | example of citing a source fragment |
+| (none) | Introduction | paragraph 4 | _0.5.4 | Introduction: Consider all | example of citing a source fragment |
+| 1 | Scope | paragraph 3 | 1_3 | Scope: Assistive technology | applicability condition; informative |
+| 3.1 | Terms | (none) | 3.1 | Terms | heading |
+| 3.1 | Terms | (intro paragraph) | 3.1_0 | Terms (Intro) | inclusion by reference: ETSI EG 201 013 |
+| 3.1 | Terms | access space | 3.1_1 | Terms: access space | defined term |
+| 4 | Functional performance | (none) | 4 | Functional performance | heading |
+| 4.2.1 | Usage without vision | (none) | 4.2.1 | Usage without vision | requirement |
+| 4.2.1 | Usage without vision | Note 1 | 4.2.1_1 | Usage without vision: Note 1 | informative |
+| Annex B | Relationship between requirements and functional performance criteria | (none) | B | Relationship between requirements and functional performance criteria | heading |
+| B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | (none) | B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | rationale for relationships; informative |
