@@ -53,31 +53,42 @@ The source document's own numbering system is called "clauses". Rationale:
 
 Examples from version 4.1.0:
 
-| Clause or Annex Number in the Source | Name in the Source | Sub-element in the Source | Identifier in the Model | Name in the Model | Purpose for ASK-M |
-|--|--|--|--|--|--|
-| (none) | (none) | (none) | _0.1 | (reserved: title page and notices) | reserved |
-| (none) | Intellectual Property Rights | (none) | _0.2 | Intellectual Property Rights | heading |
-| (none) | Introduction | (none) | _0.5 | Introduction | heading |
-| (none) | Introduction | paragraph 1 | _0.5.1 | (reserved) | reserved |
-| (none) | Introduction | paragraph 2 | _0.5.2 | The present document covers... | example of citing a source fragment |
-| (none) | Introduction | paragraph 3 and list | _0.5.3 | (reserved) | reserved |
-| (none) | Introduction | paragraph 3 and list: paragraph | _0.5.3.0 | (reserved) | reserved |
-| (none) | Introduction | paragraph 3 and list: item 1 | _0.5.3.1 | (reserved) | reserved |
-| (none) | Introduction | paragraph 3 and list: item 5 | _0.5.3.5 | (reserved) | reserved |
-| (none) | Introduction | paragraph 3 and list: item 5: paragraph | _0.5.3.5.0 | (reserved) | reserved |
-| (none) | Introduction | paragraph 3 and list: item 5: sub-item 1 | _0.5.3.5.1 | Clause A.1 directs users... | example of citing a source fragment |
-| (none) | Introduction | paragraph 4 | _0.5.4 | When the present document is used for most purposes... | example of citing a source fragment |
-| 1 | Scope | paragraph 3 | 1_3 | The present document is not intended... | applicability condition; informative |
-| 3.1 | Terms | (none) | 3.1 | Terms | heading |
-| 3.1 | Terms | (intro paragraph) | 3.1_0 | For the purposes of... | inclusion by reference: ETSI EG 201 013 |
-| 3.1 | Terms | access space | 3.1_1 | access space | defined term |
-| 4 | Functional performance | (none) | 4 | Functional performance | heading |
-| 4.2.1 | Usage without vision | (none) | 4.2.1 | Usage without vision | requirement |
-| 4.2.1 | Usage without vision | Note 1 | 4.2.1_1 | Note 1 | informative |
-| 9 | Web | (none) | 9 | Web | heading |
-| 9.1 | Perceivable | (none) | 9.1 | Perceivable | heading |
-| 9.1.4 | Distinguishable | (none) | 9.1.4 | Distinguishable | heading |
-| 9.1.4.1 | Use of colour | (none) | 9.1.4.1 | Use of colour | requirement; normative |
-| 9.1.4.6 | Void | (none) | 9.1.4.6 | Void | void in the source |
-| Annex B | Relationship between requirements and functional performance criteria | (none) | B | Relationship between requirements and functional performance criteria | heading |
-| B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | (none) | B.1 | Relationships between clauses 5 to 13 and the functional performance criteria | rationale for relationships; informative |
+| Clause or Annex # | Cite Name 1 in the Source                                                     | Structure    | Cite Name 2  | Sub-structure        | Identifier | Name in the Model                                                             | Purpose for ASK-M                       |
+| ----------------- | ----------------------------------------------------------------------------- | ------------ | ------------ | -------------------- | ---------- | ----------------------------------------------------------------------------- | --------------------------------------- |
+| (none)            | (none)                                                                        | front matter | -            | page                 | _0.1       | Cover page                                                                    |                                         |
+| (none)            | (none)                                                                        | front matter | -            | page                 | _0.2       | Second page                                                                   |                                         |
+| (none)            | Intellectual Property Rights                                                  | h1           | -            | -                    | _0.3       | Intellectual Property Rights                                                  |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | -                    | _0.6       | Introduction                                                                  |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | p                    | _0.6.1     | (reserved)                                                                    |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | p                    | _0.6.2     | The present document covers...                                                | example of citing a source fragment     |
+| (none)            | Introduction                                                                  | h1           | -            | p+list               | _0.6.3     | (reserved)                                                                    |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | p+list → p           | _0.6.3.0   | (reserved)                                                                    |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | p+list → item        | _0.6.3.1   | (reserved)                                                                    |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | p+list → item        | _0.6.3.5   | (reserved)                                                                    |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | p+list → item → p    | _0.6.3.5.0 | (reserved)                                                                    |                                         |
+| (none)            | Introduction                                                                  | h1           | -            | p+list → item → item | _0.6.3.5.1 | Clause A.1 directs users...                                                   | example of citing a source fragment     |
+| (none)            | Introduction                                                                  | h1           | -            | p                    | _0.6.4     | When the present document is used for most purposes...                        | example of citing a source fragment     |
+| 1                 | Scope                                                                         | h1           | -            | p                    | 1_3        | The present document is not intended...                                       | applicability condition                 |
+| 3.1               | Terms                                                                         | h2           | -            | -                    | 3.1        | Terms                                                                         |                                         |
+| 3.1               | Terms                                                                         | h2           | -            | (intro paragraph)    | 3.1_0      | For the purposes of...                                                        | inclusion by reference: ETSI EG 201 013 |
+| 3.1               | Terms                                                                         | h2           | access space | article              | 3.1_1      | access space                                                                  | defined term                            |
+| 4                 | Functional performance                                                        | h1           | -            | -                    | 4          | Functional performance                                                        |                                         |
+| 4.2.1             | Usage without vision                                                          | h3           | -            | -                    | 4.2.1      | Usage without vision                                                          | guideline                               |
+| 4.2.1             | Usage without vision                                                          | h3           | Note 1       | block                | 4.2.1_1    | Note 1                                                                        |                                         |
+| 9                 | Web                                                                           | h1           | -            | -                    | 9          | Web                                                                           |                                         |
+| 9.1               | Perceivable                                                                   | h2           | -            | -                    | 9.1        | Perceivable                                                                   |                                         |
+| 9.1.4             | Distinguishable                                                               | h3           | -            | -                    | 9.1.4      | Distinguishable                                                               |                                         |
+| 9.1.4.1           | Use of colour                                                                 | h4           | -            | -                    | 9.1.4.1    | Use of colour                                                                 | guideline                               |
+| 9.1.4.6           | Void                                                                          | h4           | -            | -                    | 9.1.4.6    | Void                                                                          | void in the source                      |
+| Annex B           | Relationship between requirements and functional performance criteria         | h1           | -            | -                    | B          | Relationship between requirements and functional performance criteria         |                                         |
+| B.1               | Relationships between clauses 5 to 13 and the functional performance criteria |              |              | -                    | B.1        | Relationships between clauses 5 to 13 and the functional performance criteria | rationale for relationships             |
+
+Rationale for the above examples:
+* "Cover page" — [ETSI Drafting Rules: 2.1 Cover page](https://web.archive.org/web/20240623104109/https://portal.etsi.org/Portals/0/TBpages/edithelp/Docs/43_ETSI_directives_20_may_2021_part2%20(EDR).pdf#page=7) (2024-06-23 Archive.org)
+* "Second page" — [ETSI Drafting Rules: 2.2 Second page](https://web.archive.org/web/20240623104109/https://portal.etsi.org/Portals/0/TBpages/edithelp/Docs/43_ETSI_directives_20_may_2021_part2%20(EDR).pdf#page=8) (2024-06-23 Archive.org)
+
+## Informative or normative?
+
+(Partial sources)
+
+* "Notes and examples shall not contain requirements." — [ETSI Drafting Rules: 5.5.1 Notes and examples](https://web.archive.org/web/20240623104109/https://portal.etsi.org/Portals/0/TBpages/edithelp/Docs/43_ETSI_directives_20_may_2021_part2%20(EDR).pdf#page=22) (2024-06-23 Archive.org)
