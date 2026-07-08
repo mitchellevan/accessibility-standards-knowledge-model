@@ -2,7 +2,7 @@
 
 ### applicability condition
 
-The part of a requirement that says under what conditions the requirement applies. An applicability condition evaluates to true or false. When false, the requirement is not applicable, and an evaluator would report a result such as "not applicable" or "pass" for the requirement.
+The part of a guideline that says under what conditions the guideline applies. An applicability condition evaluates to true or false. When false, the guideline is not applicable, and an evaluator would report a result such as "not applicable" or "pass" for the guideline.
 
 ### expectation
 
@@ -10,7 +10,7 @@ Text that says what should, shall, or must occur for accessibility.
 
 ### identifier
 
-An index to a source. The identifier for a source document should resemble the name of the document. Identifiers for source fragments should follow the numbering system in the source document.
+An index to a source. The identifier for a source document should resemble the title and/or number of the document. Identifiers for source fragments should follow the numbering system in the source document.
 
 ### rationale
 
@@ -20,7 +20,7 @@ A why-explanation.
 
 How items relate to each other.
 
-### requirement
+### guideline
 
 A source fragment that includes an expectation.
 
@@ -49,4 +49,4 @@ A source fragment within certain source documents. For example, EU directives co
 
 ### success criterion
 
-A requirement in certain source documents. For example, in WCAG 2, numbered success criteria are normative and do not contain other success criteria.
+A guideline in certain source documents. For example, in WCAG 2, numbered success criteria are normative and do not contain other success criteria.
