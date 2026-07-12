@@ -1,4 +1,4 @@
-## ICT accessibility guidelines
+## ICT accessibility guidelines and standards
 
 ## Accessibility evaluation practices
 
