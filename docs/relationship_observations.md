@@ -81,24 +81,74 @@ Possibilities:
 * Reference
 * Guideline
 
-## First attempt at relationship mapping
+## First attempt at relationship mapping: "language of parts" applied to non-web
 
-This is a first attempt at mapping one expectation to several source documents. This attempt is to see how the ontology works in a real example.
+This is a first attempt at mapping one expectation to several source documents. The goal of this attempt is to see how the ontology works in a real example.
 
-This example: "language of parts" applied to non-web.
+### (A) Guidelines expecting programmatic characteristics
 
-* WCAG → 3.1.2 Language of Parts https://www.w3.org/TR/WCAG22/#language-of-parts
-  * Expectation: programmatically determined human language identifier, which enables correct speech output pronunciation, and can be tested indirectly by a screen reader. (Paraphrased)
-* WCAG2ICT → A_3.26: "3.1.2 Language of Parts — Depends upon language information in a programmatically determinable form intended to drive correct pronunciation. Where another mechanism achieves correct pronunciation for ICT with closed functionality, such as self-voicing, the intent of this success criterion would be met."
-  * Expectation: correct pronunciation. (Paraphrased.)
+* WCAG SC 3.1.2 Language of Parts https://www.w3.org/TR/WCAG22/#language-of-parts
+  * Applicability condition: See "WCAG applicability".
+  * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
+* WCAG2ICT
+* EN 301 549:
+  * 10.3.1.2 Language of parts https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82
+    * Applicability condition: "Where ICT is, or includes, a non-web document"
+    * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
+* EAA
+  * Source document URI: https://eur-lex.europa.eu/eli/dir/2019/882
+  * EAA Annex I(I)(1)(i-iv) "the information on the use of the product provided on the product itself... shall be accompanied... by accessible information"
+    * EN clause 12.1 → clause 10 → 
+    * EN quoting EAA: "12.1 covers the accessibility of the presentation of information when provided in digital forms."
+  * EAA Annex I(III)(b)(ii) Services: "be presented in an understandable way"
+  * Rationale: EN 301 549 v4 Table ZB.2 maps its clause 5.1.3.14 "Spoken languages" to the aforementioned EAA source fragments (provisions).
+* VPAT 2.5Rev TODO
+
+### (B) Guidelines expecting characteristics of speech output
+
+* EN 301 549 v3.2.1 → 5.1.3.14 Spoken languages
+  * Applicability condition: "Where speech output is provided as non-visual access to closed functionality"
+  * Expectation: The human language of speech output is the same as the human language of the visual content. (Paraphrased; see the source for exceptions.)
 * EN 301 549 v4 → 5.1.3.14 Spoken languages
-  * Expectation: the human language of speech output is the same as the human language of the visual content. (Paraphrased.)
+  * Applicability condition: "Where ICT includes closed functionality, and speech output is provided as non-visual access to closed functionality"
+  * Expectation: The human language of speech output is the same as the human language of the visual content. (Paraphrased; see the source for exceptions.)
+* Relationship between the above:
+  * Applicability conditions: Same.
+    * Rationale: The phrase is more precise in v4 but conveys the same intent as in v3.2.1.
+  * Expectation: Same.
+    * Rationale: The words are identical.
+* WCAG2ICT fragment A_3.26: "3.1.2 Language of Parts — Depends upon language information in a programmatically determinable form intended to drive correct pronunciation. Where another mechanism achieves correct pronunciation for ICT with closed functionality, such as self-voicing, the intent of this success criterion would be met."
+  * Applicability condition: Don't use WCAG; use other accessibility guidelines that apply to closed functionality.
+    * Rationale: WCAG2ICT fragment A_3.0: "For non-web software on ICT with closed functionality, those who implement this document (WCAG2ICT) should consider the applicability of individual WCAG 2 success criteria on a criterion-by-criterion basis. Alternate accessibility provisions might be needed to cover the user needs addressed by the following success criteria"
+  * Expectation: Pronunciation is correct. (Paraphrased.)
+* EAA
+  * Source document URI: https://eur-lex.europa.eu/eli/dir/2019/882
+  * EAA Annex I(I)(2)(a) "do so via more than one sensory channel; this shall include providing alternatives to vision, auditory, speech and tactile elements"
+  * EAA Annex I(I)(2)(o)(i) Self-service terminals: "provide for text-to-speech technology"
+  * Rationale: EN 301 549 v4 Table ZB.2 maps its clause 5.1.3.14 "Spoken languages" to the aforementioned EAA source fragments (provisions).
+* VPAT 2.5Rev TODO
+* ACAA TODO
+
+### (C) Relationship between (A) and (B)
+
+* Applicability conditions: Different.
+* Expectation: Similar.
+* Rationale:
+  * According to [Understanding SC 3.1.2](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html), part of the intent is "Screen readers can use the pronunciation rules of the language of the text."
+  * According to WCAG2ICT → A_3.26, the intent of WCAG 3.1.2 is correct pronunciation.
+
+### (D) Non-expectations
+
+* EN 301 549 v3.2.1 → 11.3.1.2 "Void"
+  * Contains a note: Void because "language of parts" would be impossible for software. (Paraphrased.)
+* EN 301 549 v4 → 11.3.1.2 "Language of Parts (Void)"
+  * Contains a note: Void because "language of parts" would be impossible for software. (Paraphrased.)
 * BIK BITV-Test (App): no test.
   * Rationale of source document name: https://bitvtest.de/tests-und-beratung/bik-bitv-test-app
   * Source document URI: https://bitvtest.de/pruefverfahren/bitv-20-app
   * Source document retrieved: 2026-07-10
-  * My comments: Omission of a language-of-parts guideline is correct. The scope of the "BIK BITV-Test (App)" source document is the BITV requirements that apply to mobile apps, based on EN 301 549 version 3.2.1. (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app). The referenced EN document does not contain a guideline for language of parts in open non-web software. (TODO link to EN 301 549 v3.2.1)
-* BIK BITV-Test + WCAG 2.2 (App):
+  * My comments: Omission of a language-of-parts guideline is consistent with the scope of "BIK BITV-Test (App)". The scope (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app) is the BITV requirements that apply to mobile apps, based on EN 301 549 version 3.2.1 (https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf), which does not contain a guideline for language of parts in open non-web software.
+* BIK BITV-Test + WCAG 2.2 (App): no test.
   * Rationale of source document name: https://bitvtest.de/tests-und-beratung/bik-bitv-test-app
   * Source document URI: https://bitvtest.de/pruefverfahren/bitv-20-plus-app
   * Source document retrieved: 2026-07-10
@@ -107,11 +157,53 @@ This example: "language of parts" applied to non-web.
   * Rationale of source document name: The name listed here plus "(BIK)" for context. https://bitvtest.de/tests-und-beratung/bik-bitv-test-app
   * Source document URI: https://bitvtest.de/pruefverfahren/bitv-20-app
   * Source document retrieved: 2026-07-10
-  * My comments: Omission of a language-of-parts guideline is incorrect. The scope of the "WCAG2ICT-Test (App) (BIK)" source document is the WCAG requirements that apply to mobile apps, based on WCAG2ICT. (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app). However, WCAG2ICT does provide such guidance. https://www.w3.org/TR/wcag2ict/#language-of-parts
-* EAA
-  * Source document URI: https://eur-lex.europa.eu/eli/dir/2019/882
-  * EAA Annex I(I)(2)(a) "do so via more than one sensory channel; this shall include providing alternatives to vision, auditory, speech and tactile elements"
-  * EAA Annex I(I)(2)(o)(i) Self-service terminals: "provide for text-to-speech technology"
-  * Rationale: EN 301 549 v4 maps its clause 5.1.3.14 "Spoken languages" Table ZB.2 to the aforementioned EAA source fragments (provisions).
-* VPAT 2.5Rev TODO
-* ACAA TODO
+  * My comments: Omission of a language-of-parts guideline is not consistent with the scope of "WCAG2ICT-Test (App) (BIK)". The scope (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app) is the WCAG requirements that apply to mobile apps, based on WCAG2ICT (https://www.w3.org/TR/wcag2ict/#language-of-parts). However, WCAG2ICT does provide such guidance.
+
+### WCAG applicability
+
+Applicability conditions for all WCAG 2.2 Success Criteria (paraphrased): WCAG 2.2 applies to websites and web content. WCAG 2.2 can also be applied to non-web documents and software as described in WCAG2ICT.
+
+Rationale:
+
+* WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.1: "Web Content Accessibility Guidelines (WCAG) 2.2 covers a wide range of recommendations for making web content more accessible."
+* WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.2: "WCAG 2.2 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/) for an introduction and links to WCAG technical and educational material."
+  * WCAG Overview fragment _1 [Introduction](https://www.w3.org/WAI/standards-guidelines/wcag/#intro), fragment _1.3 (retrieved 2026-07-12): "WCAG applies to dynamic content, multimedia, web on mobile, and AI web interfaces. WCAG can also be applied to non-web information and communications technologies (ICT) such as native apps, software, and documents, as described in [WCAG2ICT](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/)." The link goes to the source document "WCAG2ICT Overview".
+  * [WCAG2ICT Overview](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/) fragment _0.0 Summary (retrieved 2026-07-12): "[WCAG2ICT](https://www.w3.org/TR/wcag2ict/)... describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to documents, software, and other information and communications technologies (ICT)." The link goes to the source document "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)" (paraphrased name: WCAG2ICT)
+  * WCAG2ICT fragment _0.1 [Abstract](https://www.w3.org/TR/wcag2ict/#abstract) (retrieved 2026-07-12): "This document describes how the Web Content Accessibility Guidelines (WCAG) versions 2.0 [WCAG20], 2.1 [WCAG21], and 2.2 [WCAG22] principles, guidelines, and success criteria can be applied to non-web Information and Communications Technologies (ICT), specifically to non-web documents and software. It provides informative guidance (guidance that is not normative and does not set requirements)."
+* WCAG 2.2 fragment _0.3.4 [Requirements for WCAG 2.2](https://www.w3.org/TR/WCAG22/#requirements-for-wcag-2-2): "WCAG 2.2 meets a set of [requirements for WCAG 2.2](https://w3c.github.io/wcag/requirements/22/) which, in turn, inherit requirements from previous WCAG 2 versions." The link goes to the source document "Requirements for Web Content Accessibility Guidelines 2.2" (paraphrased: "Requirements for WCAG 2.2").
+  * Requirements for WCAG 2.2 fragment 1 [Introduction](https://w3c.github.io/wcag/requirements/22/#introduction), fragment 1_2 (retrieved 2026-07-12): "The underlying goal of WCAG 2.2 requirements are the same as for WCAG 2.0 and WCAG 2.1 – to promote accessibility of Web content."
+  * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_6 (retrieved 2026-07-12): "Success criteria should... Apply to all content across all websites unless preconditions for the application of the success criteria are explicitly identified (e.g. 'except interruptions involving an emergency')."
+  * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_7 (retrieved 2026-07-12): "Success criteria should... Apply across technologies to the greatest extent possible."
+
+Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG intrepreted by WCAG2ICT.
+
+### Learnings from this example
+
+Each source document should be an object in the model.
+
+Each source fragment should be an object in the model.
+
+Each referral to a source should point to the source's object in the model, not directly to a URL of the source.
+* Easier for maintenance
+* Prevents ambiguity, e.g. in EN 301 549 where source fragments don't have unique URLs.
+
+Provisional decision: Don't record two contradictory relationships. Instead, each claim (or "statement"? or "assertion"?) in the model (e.g. "relationship" or "is named") should have a rationale. A rationale contains one or more pro arguments, and zero or more con arguments.
+
+There should be a way to indicate a "TODO"-equivalent directly in the model.
+* Because there will be so many TODOs it would overwhelm the issue tracker.
+* Because even just a "TODO" in the model is a signal to somebody reading the model that there's a potential connection.
+
+Applicability conditions should have a short form to normalize them, making comparison straightforward regardless of different wording.
+
+Open question: how structured are rationales and arguments?
+* I feel there should be an enumerated type, with values such such as:
+  * "plain reading" with a source object
+  * "interpreted reading" with the interpretation and one or more source object
+  * "identical text" as evidence of a relationship
+* Is "analysis" another thing? A prose explanation, which can have additional rationale.
+
+Open question: how should the model represent "my comments"?
+
+Open question: is this easy enough, lightweight enough? While also being well grounded in evidence?
+
+I'll probably need a way to mark "citation needed", so I can record a more or less established opinion quickly without getting sidetracked on finding exact sources. The "citation needed" can also have a prose comment, like "probably in WCAG2ICT"
