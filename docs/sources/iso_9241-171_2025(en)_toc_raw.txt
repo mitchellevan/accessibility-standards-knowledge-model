@@ -1,19 +1,24 @@
-sources:
+## Name
 
-TOC treegrid DOM
-https://www.iso.org/obp/ui/en/#iso:std:iso:9241:-171:ed-2:v1:en
+Ergonomics of human-system interaction — Part 171: Software accessibility
+Ergonomie de l’interaction homme-système — Partie 171: L’accessibilité aux logiciels
+International Standard ISO 9241-171
+Second edition
+2025-12
 
-Iteh preview PDF
-https://cdn.standards.iteh.ai/samples/iso/iso-9241-171-2025/e79ac4a68d2c4a15bc9c6f92e5ccff1a/iso-9241-171-2025.pdf
+## Sources
+
+* [ISO.org preview](https://www.iso.org/obp/ui/en/#iso:std:iso:9241:-171:ed-2:v1:en)
+* [Iteh preview PDF](https://cdn.standards.iteh.ai/samples/iso/iso-9241-171-2025/e79ac4a68d2c4a15bc9c6f92e5ccff1a/iso-9241-171-2025.pdf) — not used because it has less tree depth
 
 ---
 TODO
-remove dots and page numbers
+replace the PDF pasted things with DOM extraction, because leaf nodes
 proof vs online TOC
 proof vs Iteh preview PDF
 
 -----
-extracted from TOC treegrid DOM, processed by AI, not yet checked
+from ISO.org preview TOC: extracted by AI, not yet checked
 
 Foreword
 Introduction
@@ -55,7 +60,7 @@ Introduction
 8.1.2 Maintain location and ordering consistency
 
 ----
-AI processed from Iteh preview PDF, proofed OK from same; proofed with TOC DOM
+AI processed from Iteh preview PDF; proofed with TOC DOM
 
 8.1.3 Present user notification using consistent techniques
 8.1.4 Update equivalent alternatives for media when the media changes
@@ -70,12 +75,6 @@ AI processed from Iteh preview PDF, proofed OK from same; proofed with TOC DOM
 
 -----
 pasted text from Iteh preview PDF. (WARNING: Not complete — it lacks the leaf nodes.)
-
-Ergonomics of human-system interaction — Part 171: Software accessibility
-Ergonomie de l’interaction homme-système — Partie 171: L’accessibilité aux logiciels
-International Standard ISO 9241-171
-Second edition
-2025-12
 
 9 Goal 3: Achieving support for individualization needs ....................................................................................................... 20
 9.1 To be provided with the way of interacting with a system that best works for them..................... 20
@@ -275,7 +274,7 @@ Second edition
 Annex A (informative) W3C web content accessibility guidelines (WCAG) 2.2 success criteria.................79
 
 ----
-Continuing from the online TOC. Proofed.
+from ISO.org preview TOC: extracted by AI; proofed OK.
 
 Annex A W3C web content accessibility guidelines (WCAG) 2.2 success criteria
 Annex B W3C user agent accessibility guidelines (UAAG) 2.0
