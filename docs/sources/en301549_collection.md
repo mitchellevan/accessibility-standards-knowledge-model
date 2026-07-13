@@ -88,39 +88,33 @@ Examples from version 4.1.0:
 
 Rationale for the above examples:
 
-* "Cover page" — [ETSI Drafting Rules (EDR): 2.1 Cover page](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=239)
-* "Second page" — [EDR 2.2 Second page](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=240)
+* "Cover page" — [ETSI Drafting Rules (EDR) clause 2.1](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=239) *Cover page*
+* "Second page" — [EDR clause 2.2](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=240) *Second page*
 
 ## Informative or normative?
 
-The word "shall" (and potentially other phrases) indicate a normative conformance requirement. Rationale:
+The word 'shall' (and potentially other words) indicate a normative conformance requirement. Rationale:
 
-* 14.1 "Achieving conformance": "Requirements are clauses containing the word 'shall'. Applicable requirements are requirements whose preconditions are true for an ICT. Those clauses containing the word 'should' are recommendations and are not required for conformance."
-* _0.3 "Modal verbs terminology" includes ETSI Drafting Rules (EDR) clause 3.2 by reference.
-* [EDR clause 3.2 Verbal forms for the expression of provisions](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=249):
-  * "The verbal forms shown in table 2 shall be used to indicate requirements strictly to be followed in order to conform to the standard and from which no deviation is permitted."
-  * "Verbal form: shall".
-  * "Equivalent expressions for use in exceptional cases": "is to", "is required to", "it is required that", "has to", "only ... is permitted", "it is necessary"
-  * "Verbal form: shall not".
-  * "Equivalent expressions for use in exceptional cases": "is not allowed [permitted] [acceptable] [permissible]", "is required to be not", "is required that ... be not", "is not to be"
+* 14.1 *Achieving conformance:* 'Shall' conveys a requirement. 'Should' is a recommendation, not a conformance requirement.
+* _0.3 *Modal verbs terminology* includes ETSI Drafting Rules (EDR) clause 3.2 by reference.
+* [EDR clause 3.2](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=249) *Verbal forms for the expression of provisions:* Explains 'shall' and 'should' similarly, along with some infrequently-used equivalent words.
 
-"Informative" means not required for conformance. Informative sources may offer the best available way to understand conformance requirements. Rationale:
+'Informative' means not required for conformance. Informative sources may offer the best available way to understand conformance requirements. Rationale:
 
-* 2.2 Informative references
-* [EDR Glossary](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=263): "informative element: provides additional information intended to assist the understanding or use of the ETSI deliverable, but which can be removed without changing its technical substance"
-* EDR Glossary: "informative reference: reference that is not necessary for the implementation of the ETSI deliverable and that only assist the user in understanding it"
+* 2.2 *Informative references*
+* [EDR *Glossary*](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=263)*:* 'informative element'
+* EDR *Glossary:* 'informative reference'
 
-"Recommended" means not required for conformance, and is often something that goes beyond the minimum conformance requirement. Rationale:
+'Recommended' means not required for conformance, and is often something that goes beyond the minimum conformance requirement. Rationale:
 
-* 14.1 Achieving conformance
-* EDR Glossary: "recommendation: expression in the content of a document conveying that among several possibilities one is recommended as particularly suitable, without mentioning or excluding others, or that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is deprecated but not prohibited"
+* 14.1 *Achieving conformance*
+* EDR *Glossary:* 'recommendation'
 
-3.1 "Terms" are informative. Rationale:
+3.1 *Terms* are informative. Rationale:
 
-* EDR clause 2.0: "Terms" are an "informative element" in ETSI deliverables.
-* EDR clause 2.11.1: definitions of terms are "necessary for understanding".
-* EDR clause 2.11.1: "The definitions of terms shall... not take the form of, or contain, a requirement".
+* EDR clause 2.0: The "Terms" section is an "informative element" in ETSI deliverables.
+* EDR clause 2.11.1: Term definitions are "necessary for understanding" and are not allowed to convey requirements.
 
 Notes and examples are informative. Rationale:
 
-* "Notes and examples shall not contain requirements." — [EDR clause 5.5.1 Notes and examples](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=254)
+* [EDR clause 5.5.1](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=254) *Notes and examples* are not allowed to convey requirements.
