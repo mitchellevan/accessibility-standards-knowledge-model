@@ -4,7 +4,7 @@
 
 [EN 301 549 V4.1.0 (2026-06) Accessibility requirements for ICT products and services](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf)
 
-Rationale for including EN 301 549 in ASK-M:
+Rationale for including EN 301 549 in ASKM:
 
 * VPAT includes it.
 
@@ -43,7 +43,7 @@ Rationale for not including more version number details:
 
 * ETSI plans to replace the "2026-06" version with a final "published" version. TODO cite current work programme
 * Based on past ETSI work programmes, it is predictable that the "2026-06" version will not be relevant long-term. TODO cite past work programme
-* For this reason, ASK-M author (Mitchell Evan) plans to overwrite ASK-M content based on any minor changes in the final published version.
+* For this reason, ASKM author (Mitchell Evan) plans to overwrite ASKM content based on any minor changes in the final published version.
 
 ## Source fragment identifiers
 
@@ -54,7 +54,7 @@ The source document's own numbering system is called "clauses". Rationale:
 
 Examples from version 4.1.0:
 
-| Clause or Annex | Name 1 in the Source                                                          | Structure 1  | Name 2       | Structure 2          | Identifier | Name in the Model                                                             | Purpose for ASK-M                       |
+| Clause or Annex | Name 1 in the Source                                                          | Structure 1  | Name 2       | Structure 2          | Identifier | Name in the Model                                                             | Purpose for ASKM                        |
 | --------------- | ----------------------------------------------------------------------------- | ------------ | ------------ | -------------------- | ---------- | ----------------------------------------------------------------------------- | --------------------------------------- |
 | -               | -                                                                             | front matter | -            | page                 | _0.0.1     | Cover page                                                                    |                                         |
 | -               | -                                                                             | front matter | -            | page                 | _0.0.2     | Second page                                                                   |                                         |
