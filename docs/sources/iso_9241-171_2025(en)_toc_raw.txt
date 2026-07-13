@@ -1,24 +1,22 @@
 ## Name
 
-Ergonomics of human-system interaction — Part 171: Software accessibility
-Ergonomie de l’interaction homme-système — Partie 171: L’accessibilité aux logiciels
-International Standard ISO 9241-171
-Second edition
-2025-12
+"ISO 9241-171:2025(en)"
+"Ergonomics of human-system interaction — Part 171: Software accessibility"
+— Verbatim from ISO.org preview
 
-## Sources
+## Source documents
 
 * [ISO.org preview](https://www.iso.org/obp/ui/en/#iso:std:iso:9241:-171:ed-2:v1:en)
 * [Iteh preview PDF](https://cdn.standards.iteh.ai/samples/iso/iso-9241-171-2025/e79ac4a68d2c4a15bc9c6f92e5ccff1a/iso-9241-171-2025.pdf) — not used because it has less tree depth
 
----
-TODO
-replace the PDF pasted things with DOM extraction, because leaf nodes
-proof vs online TOC
-proof vs Iteh preview PDF
+## Source fragments — names and identifiers
+
+<pre>
+
+TODO finish proofing vs online TOC
 
 -----
-from ISO.org preview TOC: extracted by AI, not yet checked
+from ISO.org preview TOC: extracted by AI, not yet proofed
 
 Foreword
 Introduction
@@ -60,7 +58,7 @@ Introduction
 8.1.2 Maintain location and ordering consistency
 
 ----
-AI processed from Iteh preview PDF; proofed with TOC DOM
+AI processed from Iteh preview PDF; proofed with TOC DOM okay
 
 8.1.3 Present user notification using consistent techniques
 8.1.4 Update equivalent alternatives for media when the media changes
@@ -74,204 +72,348 @@ AI processed from Iteh preview PDF; proofed with TOC DOM
 8.4 To provide immediate and easily accessible help or further instructions, where such help can be provided by the system
 
 -----
-pasted text from Iteh preview PDF. (WARNING: Not complete — it lacks the leaf nodes.)
+from ISO.org preview TOC: extracted by AI, not yet proofed
 
-9 Goal 3: Achieving support for individualization needs ....................................................................................................... 20
-9.1 To be provided with the way of interacting with a system that best works for them..................... 20
-9.2 To choose between the available input and output modalities and their configuration without requiring restart of the system....................................................................................................................................21
-9.2.1 Enable switching of input and output alternatives .......................................................................................21
-9.2.2 Enable revising or reassigning controls ..................................................................................................................21
-9.3 To have simultaneous use of alternate interaction modalities .............................................................................21
-9.3.1 Choosing modalities to be simultaneously available ...................................................................................21
-9.3.2 Switching between simultaneously available modalities........................................................................21
-9.3.3 Allow user to select media streams to be presented ...................................................................................21
-9.4 To be provided with information on available options for interacting with a system on which to base a choice of interaction methods ....................................................................................................................21
-9.5 To be provided with an accessible means to choose individualization features.................................. 22
-9.5.1 Enable individualization of user-preference settings ................................................................................ 22
-9.5.2 Enable adjustment of attributes of common user-interface elements .........................................24
-9.5.3 Enable individualization of the user interface...................................................................................................24
-9.6 To have individualization features maintained for future uses of the system, until changed by the user .....................................................................................................................................................................................24
-9.6.1 Utilize user-preference profiles ......................................................................................................................................24
-9.6.2 Provide a means of restoring system defaults ................................................................................................. 25
-9.6.3 Minimize the need to restart for changes............................................................................................................. 25
-9.7 To provide pre-defined preference profiles .......................................................................................................................... 25
-9.8 To take or give up control of functions that can be performed by either the user or the system ..................................................................................................................................................................................................................... 25
-9.9 To have the option to use the system with a minimum of setup or configuration ............................. 25
-9.10 To customize important functionality: a new user accessibility need (UAN) ........................................ 25
-9.10.1 Manage key input functionalities ................................................................................................................................. 25
-9.10.2 Manage pointer functionalities .......................................................................................................................................27
-9.10.3 Manage visual attributes ..................................................................................................................................................... 28
-9.10.4 Manage auditory attributes ............................................................................................................................................... 30
-9.10.5 Manage language selection ................................................................................................................................................ 30
-9.10.6 Manage windowing functionalities .............................................................................................................................31
-9.10.7 Manage functionalities providing content alternatives ............................................................................32
-9.10.8 Manage animation functionalities................................................................................................................................32
-9.10.9 Adjust the scale and layout of user-interface elements as font-size changes .........................32
-10 Goal 4: Achieving approachability needs ........................................................................................................................................... 33
-10.1 To have the system free from any physical barriers ..................................................................................................... 33
-10.2 To have the system free from any psychological barriers ........................................................................................ 33
-10.3 To have the system maintain the user's attention ........................................................................................................... 33
-10.3.1 Engage the user's attention ............................................................................................................................................... 33
-10.3.2 Enable user rest breaks ......................................................................................................................................................... 33
-10.4 To have interaction options clearly presented.................................................................................................................... 33
-10.5 To have appropriate levels of privacy and security ........................................................................................................ 34
-10.6 To avoid patterns that cause psychological or physical discomfort or disturbance ......................... 34
-10.6.1 Avoid seizure-inducing flash rates .............................................................................................................................. 34
-10.7 To use the system remotely as well as directly .................................................................................................................. 34
-10.8 To have the system free from environmental barriers ............................................................................................... 34
-11 Goal 5: Achieving perceivability needs .................................................................................................................................................34
-11.1 To use a specific sensory modality (or a set of specific modalities) to perceive information ......................................................................................................................................................................................................... 34
-11.1.1 To have information presented visually................................................................................................................. 34
-11.1.2 To have visual information available in other modalities ...................................................................... 35
-11.1.3 To have information presented in auditory form........................................................................................... 35
-11.1.4 To have audio information available in other modalities ....................................................................... 35
-11.1.5 To have information in tactile form............................................................................................................................ 36
-11.1.6 To have tactile information also available in other modalities.......................................................... 36
-11.1.7 To experience information via multiple simultaneous modalities ................................................. 36
-11.2 To have presentation attributes of a modality that match an individual's needs ............................... 36
-11.2.1 To have presentation attributes specific to the visual modality that match an individual's needs ....................................................................................................................................................................... 36
-11.2.2 To have material printed ...................................................................................................................................................... 38
-11.2.3 To have sign language perceivable .............................................................................................................................. 38
-11.2.4 To have 3-dimensional visual information presented using only two dimensions ......... 38
-11.2.5 To have presentation attributes specific to the auditory modality that match an individual's needs ....................................................................................................................................................................... 38
-11.2.6 To select or deselect different audio streams .................................................................................................... 39
-11.2.7 To have presentation attributes specific to the tactile modality that match an individual's needs ....................................................................................................................................................................... 39
-11.2.8 To have visual or tactile feedback occur at the same location as the control ....................... 39
-11.3 To distinguish among the different components of information that are being presented ....... 39
-11.3.1 To distinguish between different components without them interfering with one another ...................................................................................................................................................................................... 39
-11.3.2 To prevent actions which would unintentionally decrease information perceivability.................................................................................................................................................................................. 39
-11.3.3 To locate and identify all actionable components without activating them .......................... 39
-11.3.4 To have actionable components look, sound or feel distinctive from non-actionable components .......................................................................................................................................................... 40
-11.3.5 To have sufficient landmarks and cues to navigate to the necessary locations, functionalities or controls to carry out a task .................................................................................................. 40
-11.3.6 To have distinct recognizable signals for different alerts or other messages that use signals ......................................................................................................................................................................................... 40
-11.4 To perceive information regardless of environmental or other conditions that might interfere ................................................................................................................................................................................................................. 40
-11.4.1 To perceive foreground information in the presence of background information .......... 40
-11.4.2 To avoid distractions that prevent focusing on a task ................................................................................41
-11.4.3 To have accessibility features not interfere with perception of standard information .......................................................................................................................................................................................41
-11.4.4 To have only the content necessary for the current task presented ..............................................41
-11.4.5 To have haptic input and output from devices not interfere with the perception of information .................................................................................................................................................................................41
-11.5 To not have one's senses overloaded .............................................................................................................................................41
-11.6 To have attention drawn to critically important information in the appropriate modality, form, and language ..............................................................................................................................................................42
-12 Goal 6: Achieving understandability needs ..................................................................................................................................... 42
-12.1 To obtain information on the system and its components and functionalities ......................................42
-12.1.1 To get an overview and to orient the users to the system and its functions and components .......................................................................................................................................................................................42
-12.1.2 To obtain and use unique names for every user interface component ........................................43
-12.1.3 To receive training that supports an individual's cognitive needs ................................................ 46
-12.1.4 To receive help that supports an individual's cognitive needs .......................................................... 46
-12.1.5 To receive recommendations that aid a user's understanding ...........................................................47
-12.2 To understand information presented by the system ...................................................................................................47
-12.2.1 To have presented information as easy to understand as possible ................................................47
-12.2.2 To have individual linguistic requirements supported by the system ....................................... 48
-12.2.3 To have individual cultural requirements supported by the system ........................................... 48
-12.2.4 To have text alternatives be provided for all non-textual information ...................................... 48
-12.2.5 To have information provided pictorially as well as via text .............................................................. 50
-12.2.6 To customize abstract symbols with alternative representations................................................. 50
-12.2.7 To have language presented in a particular modality and format.................................................. 50
-12.3 To have information that supports an individual's cognitive needs ................................................................51
-12.3.1 To have information presented in a manner that supports an individual's styles of reasoning ......................................................................................................................................................................................51
-12.3.2 To avoid unnecessary high cognitive demands ................................................................................................51
-12.3.3 To have navigation that supports an individual's thinking style ......................................................51
-12.3.4 To have assistance with remembering and recalling information ................................................. 53
-12.4 To have the steps for completing tasks optimized to match an individual's needs and clearly explained ............................................................................................................................................................................................ 53
-12.4.1 Optimize the number of steps required for any task .................................................................................. 53
-12.5 To have cues to support the individual in completing tasks .................................................................................. 53
-12.5.1 Provide notification about toggle-key status .................................................................................................... 53
-12.5.2 Provide implicit or explicit designators ................................................................................................................. 54
-12.5.3 Provide notification of progress.................................................................................................................................... 54
-12.6 To have feedback showing the results of actions.............................................................................................................. 54
-12.7 To have sufficient time to interact with the system....................................................................................................... 54
-12.7.1 To have sufficient time to understand displayed or presented information ......................... 54
-12.7.2 To have information necessary to plan actions available in advance .......................................... 55
-12.7.3 To plan a series of actions in advance....................................................................................................................... 55
-12.8 To access support when needed ....................................................................................................................................................... 55
-13 Goal 7: Achieving controllability needs................................................................................................................................................ 55
-13.1 To use a specific sensory modality (or a set of specific sensory modalities) for inputs to the system............................................................................................................................................................................................................ 55
-13.1.1 To have alternate modalities of input to the system ................................................................................... 55
-13.1.2 To use the tactile modality as a source of inputs to the system........................................................ 56
-13.1.3 To use sound as a source of inputs .............................................................................................................................. 56
-13.1.4 To use visual recognition as a source of inputs ................................................................................................57
-13.2 To control attributes of an input or interaction modality to match an individual's needs ..........57
-13.2.1 To have acceptable input or interaction attributes specific to the tactile modality ........57
-13.2.2 To have acceptable input or interaction attributes specific to the auditory modality ...............................................................................................................................................................................................57
-13.2.3 To have acceptable input or interaction attributes specific to the visual modality .........57
-13.2.4 To position system components and devices in suitable locations for their use ................57
-13.3 To use a specific interaction method to provide inputs to the system...........................................................57
-13.3.1 Keyboard-based interactions............................................................................................................................................57
-13.3.2 Pointer-based interactions ..................................................................................................................................................59
-13.3.3 Speech-based interactions...................................................................................................................................................59
-13.3.4 Gesture-based interactions ............................................................................................................................................... 60
-13.4 To perform the task using specific types of action ......................................................................................................... 60
-13.4.1 To have a means of shifting the focus from one interface component to another interface component ................................................................................................................................................................ 60
-13.4.2 To perform the task using various parts of the body ..................................................................................61
-13.4.3 To have a method to fully operate the system that does not require simultaneous actions....................................................................................................................................................................................................61
-13.4.4 To interact with the system at one's own pace..................................................................................................62
-13.4.5 To have a method to fully operate the system that does not require direct body contact .................................................................................................................................................................................................. 64
-13.4.6 To have specific interaction features: a new user accessibility need (UAN) ......................... 64
-13.5 To perform supporting and maintenance tasks related to the use of the system that other users are expected to undertake ......................................................................................................................................67
-13.6 To control the environment (to the extent possible) to prevent interference with performing the task .....................................................................................................................................................................................67
-13.6.1 General ..................................................................................................................................................................................................67
-13.6.2 Avoid interference with accessibility features ..................................................................................................67
-13.7 To access the controls that allow them to turn on and adjust the built-in accessibility features .................................................................................................................................................................................................................. 68
-13.7.1 Make controls for accessibility features discoverable and operable ............................................ 68
-13.7.2 Inform user of accessibility feature “On” or “Off” status......................................................................... 68
-13.7.3 Inform user of accessibility feature activation ................................................................................................ 68
-13.7.4 Provide capability to use preference settings across locations ........................................................ 68
-13.8 To have a suitable level of autonomy............................................................................................................................................ 69
-14 Goal 8: Usability ............................................................................................................................................................................................................. 69
-14.1 To be provided a means to successfully accomplish tasks ....................................................................................... 69
-14.2 To avoid making mistakes in completing tasks ................................................................................................................. 69
-14.3 To complete tasks in an efficient manner relative to one's own abilities ................................................... 69
-14.4 To perform tasks with a minimum of physical exertion ............................................................................................ 69
-14.5 To perform tasks with a minimum of cognitive exertion.......................................................................................... 69
-14.6 To operate the system without becoming fatigued .........................................................................................................70
-14.7 To complete tasks within the available time .........................................................................................................................70
-14.8 To be satisfied with the outcome of interacting with the system.......................................................................70
-14.9 To have comparable satisfaction that the system is worth using to that of other users ................70
-15 Goal 9: Error tolerance ........................................................................................................................................................................................... 70
-15.1 To have confidence that using the system will be free from negative consequences or unacceptable risks.........................................................................................................................................................................................70
-15.1.1 Avoiding negative consequences....................................................................................................................................70
-15.1.2 Avoiding motion sickness .....................................................................................................................................................70
-15.1.3 Avoiding unexpected major changes..........................................................................................................................70
-15.2 To explore a system without unintentionally activating components or their functionalities ...................................................................................................................................................................................................71
-15.2.1 Support exploration without unintentionally activating functions ...............................................71
-15.2.2 Safeguard against inadvertent activation or deactivation of accessibility features .......71
-15.3 To accomplish tasks in spite of the occurrence of errors ...........................................................................................71
-15.3.1 Allow warning or error information to persist.................................................................................................71
-15.4 To detect when errors have been made .....................................................................................................................................71
-15.4.1 Notify the user when errors are detected .............................................................................................................71
-15.4.2 Provide information about the error that has occurred...........................................................................71
-15.5 To recover from errors made from interacting with the system ........................................................................71
-15.5.1 Facilitate navigation to the location of errors....................................................................................................71
-15.5.2 Assist with error correction ..............................................................................................................................................71
-15.6 To reset a system to an earlier or original condition as a means of responding to errors .......... 72
-15.7 To avoid errors by making negative consequences be obvious, easy to avoid, and difficult to trigger ......................................................................................................................................................................................... 72
-16 Goal 10: Equitable use .............................................................................................................................................................................................72
-16.1 To use a system in a manner that is as similar as possible to other users ................................................. 72
-16.2 To use a system in a manner that is equivalent to that of other users, even if the manner of use is different ........................................................................................................................................................................................... 72
-16.3 To have available alternate ways of interacting with a system that match a user's needs ......... 72
-16.3.1 Provide alternative means of interaction that match users' needs ............................................... 72
-16.3.2 Provide alternatives when assistive technology (AT) is not operable ........................................ 73
-17 Goal 11: Compatibility with other systems ......................................................................................................................................73
-17.1 To use their own assistive products or assistive technology (AT) to interact with all the functionalities of the system............................................................................................................................................................... 73
-17.1.1 Make interactions available to assistive technology (AT)...................................................................... 73
-17.1.2 Make user-interface element information available to assistive technologies.................... 73
-17.1.3 Make feedback and messages available to assistive technology (AT) ..........................................74
-17.1.4 Make event notification available to assistive technologies .................................................................74
-17.1.5 Enable communication between software and assistive technology (AT) ............................. 75
-17.1.6 Use standard accessibility services ............................................................................................................................ 75
-17.1.7 Allow assistive technology (AT) to change focus and selection ........................................................76
-17.1.8 Allow assistive technology (AT) to access resources ..................................................................................76
-17.1.9 Use system-standard input and output....................................................................................................................76
-17.1.10 Enable appropriate presentation of tables............................................................................................................76
-17.1.11 Accept the installation of keyboard and pointing device emulators ............................................ 77
-17.1.12 Allow assistive technology (AT) to monitor output operations ........................................................ 77
-17.2 To have the interaction between the system and assistive technology be without interference ........................................................................................................................................................................................................ 77
-17.2.1 Support combinations of assistive technologies ............................................................................................. 77
-17.2.2 Avoid interference between assistive technologies ..................................................................................... 77
-17.3 To have specific accessibility functions available at all times, without disruption ........................... 77
-17.3.1 Pass through of system functions ................................................................................................................................ 77
-17.3.2 Restore hidden accessibility functions.................................................................................................................... 78
-Annex A (informative) W3C web content accessibility guidelines (WCAG) 2.2 success criteria.................79
+9 Goal 3: Achieving support for individualization needs
+9.1 To be provided with the way of interacting with a system that best works for them
+9.2 To choose between the available input and output modalities and their configuration without requiring restart of the system
+9.2.1 Enable switching of input and output alternatives
+9.2.2 Enable revising or reassigning controls
+9.3 To have simultaneous use of alternate interaction modalities
+9.3.1 Choosing modalities to be simultaneously available
+9.3.2 Switching between simultaneously available modalities
+9.3.3 Allow user to select media streams to be presented
+9.4 To be provided with information on available options for interacting with a system on which to base a choice of interaction methods
+9.5 To be provided with an accessible means to choose individualization features
+9.5.1 Enable individualization of user-preference settings
+9.5.1.1 Make settings easily adjustable
+9.5.1.2 Allow users to choose visual or tactile alternatives for audio output
+9.5.1.3 Provide a visual information mode usable by users with low visual acuity
+9.5.1.4 Provide colour schemes designed for people with disabilities
+9.5.1.5 Enable control of audio volume
+9.5.1.6 Enable separate control of individual audio streams
+9.5.1.7 Enable adjustment of audio output
+9.5.1.8 Enable tactile output to be adjusted
+9.5.2 Enable adjustment of attributes of common user-interface elements
+9.5.3 Enable individualization of the user interface
+9.6 To have individualization features maintained for future uses of the system, until changed by the user
+9.6.1 Utilize user-preference profiles
+9.6.2 Provide a means of restoring system defaults
+9.6.3 Minimize the need to restart for changes
+9.7 To provide pre-defined preference profiles
+9.8 To take or give up control of functions that can be performed by either the user or the system
+9.9 To have the option to use the system with a minimum of setup or configuration
+9.10 To customize important functionality: a new user accessibility need (UAN)
+9.10.1 Manage key input functionalities
+9.10.1.1 Provide adjustment of delay before key acceptance (9.3.4)
+9.10.1.2 Provide adjustment of same-key double-strike acceptance
+9.10.1.3 Provide adjustment of key repeat rate
+9.10.1.4 Provide adjustment of key-repeat onset
+9.10.1.5 Allow users to turn key-repeat off
+9.10.1.6 Enable remapping of keyboard functions
+9.10.1.7 Allow users to customize shortcut keys
+9.10.1.8 Provide adjustment of multiple-click parameters
+9.10.2 Manage pointer functionalities
+9.10.2.1 Enable individualization of the cursor and pointer
+9.10.2.2 Provide adjustment of delay of pointing-device button-press acceptance
+9.10.2.3 Enable the reassignment of pointing-device button functions
+9.10.2.4 Provide adjustment of minimum drag distance
+9.10.2.5 Provide adjustment of pointer speed
+9.10.2.6 Provide adjustment of pointer acceleration
+9.10.2.7 Provide adjustment of pointer movement direction
+9.10.3 Manage visual attributes
+9.10.3.1 Enable users to adjust visual attributes
+9.10.3.2 Enable user control of stylesheets
+9.10.3.3 Allow users to individualize colour coding
+9.10.3.4 Provide individualization of colour schemes
+9.10.3.5 Enable users to set minimum font size
+9.10.3.6 Enable user management of views
+9.10.4 Manage auditory attributes
+9.10.4.1 Enable users to manage auditory attributes
+9.10.4.2 Use an appropriate frequency range for non-speech audio
+9.10.5 Manage language selection
+9.10.6 Manage windowing functionalities
+9.10.6.1 Provide user control of multiple “always-on-top” windows
+9.10.6.2 Enable user choice of effect of pointer and focus on window stacking order
+9.10.6.3 Enable window positioning
+9.10.6.4 Enable window resizing
+9.10.7 Manage functionalities providing content alternatives
+9.10.7.1 Enable system-wide control of captioning
+9.10.7.2 Support system settings for captioning
+9.10.7.3 Enable system-wide control of audio descriptions
+9.10.7.4 Support system settings for audio descriptions
+9.10.8 Manage animation functionalities
+9.10.9 Adjust the scale and layout of user-interface elements as font-size changes
+10 Goal 4: Achieving approachability needs
+10.1 To have the system free from any physical barriers
+10.2 To have the system free from any psychological barriers
+10.3 To have the system maintain the user's attention
+10.3.1 Engage the user's attention
+10.3.2 Enable user rest breaks
+10.4 To have interaction options clearly presented
+10.5 To have appropriate levels of privacy and security
+10.6 To avoid patterns that cause psychological or physical discomfort or disturbance
+10.6.1 Avoid seizure-inducing flash rates
+10.7 To use the system remotely as well as directly
+10.8 To have the system free from environmental barriers
+11 Goal 5: Achieving perceivability needs
+11.1 To use a specific sensory modality (or a set of specific modalities) to perceive information
+11.1.1 To have information presented visually
+11.1.1.1 Make all information available visually
+11.1.1.2 Present text as text, not as images of text
+11.1.1.3 Use text characters as text, not as drawing elements
+11.1.2 To have visual information available in other modalities
+11.1.3 To have information presented in auditory form
+11.1.4 To have audio information available in other modalities
+11.1.5 To have information in tactile form
+11.1.6 To have tactile information also available in other modalities
+11.1.6.1 Do not convey information by tactile output alone
+11.1.7 To experience information via multiple simultaneous modalities
+11.1.7.1 Synchronize audio equivalents for visual events
+11.2 To have presentation attributes of a modality that match an individual's needs
+11.2.1 To have presentation attributes specific to the visual modality that match an individual's needs
+11.2.1.1 Format information suitable for the current view
+11.2.1.2 Provide focus and cursors
+11.2.1.3 Avoid obscuring the focus
+11.2.1.4 Enable enhancement of focus and cursors
+11.2.1.5 Provide easily-selectable pointing-device targets
+11.2.1.6 Do not convey information by visual font attribute alone
+11.2.1.7 Do not convey information by colour output alone
+11.2.1.8 Provide contrast between adjacent colours
+11.2.2 To have material printed
+11.2.3 To have sign language perceivable
+11.2.4 To have 3-dimensional visual information presented using only two dimensions
+11.2.5 To have presentation attributes specific to the auditory modality that match an individual's needs
+11.2.5.1 Match auditory information to user's needs
+11.2.5.2 Use tone pattern rather than tone value to convey information
+11.2.6 To select or deselect different audio streams
+11.2.7 To have presentation attributes specific to the tactile modality that match an individual's needs
+11.2.8 To have visual or tactile feedback occur at the same location as the control
+11.3 To distinguish among the different components of information that are being presented
+11.3.1 To distinguish between different components without them interfering with one another
+11.3.2 To prevent actions which would unintentionally decrease information perceivability
+11.3.3 To locate and identify all actionable components without activating them
+11.3.4 To have actionable components look, sound or feel distinctive from non-actionable components
+11.3.5 To have sufficient landmarks and cues to navigate to the necessary locations, functionalities or controls to carry out a task
+11.3.6 To have distinct recognizable signals for different alerts or other messages that use signals
+11.3.6.1 Use specified frequency components for audio warnings and alerts
+11.4 To perceive information regardless of environmental or other conditions that might interfere
+11.4.1 To perceive foreground information in the presence of background information
+11.4.1.1 Control background and other non-essential visual information
+11.4.1.2 Control of background and other sound tracks
+11.4.2 To avoid distractions that prevent focusing on a task
+11.4.3 To have accessibility features not interfere with perception of standard information
+11.4.3.1 Position captions to not obscure content
+11.4.4 To have only the content necessary for the current task presented
+11.4.4.1 Enable persistent display
+11.4.5 To have haptic input and output from devices not interfere with the perception of information
+11.5 To not have one's senses overloaded
+11.6 To have attention drawn to critically important information in the appropriate modality, form, and language
+12 Goal 6: Achieving understandability needs
+12.1 To obtain information on the system and its components and functionalities
+12.1.1 To get an overview and to orient the users to the system and its functions and components
+12.1.1.1 Provide an overview of the system
+12.1.1.2 Provide information on individual functions and components
+12.1.1.3 Provide programmatically available information
+12.1.1.4 Provide various views on the content
+12.1.2 To obtain and use unique names for every user interface component
+12.1.2.1 Provide unique names to organize and identify content
+12.1.2.2 Provide a name for each user-interface element
+12.1.2.3 Provide meaningful names
+12.1.2.4 Provide unique names within context
+12.1.2.5 Display names
+12.1.2.6 Provide names and labels that are short
+12.1.2.7 Provide text label display option for icons
+12.1.2.8 Provide unique and meaningful window titles
+12.1.2.9 Provide window titles that are unique system-wide
+12.1.2.10 Provide meaningful names for directly interacting with commands
+12.1.2.11 Properly position the labels of user-interface elements on screen
+12.1.3 To receive training that supports an individual's cognitive needs
+12.1.3.1 Provide training that supports various cognitive styles of understanding
+12.1.4 To receive help that supports an individual's cognitive needs
+12.1.4.1 Provide context sensitive help
+12.1.4.2 Provide understandable documentation and “Help”
+12.1.4.3 Provide instructions and “Help” without unnecessary device references
+12.1.4.4 Provide documentation and “Help” on accessibility features
+12.1.5 To receive recommendations that aid a user's understanding
+12.2 To understand information presented by the system
+12.2.1 To have presented information as easy to understand as possible
+12.2.1.1 Ensure content is understandable without solely relying on sensory characteristics
+12.2.1.2 Provide readable content
+12.2.1.3 Format content for ease of use
+12.2.1.4 Provide understandable user notifications
+12.2.2 To have individual linguistic requirements supported by the system
+12.2.3 To have individual cultural requirements supported by the system
+12.2.4 To have text alternatives be provided for all non-textual information
+12.2.4.1 Provide accessible alternatives to task-relevant non-text content
+12.2.4.2 Provide meaningful text alternatives
+12.2.4.3 Avoiding redundancies in text alternatives
+12.2.4.4 Provide control of text alternatives
+12.2.4.5 Provide text alternatives in electronic documentation and “Help”
+12.2.4.6 Display any captions provided
+12.2.5 To have information provided pictorially as well as via text
+12.2.6 To customize abstract symbols with alternative representations
+12.2.7 To have language presented in a particular modality and format
+12.3 To have information that supports an individual's cognitive needs
+12.3.1 To have information presented in a manner that supports an individual's styles of reasoning
+12.3.2 To avoid unnecessary high cognitive demands
+12.3.3 To have navigation that supports an individual's thinking style
+12.3.3.1 Provide multiple means of navigation
+12.3.3.2 Provide the ability to reverse navigation actions
+12.3.3.3 Provide information about current location
+12.3.3.4 Provide direct navigation capabilities
+12.3.3.5 Provide sequential navigation capabilities
+12.3.3.6 Provide the ability to use hierarchical navigation
+12.3.3.7 Provide the ability to establish and use individualized landmarks
+12.3.3.8 Provide searching capabilities
+12.3.3.9 Facilitate list and menu navigation
+12.3.3.10 Facilitate navigation of controls by grouping
+12.3.3.11 Arrange controls in task-appropriate navigation order
+12.3.4 To have assistance with remembering and recalling information
+12.4 To have the steps for completing tasks optimized to match an individual's needs and clearly explained
+12.4.1 Optimize the number of steps required for any task
+12.5 To have cues to support the individual in completing tasks
+12.5.1 Provide notification about toggle-key status
+12.5.2 Provide implicit or explicit designators
+12.5.3 Provide notification of progress
+12.6 To have feedback showing the results of actions
+12.7 To have sufficient time to interact with the system
+12.7.1 To have sufficient time to understand displayed or presented information
+12.7.2 To have information necessary to plan actions available in advance
+12.7.3 To plan a series of actions in advance
+12.8 To access support when needed
+13 Goal 7: Achieving controllability needs
+13.1 To use a specific sensory modality (or a set of specific sensory modalities) for inputs to the system
+13.1.1 To have alternate modalities of input to the system
+13.1.1.1 Support alternate methods and modalities for inputs to the system
+13.1.1.2 Provide text equivalents for all interactive user-interface elements
+13.1.2 To use the tactile modality as a source of inputs to the system
+13.1.2.1 Support all functionality via the keyboard interface
+13.1.2.2 Operable through tactilely discernible controls
+13.1.3 To use sound as a source of inputs
+13.1.4 To use visual recognition as a source of inputs
+13.2 To control attributes of an input or interaction modality to match an individual's needs
+13.2.1 To have acceptable input or interaction attributes specific to the tactile modality
+13.2.2 To have acceptable input or interaction attributes specific to the auditory modality
+13.2.3 To have acceptable input or interaction attributes specific to the visual modality
+13.2.4 To position system components and devices in suitable locations for their use
+13.3 To use a specific interaction method to provide inputs to the system
+13.3.1 Keyboard-based interactions
+13.3.1.1 Enable full use via keyboard
+13.3.1.2 Provide keyboard input from all standard input mechanisms
+13.3.1.3 Provide keyboard access to information displayed outside the physical screen
+13.3.1.4 Provide parallel keyboard control of pointer functions
+13.3.2 Pointer-based interactions
+13.3.2.1 Provide pointer control of keyboard functions
+13.3.2.2 Enable selection of elements as an alternative to typing
+13.3.2.3 Provide direct control of pointer position from external devices
+13.3.3 Speech-based interactions
+13.3.3.1 Provide speech recognition services
+13.3.3.2 Ensure that voice commands are distinct
+13.3.4 Gesture-based interactions
+13.3.4.1 Provide gesture recognition services
+13.3.4.2 Ensure that gestures are distinct
+13.4 To perform the task using specific types of action
+13.4.1 To have a means of shifting the focus from one interface component to another interface component
+13.4.1.1 Enable moving focus between windows
+13.4.1.2 Enable moving focus between user interface components
+13.4.1.3 manage the results of hovering or shifting focus
+13.4.1.4 Separate moving focus and activation
+13.4.1.5 Provide a means of finding the pointer
+13.4.2 To perform the task using various parts of the body
+13.4.3 To have a method to fully operate the system that does not require simultaneous actions
+13.4.3.1 Enable sequential entry of multiple (chorded) keystrokes
+13.4.3.2 Provide alternative input methods for complex pointing-device operations
+13.4.3.3 Enable pointing-device button-hold functionality
+13.4.3.4 Provide alternatives to simultaneous pointer operations
+13.4.4 To interact with the system at one's own pace
+13.4.4.1 Allow users to interact at their own pace
+13.4.4.2 Enable user control of timed responses
+13.4.4.3 Enable user control of time-sensitive presentation of information
+13.4.4.4 Enable user control of presentation of time-based media
+13.4.4.5 Enable users to stop, start and pause
+13.4.4.6 Enable users to replay, rewind, pause and fast-or jump-forward
+13.4.5 To have a method to fully operate the system that does not require direct body contact
+13.4.6 To have specific interaction features: a new user accessibility need (UAN)
+13.4.6.1 General
+13.4.6.2 Support “Copy” and “Paste” operations
+13.4.6.3 Support “Copy” operations in non-editable text
+13.4.6.4 Provide “Undo” and/or “Confirm” functionality
+13.4.6.5 Support minimize, maximize, restore and close windows
+13.4.6.6 Enable windows to avoid taking focus
+13.4.6.7 Provide system-wide spell-checking tools
+13.4.6.8 Provide shortcut keys
+13.4.6.9 Reserve accessibility shortcut key assignments
+13.4.6.10 Support user-defined shortcuts
+13.4.6.11 Enable “always-on-top” windows
+13.4.6.12 Read content on systems with closed functionality
+13.4.6.13 Enable software-controlled media extraction
+13.4.6.14 Enable control of dynamic or executable content
+13.4.6.15 Announce changes on systems with closed functionality
+13.5 To perform supporting and maintenance tasks related to the use of the system that other users are expected to undertake
+13.6 To control the environment (to the extent possible) to prevent interference with performing the task
+13.6.1 General
+13.6.2 Avoid interference with accessibility features
+13.7 To access the controls that allow them to turn on and adjust the built-in accessibility features
+13.7.1 Make controls for accessibility features discoverable and operable
+13.7.2 Inform user of accessibility feature “On” or “Off” status
+13.7.3 Inform user of accessibility feature activation
+13.7.4 Provide capability to use preference settings across locations
+13.8 To have a suitable level of autonomy
+14 Goal 8: Usability
+14.1 To be provided a means to successfully accomplish tasks
+14.2 To avoid making mistakes in completing tasks
+14.3 To complete tasks in an efficient manner relative to one's own abilities
+14.4 To perform tasks with a minimum of physical exertion
+14.5 To perform tasks with a minimum of cognitive exertion
+14.6 To operate the system without becoming fatigued
+14.7 To complete tasks within the available time
+14.8 To be satisfied with the outcome of interacting with the system
+14.9 To have comparable satisfaction that the system is worth using to that of other users
+15 Goal 9: Error tolerance
+15.1 To have confidence that using the system will be free from negative consequences or unacceptable risks
+15.1.1 Avoiding negative consequences
+15.1.2 Avoiding motion sickness
+15.1.3 Avoiding unexpected major changes
+15.2 To explore a system without unintentionally activating components or their functionalities
+15.2.1 Support exploration without unintentionally activating functions
+15.2.2 Safeguard against inadvertent activation or deactivation of accessibility features
+15.3 To accomplish tasks in spite of the occurrence of errors
+15.3.1 Allow warning or error information to persist
+15.4 To detect when errors have been made
+15.4.1 Notify the user when errors are detected
+15.4.2 Provide information about the error that has occurred
+15.5 To recover from errors made from interacting with the system
+15.5.1 Facilitate navigation to the location of errors
+15.5.2 Assist with error correction
+15.6 To reset a system to an earlier or original condition as a means of responding to errors
+15.7 To avoid errors by making negative consequences be obvious, easy to avoid, and difficult to trigger
+16 Goal 10: Equitable use
+16.1 To use a system in a manner that is as similar as possible to other users
+16.2 To use a system in a manner that is equivalent to that of other users, even if the manner of use is different
+16.3 To have available alternate ways of interacting with a system that match a user's needs
+16.3.1 Provide alternative means of interaction that match users' needs
+16.3.2 Provide alternatives when assistive technology (AT) is not operable
+17 Goal 11: Compatibility with other systems
+17.1 To use their own assistive products or assistive technology (AT) to interact with all the functionalities of the system
+17.1.1 Make interactions available to assistive technology (AT)
+17.1.2 Make user-interface element information available to assistive technologies
+17.1.3 Make feedback and messages available to assistive technology (AT)
+17.1.4 Make event notification available to assistive technologies
+17.1.5 Enable communication between software and assistive technology (AT)
+17.1.6 Use standard accessibility services
+17.1.7 Allow assistive technology (AT) to change focus and selection
+17.1.8 Allow assistive technology (AT) to access resources
+17.1.9 Use system-standard input and output
+17.1.10 Enable appropriate presentation of tables
+17.1.11 Accept the installation of keyboard and pointing device emulators
+17.1.12 Allow assistive technology (AT) to monitor output operations
+17.2 To have the interaction between the system and assistive technology be without interference
+17.2.1 Support combinations of assistive technologies
+17.2.2 Avoid interference between assistive technologies
+17.3 To have specific accessibility functions available at all times, without disruption
+17.3.1 Pass through of system functions
+17.3.2 Restore hidden accessibility functions
 
 ----
 from ISO.org preview TOC: extracted by AI; proofed OK.
@@ -332,3 +474,5 @@ D.3.11.1 General
 D.3.11.2 Turn feature “On” and “Off”
 D.3.11.3 Adjustments
 Bibliography
+
+</pre>
