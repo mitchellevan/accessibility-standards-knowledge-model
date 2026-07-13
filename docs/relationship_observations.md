@@ -83,14 +83,14 @@ Possibilities:
 
 ## First attempt at relationship mapping: "language of parts" applied to non-web
 
-This is a first attempt at mapping one expectation to several source documents. The goal of this attempt is to see how the ontology works in a real example.
+This is a first attempt at mapping similar expectations to each other in several source documents. The goal of this attempt is to exercise the ontology.
 
 ### (A) Guidelines expecting programmatic characteristics
 
-* WCAG SC 3.1.2 Language of Parts https://www.w3.org/TR/WCAG22/#language-of-parts
+* WCAG SC 3.1.2 [Language of Parts](https://www.w3.org/TR/WCAG22/#language-of-parts)
   * Applicability condition: See "WCAG applicability".
   * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
-* WCAG2ICT
+* WCAG2ICT fragment 
 * EN 301 549:
   * 10.3.1.2 Language of parts https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82
     * Applicability condition: "Where ICT is, or includes, a non-web document"
@@ -168,14 +168,23 @@ Rationale:
 * WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.1: "Web Content Accessibility Guidelines (WCAG) 2.2 covers a wide range of recommendations for making web content more accessible."
 * WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.2: "WCAG 2.2 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/) for an introduction and links to WCAG technical and educational material."
   * WCAG Overview fragment _1 [Introduction](https://www.w3.org/WAI/standards-guidelines/wcag/#intro), fragment _1.3 (retrieved 2026-07-12): "WCAG applies to dynamic content, multimedia, web on mobile, and AI web interfaces. WCAG can also be applied to non-web information and communications technologies (ICT) such as native apps, software, and documents, as described in [WCAG2ICT](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/)." The link goes to the source document "WCAG2ICT Overview".
-  * [WCAG2ICT Overview](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/) fragment _0.0 Summary (retrieved 2026-07-12): "[WCAG2ICT](https://www.w3.org/TR/wcag2ict/)... describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to documents, software, and other information and communications technologies (ICT)." The link goes to the source document "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)" (paraphrased name: WCAG2ICT)
-  * WCAG2ICT fragment _0.1 [Abstract](https://www.w3.org/TR/wcag2ict/#abstract) (retrieved 2026-07-12): "This document describes how the Web Content Accessibility Guidelines (WCAG) versions 2.0 [WCAG20], 2.1 [WCAG21], and 2.2 [WCAG22] principles, guidelines, and success criteria can be applied to non-web Information and Communications Technologies (ICT), specifically to non-web documents and software. It provides informative guidance (guidance that is not normative and does not set requirements)."
+  * See "WCAG2ICT applicability" in ASKM notes.
 * WCAG 2.2 fragment _0.3.4 [Requirements for WCAG 2.2](https://www.w3.org/TR/WCAG22/#requirements-for-wcag-2-2): "WCAG 2.2 meets a set of [requirements for WCAG 2.2](https://w3c.github.io/wcag/requirements/22/) which, in turn, inherit requirements from previous WCAG 2 versions." The link goes to the source document "Requirements for Web Content Accessibility Guidelines 2.2" (paraphrased: "Requirements for WCAG 2.2").
   * Requirements for WCAG 2.2 fragment 1 [Introduction](https://w3c.github.io/wcag/requirements/22/#introduction), fragment 1_2 (retrieved 2026-07-12): "The underlying goal of WCAG 2.2 requirements are the same as for WCAG 2.0 and WCAG 2.1 – to promote accessibility of Web content."
   * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_6 (retrieved 2026-07-12): "Success criteria should... Apply to all content across all websites unless preconditions for the application of the success criteria are explicitly identified (e.g. 'except interruptions involving an emergency')."
   * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_7 (retrieved 2026-07-12): "Success criteria should... Apply across technologies to the greatest extent possible."
 
-Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG intrepreted by WCAG2ICT.
+### WCAG2ICT applicability
+
+WCAG 2.2 can be applied to non-web documents and software, with case-by-case exceptions.
+
+Rationale:
+
+* [WCAG2ICT Overview](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/) fragment _0.0 Summary (retrieved 2026-07-12): "[WCAG2ICT](https://www.w3.org/TR/wcag2ict/)... describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to documents, software, and other information and communications technologies (ICT)." The link goes to the source document "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)" (paraphrased name: WCAG2ICT)
+* WCAG2ICT fragment _1 [Abstract](https://www.w3.org/TR/wcag2ict/#abstract) (retrieved 2026-07-12): "This document describes how the Web Content Accessibility Guidelines (WCAG) versions 2.0 [WCAG20], 2.1 [WCAG21], and 2.2 [WCAG22] principles, guidelines, and success criteria can be applied to non-web Information and Communications Technologies (ICT), specifically to non-web documents and software. It provides informative guidance (guidance that is not normative and does not set requirements)."
+* WCAG2ICT fragment _3.2.1 [Interpretation of web terminology in a non-web context](https://w3c.github.io/wcag2ict/#interpretation-of-web-terminology-in-a-non-web-context), fragment _3.2.1.3 (editor's draft retrieved 2026-07-12):
+  * "Not all success criteria have been fully adopted in all local standards, regulations, and legislation, and may not be applicable to all technologies. WCAG2ICT has been used in some standards and regulations to determine whether or not to apply certain success criteria. Some standards (for example, Section 508 in the U.S., and EN 301 549 in Europe) do not apply WCAG 2 Success Criteria 2.4.1 Bypass Blocks, 2.4.5 Multiple Ways, 3.2.3 Consistent Navigation, and 3.2.4 Consistent Identification to non-web documents and non-web software. In addition, EN 301 549 does not apply 2.4.2 Page Titled and 3.1.2 Language of Parts to non-web software. In contrast, the U.S. Department of Justice [Guidance to Revisions to ADA Title II Regulation on Accessibility of Web Information and Services of State and Local Government Entities, Appendix D to Part 35, Title 28](https://www.ecfr.gov/current/title-28/chapter-I/part-35/appendix-Appendix%20D%20to%20Part%2035), directs implementers to utilize the guidance in WCAG2ICT to determine the applicability of success criteria and how to apply the requirements to mobile applications. Since WCAG2ICT does not specifically say which criteria can or should apply, those implementing WCAG2ICT should consider the applicability of individual success criteria to non-web documents and non-web software."
+Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG interpreted by WCAG2ICT.
 
 ### Learnings from this example
 
@@ -186,6 +195,13 @@ Each source fragment should be an object in the model.
 Each referral to a source should point to the source's object in the model, not directly to a URL of the source.
 * Easier for maintenance
 * Prevents ambiguity, e.g. in EN 301 549 where source fragments don't have unique URLs.
+
+It's too time-consuming to write each source fragment manually in each citation, especially when they are not numbered in the source document. These things will help:
+
+* To the extent allowed by copyright, index the whole source document in the model my numbering all major source fragments.
+* When drafting content before the cited source fragments have been indexed:
+  * Cite a higher-level source, even the whole document, and quote the source.
+  * Cite the section by name only (e.g., its heading) when there is no numerical identifier.
 
 Provisional decision: Don't record two contradictory relationships. Instead, each claim (or "statement"? or "assertion"?) in the model (e.g. "relationship" or "is named") should have a rationale. A rationale contains one or more pro arguments, and zero or more con arguments.
 
@@ -207,3 +223,7 @@ Open question: how should the model represent "my comments"?
 Open question: is this easy enough, lightweight enough? While also being well grounded in evidence?
 
 I'll probably need a way to mark "citation needed", so I can record a more or less established opinion quickly without getting sidetracked on finding exact sources. The "citation needed" can also have a prose comment, like "probably in WCAG2ICT"
+
+The whole model will need to be localizable, while meeting this same language-of-parts requirement.
+* Can the default language be English, while allowing any tree or leaf to override the language?
+* I'll probably need to mix languages within a text string, such as a comment or rationale. Plan to beat: span element with lang attribute.
