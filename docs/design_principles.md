@@ -33,10 +33,15 @@ How:
 
 Potential limitations:
 
-* If any source has an unnumbered fragment followed by a fragment numbered 0, then a different approach will be needed.
+* If any source has a fragment that's not numbered in the source document, followed by a fragment numbered 0 in the source document, then a different approach will be needed.
 
 ## Names of source fragments
 
-* In general, err on the side of more verbatim quotes, fewer paraphrases. This makes it simpler for model authors to cite unnamed fragments, easier for model users to follow the citation to the original, and leans into the model's goal of source attribution.
-* "Reserved" fragments help explain the identifier numbering hierarchy. They might be cited in the future.
+Many source documents are protected by copyright that restricts copying from the source. See the [Contribution Guide](../CONTRIBUTING.MD) on respecting copyright.
 
+| Where restricted by copyright                                                                                                                                                | Where copying from a source is freely allowed                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use a verbatim heading to the extent allowed by policy; paraphrase otherwise.                                                                                                | Use verbatim section headings.                                                                                                              |
+| When citing a fragment without its own heading: cite a parent heading, page number, sequential paragraph number, quoted text to the extent allowed by policy, or paraphrase. | Quote the start of the paragraph. This makes it simple for model contributors, and easier for users to follow the citation to the original. |
+
+Not all fragments need to be named in advance. "Reserved" fragments are not currently used in ASKM relationships or commentary, but help explain ASKM's identifier numbering scheme.
