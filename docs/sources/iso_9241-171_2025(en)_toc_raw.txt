@@ -13,11 +13,6 @@
 
 <pre>
 
-TODO finish proofing vs online TOC
-
------
-from ISO.org preview TOC: extracted by AI, not yet proofed
-
 Foreword
 Introduction
 1 Scope
@@ -56,10 +51,6 @@ Introduction
 8.1 To not be surprised by the results of interactions with the system
 8.1.1 Maintain naming consistency
 8.1.2 Maintain location and ordering consistency
-
-----
-AI processed from Iteh preview PDF; proofed with TOC DOM okay
-
 8.1.3 Present user notification using consistent techniques
 8.1.4 Update equivalent alternatives for media when the media changes
 8.1.5 Use familiar tactile patterns
@@ -70,10 +61,6 @@ AI processed from Iteh preview PDF; proofed with TOC DOM okay
 8.2 To apply personal knowledge and experience to interact successfully with the system
 8.3 To provide user assistance for knowledge needed to interact with the system
 8.4 To provide immediate and easily accessible help or further instructions, where such help can be provided by the system
-
------
-from ISO.org preview TOC: extracted by AI, not yet proofed
-
 9 Goal 3: Achieving support for individualization needs
 9.1 To be provided with the way of interacting with a system that best works for them
 9.2 To choose between the available input and output modalities and their configuration without requiring restart of the system
@@ -414,10 +401,6 @@ from ISO.org preview TOC: extracted by AI, not yet proofed
 17.3 To have specific accessibility functions available at all times, without disruption
 17.3.1 Pass through of system functions
 17.3.2 Restore hidden accessibility functions
-
-----
-from ISO.org preview TOC: extracted by AI; proofed OK.
-
 Annex A W3C web content accessibility guidelines (WCAG) 2.2 success criteria
 Annex B W3C user agent accessibility guidelines (UAAG) 2.0
 Annex C Mapping of ISO 9241-171:2008 to this document
