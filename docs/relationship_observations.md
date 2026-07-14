@@ -87,22 +87,66 @@ This is a first attempt at mapping similar expectations to each other in several
 
 ### (A) Guidelines expecting programmatic characteristics
 
-* WCAG SC 3.1.2 [Language of Parts](https://www.w3.org/TR/WCAG22/#language-of-parts)
-  * Applicability condition: See "WCAG applicability".
+* WCAG [SC 3.1.2](https://www.w3.org/TR/WCAG22/#language-of-parts) *Language of Parts*
+  * Applicability condition: Web. See "WCAG applicability".
   * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
-* WCAG2ICT fragment 
-* EN 301 549:
-  * 10.3.1.2 Language of parts https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82
-    * Applicability condition: "Where ICT is, or includes, a non-web document"
+* WCAG2ICT fragment xxxx 
+* EN 301 549 v4:
+  * [9.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=67) *Language of parts*
+    * Applicability condition: web
+    * Expectation: includes WCAG SC 3.1.2 by reference.
+  * [10.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82) *Language of parts*
+    * Applicability condition: non-web document
     * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
+  * [12.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=106) Accessibility information about products
+    * Applicability condition 1: Web content provides information about a product.
+    * Expectation 1: This information in web content meets clause 9 (+- WCAG 2.2).
+    * Applicability condition 2: A non-web document provides information about a product.
+    * Expectation 2: This information in a non-web document meets clause 10 (+- WCAG 2.2).
+    * Applicability condition 2: Non-web software provides information about a product.
+    * Expectation 2: This information in non-web software meets clause 11 (+- WCAG 2.2).
+      * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
+  * [12.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107) Accessibility information about services
+    * Like 12.1: s/product/service/
 * EAA
-  * Source document URI: https://eur-lex.europa.eu/eli/dir/2019/882
   * EAA Annex I(I)(1)(i-iv) "the information on the use of the product provided on the product itself... shall be accompanied... by accessible information"
-    * EN clause 12.1 → clause 10 → 
-    * EN quoting EAA: "12.1 covers the accessibility of the presentation of information when provided in digital forms."
   * EAA Annex I(III)(b)(ii) Services: "be presented in an understandable way"
-  * Rationale: EN 301 549 v4 Table ZB.2 maps its clause 5.1.3.14 "Spoken languages" to the aforementioned EAA source fragments (provisions).
-* VPAT 2.5Rev TODO
+  * TODO more?
+  * Rationale: TODO
+
+### (A2) Guidelines expecting programmatic characteristics in content creation
+
+* EN 301 549 v4:
+  * 5.10.2 *Accessible content creation*
+    * Case a
+      * Applicability condition 1: A content creation tool (defined in clause 3.1 *Terms* 'authoring tool') that creates web content.
+      * Expectation 1a: The content creation tool enables its users to create web content that meets clause 9 (+- WCAG 2.2), to the extent described in clause 5.10.1.
+      * Expectation 1b: s/enables/guides/
+    * Case b
+      * Applicability condition 2: A content creation tool (defined in clause 3.1 *Terms* 'authoring tool') that creates non-web document content.
+      * Expectation 2a: The content creation tool enables its users to create non-web document content that meets clause 10 (+- WCAG 2.2), to the extent described in clause 5.10.1.
+      * Expectation 2b: s/enables/guides/
+    * Case c
+      * Applicability condition 3: A content creation tool (defined in clause 3.1 *Terms* 'authoring tool') that creates non-web software content.
+      * Expectation 3a: The content creation tool enables its users to create non-web software content that meets clause 11 (+- WCAG 2.2), to the extent described in clause 5.10.1.
+      * Expectation 3b: s/enables/guides/
+      * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
+  * 5.10.3 *Preservation of accessibility information in transformations*
+    * Applicability: a content creation tool (Terms: 'authoring tool') that transforms an input, and the input can contain accessibility information (implied by 'preserved'). ("Accessibility information" needs a de facto definition.)
+    * Expectation: the accessibility information is preserved in the output, to the extent described in clause 5.10.1.
+      * Rationale: ASKM interprets 5.10.1 "to the extent supported" as meaning the same as 5.10.3 "if mechanisms exist".
+    * In context of 5.10.3, "accessibility information" is not limited to info required for clauses 9–11. So 5.10.3 could apply to language-of-parts information in non-web software content as input, depending on its format and technology. And 5.10.3 could expect preservation of language-of-parts information in non-web software content as output, depending on its format and technology.
+  * 5.10.4 Repair assistance
+    * Applicability: like 5.10.2, and the tool detects failures of 9, 10, or 11
+      * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
+    * Expectation: inform the user and help them fix the problems (see 5.10.4 and its notes)
+  * 5.10.5 *Templates*
+    * Applicability: like 5.10.2, and the tool has templates
+    * Expectation 1: One or more templates meet the expectations of 5.10.2.
+      * Rationale: ASKM interprets 5.10.5 "supports" to mean the same as 5.10.2 "enable and guide".
+      * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
+    * Expectation 2: Users are accurately informed of at least one template meeting expectation 1.
+* EAA TODO
 
 ### (B) Guidelines expecting characteristics of speech output
 
@@ -126,65 +170,66 @@ This is a first attempt at mapping similar expectations to each other in several
   * EAA Annex I(I)(2)(a) "do so via more than one sensory channel; this shall include providing alternatives to vision, auditory, speech and tactile elements"
   * EAA Annex I(I)(2)(o)(i) Self-service terminals: "provide for text-to-speech technology"
   * Rationale: EN 301 549 v4 Table ZB.2 maps its clause 5.1.3.14 "Spoken languages" to the aforementioned EAA source fragments (provisions).
-* VPAT 2.5Rev TODO
-* ACAA TODO
 
 ### (C) Relationship between (A) and (B)
 
 * Applicability conditions: Different.
 * Expectation: Similar.
 * Rationale:
-  * According to [Understanding SC 3.1.2](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html), part of the intent is "Screen readers can use the pronunciation rules of the language of the text."
-  * According to WCAG2ICT → A_3.26, the intent of WCAG 3.1.2 is correct pronunciation.
+  * According to [Understanding SC 3.1.2](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html), part of the intent is "Screen readers can use the pronunciation rules of the language of the text." (Retrieved 2026-07-12)
+  * According to WCAG2ICT fragment A_3.26, the intent of WCAG 3.1.2 is correct pronunciation.
 
 ### (D) Non-expectations
 
-* EN 301 549 v3.2.1 → 11.3.1.2 "Void"
+* EN 301 549 v3.2.1 clause 11.3.1.2 "Void"
   * Contains a note: Void because "language of parts" would be impossible for software. (Paraphrased.)
-* EN 301 549 v4 → 11.3.1.2 "Language of Parts (Void)"
+* EN 301 549 v4 clause 11.3.1.2 "Language of Parts (Void)"
   * Contains a note: Void because "language of parts" would be impossible for software. (Paraphrased.)
 * BIK BITV-Test (App): no test.
-  * Rationale of source document name: https://bitvtest.de/tests-und-beratung/bik-bitv-test-app
-  * Source document URI: https://bitvtest.de/pruefverfahren/bitv-20-app
   * Source document retrieved: 2026-07-10
-  * My comments: Omission of a language-of-parts guideline is consistent with the scope of "BIK BITV-Test (App)". The scope (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app) is the BITV requirements that apply to mobile apps, based on EN 301 549 version 3.2.1 (https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf), which does not contain a guideline for language of parts in open non-web software.
+  * ASKM comment: Omission of a language-of-parts guideline is consistent with the scope of "BIK BITV-Test (App)". The scope (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app) is the BITV requirements that apply to mobile apps, based on EN 301 549 version 3.2.1 (https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf), which does not contain a guideline for language of parts in open non-web software.
 * BIK BITV-Test + WCAG 2.2 (App): no test.
-  * Rationale of source document name: https://bitvtest.de/tests-und-beratung/bik-bitv-test-app
-  * Source document URI: https://bitvtest.de/pruefverfahren/bitv-20-plus-app
   * Source document retrieved: 2026-07-10
-  * My comments: Same as for language-of-parts for BIK BITV-Test (App).
-* WCAG2ICT-Test (App) (BIK)
-  * Rationale of source document name: The name listed here plus "(BIK)" for context. https://bitvtest.de/tests-und-beratung/bik-bitv-test-app
-  * Source document URI: https://bitvtest.de/pruefverfahren/bitv-20-app
+  * ASKM comment: Same as for language-of-parts for BIK BITV-Test (App).
+* WCAG2ICT-Test (App) (BIK): no test.
   * Source document retrieved: 2026-07-10
-  * My comments: Omission of a language-of-parts guideline is not consistent with the scope of "WCAG2ICT-Test (App) (BIK)". The scope (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app) is the WCAG requirements that apply to mobile apps, based on WCAG2ICT (https://www.w3.org/TR/wcag2ict/#language-of-parts). However, WCAG2ICT does provide such guidance.
+  * ASKM comment: Omission of a language-of-parts guideline is not consistent with the scope of "WCAG2ICT-Test (App) (BIK)". The scope (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app) is the WCAG requirements that apply to mobile apps, based on WCAG2ICT (https://www.w3.org/TR/wcag2ict/#language-of-parts). However, WCAG2ICT does provide such guidance.
 
-### WCAG applicability
+### WCAG applicability to web
 
-Applicability conditions for all WCAG 2.2 Success Criteria (paraphrased): WCAG 2.2 applies to websites and web content. WCAG 2.2 can also be applied to non-web documents and software as described in WCAG2ICT.
+Applicability conditions for WCAG 2:
+* Summary: WCAG 2 applies to web pages, online and offline documents, and open software applications (those that can interoperate with assistive technology). Some WCAG success critera apply to closed software.
+
+* WCAG 2 applies to anything served from a URL and presented in a user agent. Web pages are the foremost example. Another example is PDF viewable in a browser.
+  * TODO definition of 'web page'
+  * TODO integrate these summaries into the Rationale.
+* WCAG 2 applies to non-web documents and non-web software as described in WCAG2ICT.
+* WCAG 2 does not have formal preconditions that would limit the applicability of WCAG as a whole
 
 Rationale:
 
+* WCAG Overview fragment _1 [Introduction](https://www.w3.org/WAI/standards-guidelines/wcag/#intro), fragment _1.3 (retrieved 2026-07-12): "WCAG applies to dynamic content, multimedia, web on mobile, and AI web interfaces. WCAG can also be applied to non-web information and communications technologies (ICT) such as native apps, software, and documents, as described in [WCAG2ICT](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/)." The link goes to the source document "WCAG2ICT Overview".
 * WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.1: "Web Content Accessibility Guidelines (WCAG) 2.2 covers a wide range of recommendations for making web content more accessible."
 * WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.2: "WCAG 2.2 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/) for an introduction and links to WCAG technical and educational material."
-  * WCAG Overview fragment _1 [Introduction](https://www.w3.org/WAI/standards-guidelines/wcag/#intro), fragment _1.3 (retrieved 2026-07-12): "WCAG applies to dynamic content, multimedia, web on mobile, and AI web interfaces. WCAG can also be applied to non-web information and communications technologies (ICT) such as native apps, software, and documents, as described in [WCAG2ICT](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/)." The link goes to the source document "WCAG2ICT Overview".
   * See "WCAG2ICT applicability" in ASKM notes.
 * WCAG 2.2 fragment _0.3.4 [Requirements for WCAG 2.2](https://www.w3.org/TR/WCAG22/#requirements-for-wcag-2-2): "WCAG 2.2 meets a set of [requirements for WCAG 2.2](https://w3c.github.io/wcag/requirements/22/) which, in turn, inherit requirements from previous WCAG 2 versions." The link goes to the source document "Requirements for Web Content Accessibility Guidelines 2.2" (paraphrased: "Requirements for WCAG 2.2").
   * Requirements for WCAG 2.2 fragment 1 [Introduction](https://w3c.github.io/wcag/requirements/22/#introduction), fragment 1_2 (retrieved 2026-07-12): "The underlying goal of WCAG 2.2 requirements are the same as for WCAG 2.0 and WCAG 2.1 – to promote accessibility of Web content."
   * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_6 (retrieved 2026-07-12): "Success criteria should... Apply to all content across all websites unless preconditions for the application of the success criteria are explicitly identified (e.g. 'except interruptions involving an emergency')."
   * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_7 (retrieved 2026-07-12): "Success criteria should... Apply across technologies to the greatest extent possible."
 
-### WCAG2ICT applicability
+### WCAG applicability to non-web, via WCAG2ICT
 
 WCAG 2.2 can be applied to non-web documents and software, with case-by-case exceptions.
 
+Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG interpreted by WCAG2ICT.
+
 Rationale:
 
+* WCAG Overview fragment _1
 * [WCAG2ICT Overview](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/) fragment _0.0 Summary (retrieved 2026-07-12): "[WCAG2ICT](https://www.w3.org/TR/wcag2ict/)... describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to documents, software, and other information and communications technologies (ICT)." The link goes to the source document "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)" (paraphrased name: WCAG2ICT)
 * WCAG2ICT fragment _1 [Abstract](https://www.w3.org/TR/wcag2ict/#abstract) (retrieved 2026-07-12): "This document describes how the Web Content Accessibility Guidelines (WCAG) versions 2.0 [WCAG20], 2.1 [WCAG21], and 2.2 [WCAG22] principles, guidelines, and success criteria can be applied to non-web Information and Communications Technologies (ICT), specifically to non-web documents and software. It provides informative guidance (guidance that is not normative and does not set requirements)."
 * WCAG2ICT fragment _3.2.1 [Interpretation of web terminology in a non-web context](https://w3c.github.io/wcag2ict/#interpretation-of-web-terminology-in-a-non-web-context), fragment _3.2.1.3 (editor's draft retrieved 2026-07-12):
   * "Not all success criteria have been fully adopted in all local standards, regulations, and legislation, and may not be applicable to all technologies. WCAG2ICT has been used in some standards and regulations to determine whether or not to apply certain success criteria. Some standards (for example, Section 508 in the U.S., and EN 301 549 in Europe) do not apply WCAG 2 Success Criteria 2.4.1 Bypass Blocks, 2.4.5 Multiple Ways, 3.2.3 Consistent Navigation, and 3.2.4 Consistent Identification to non-web documents and non-web software. In addition, EN 301 549 does not apply 2.4.2 Page Titled and 3.1.2 Language of Parts to non-web software. In contrast, the U.S. Department of Justice [Guidance to Revisions to ADA Title II Regulation on Accessibility of Web Information and Services of State and Local Government Entities, Appendix D to Part 35, Title 28](https://www.ecfr.gov/current/title-28/chapter-I/part-35/appendix-Appendix%20D%20to%20Part%2035), directs implementers to utilize the guidance in WCAG2ICT to determine the applicability of success criteria and how to apply the requirements to mobile applications. Since WCAG2ICT does not specifically say which criteria can or should apply, those implementing WCAG2ICT should consider the applicability of individual success criteria to non-web documents and non-web software."
-Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG interpreted by WCAG2ICT.
 
 ### Learnings from this example
 
