@@ -85,12 +85,45 @@ Possibilities:
 
 This is a first attempt at mapping similar expectations to each other in several source documents. The goal of this attempt is to exercise the ontology.
 
-### (A) Guidelines expecting programmatic characteristics
+### (A) Guidelines expecting language of parts as a programmatic characteristic
+
+Product documentation provided with the ICT shall be made available in at least one of the following electronic
+formats:
+a) a Web format that conforms to the requirements of clause 9; or
+b) a non-web format that conforms to the requirements of clause 10.
+
+Documentation provided by support services shall be made available in at least one of the following electronic formats:
+a) a Web format that conforms to clause 9; or
+b) a non-web format that conforms to clause 10.
 
 * WCAG [SC 3.1.2](https://www.w3.org/TR/WCAG22/#language-of-parts) *Language of Parts*
-  * Applicability condition: Web. See "WCAG applicability".
+  * Applicability condition: Web. See "Applicability conditions for WCAG 2 as a whole".
   * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
-* WCAG2ICT fragment xxxx 
+* WCAG2ICT [SC 3.1.2](https://www.w3.org/TR/wcag2ict/#language-of-parts) *Language of Parts*
+  * Applicability condition: Non-web documents and open non-web software. See "Applicability conditions for WCAG 2 as a whole".
+  * Expectation: Same as WCAG: minor word substitution replaces web-centric language with the same concepts. See the original source for added notes.
+* EN 301 549 v3:
+  * 9.3.1.2 *Language of parts:* Same as v4 with only minor editorial differences.
+  * 10.3.1.2 *Language of parts:* Same as v4 with only minor editorial differences.
+  * [12.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=84) *Accessible documentation*
+    * Applicability condition 1: Product documentation is provided in any format with the ICT, including non-digital.
+    * Expectation 1: The product documentation is made available in web format or non-web document format.
+    * Applicability condition 2: Product documentation in web format is provided with the ICT.
+    * Expectation 2: The product documentation meets clause 9 (same as WCAG 2.1).
+    * Applicability condition 3: Product documentation in a non-web document format is provided with the ICT.
+    * Expectation 3: The product documentation meets clause 9 (+- WCAG 2.1).
+  * [12.2.4](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=85) *Accessible documentation*
+    * Applicability condition 1: Documentation is provided in any format by support services, including non-digital.
+    * Expectation 1: The documentation is made available in web format or non-web document format.
+    * Applicability condition 2: Documentation in web format is provided by support services.
+    * Expectation 2: The documentation meets clause 9 (same as WCAG 2.1).
+    * Applicability condition 3: Documentation in a non-web document format is provided by support services.
+    * Expectation 3: The documentation meets clause 9 (+- WCAG 2.1).
+  * Relationship of v3 clauses 12.1.2 and 12.2.4
+    * Applicability is similar.
+      * They differ mainly by how the documentation is provided. In practice these may overlap, e.g. online documentation could be linked from a web-based product and also provided by support services.
+      * Clause 12.1.2 applies to "product documentation" while clause 12.2.4 applies to "documentation". While these two concepts could be identical in many cases, there could also hypothetically be a scenario where support services would provide another kind of documentation that is not "product documentation".
+    * Expectations are the same, differing only in the Notes without changing the intent.
 * EN 301 549 v4:
   * [9.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=67) *Language of parts*
     * Applicability condition: web
@@ -98,24 +131,62 @@ This is a first attempt at mapping similar expectations to each other in several
   * [10.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82) *Language of parts*
     * Applicability condition: non-web document
     * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
-  * [12.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=106) Accessibility information about products
+  * [12.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=106) *Accessibility information about products*
     * Applicability condition 1: Web content provides information about a product.
     * Expectation 1: This information in web content meets clause 9 (+- WCAG 2.2).
     * Applicability condition 2: A non-web document provides information about a product.
     * Expectation 2: This information in a non-web document meets clause 10 (+- WCAG 2.2).
-    * Applicability condition 2: Non-web software provides information about a product.
-    * Expectation 2: This information in non-web software meets clause 11 (+- WCAG 2.2).
+    * Applicability condition 3: Non-web software provides information about a product.
+    * Expectation 3: This information in non-web software meets clause 11 (+- WCAG 2.2).
       * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
-  * [12.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107) Accessibility information about services
+  * [12.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107) *Accessibility information about services*
     * Like 12.1: s/product/service/
+* Relationship of v3 clauses 12.1.2 and 12.2.4 taken together, compared with v4 clauses 12.1 and 12.2 taken together
+  * Applicability is similar.
+    * Similarity: The v3 and v4 clauses apply to digital information.
+    * Difference: The v3 clauses also apply to non-digital information, such as a print manual, while the v4 clauses do not.
+    * Similarity: ASKM interprets v3 "products" to include hardware, software, and web-based digital products. This overlaps substantially with v4 "products and services".
+    * Difference: In v4 clause 12.2, "services" can also include the non-digital aspects of a service, such as banking or transportation. As a result, "information about a service" in v4 clause 12.2 can be broader than "product documentation" in v3 clause 12.1.2.
+  * Requirements are similar.
+    * Similarity: Through reference to clauses 9 and 10, v3 and v4 require most of the same WCAG criteria.
+    * Difference: Through reference to clauses 9 and 10, v4 adds WCAG 2.2 and has a few other differences. See TODO "Clause 9 differences between EN 301 549 v3.2.1 and v4"; TODO "Clause 10 differences between EN 301 549 v3.2.1 and v4".
+    * Difference: The v4 clauses allow product information to appear as the content of non-web software, while the v3 clauses require such content to be made available in a web format or non-web document format.
 * EAA
   * EAA Annex I(I)(1)(i-iv) "the information on the use of the product provided on the product itself... shall be accompanied... by accessible information"
   * EAA Annex I(III)(b)(ii) Services: "be presented in an understandable way"
-  * TODO more?
-  * Rationale: TODO
+  * TODO more from EN 301 549 v4 Annex ZB
+  * Rationale: from EN 301 549 v4 Annex ZB
 
-### (A2) Guidelines expecting programmatic characteristics in content creation
+### (B) Guidelines expecting language of parts as a programmatic characteristics in content creation
 
+* EN 301 549 v3.2.1:
+  * 11.8.2 *Accessible content creation*
+    * Case a
+      * Applicability condition 1: Same as v4 with minor editorial differences.
+      * Expectation 1a: Similar to v4, except clause 9 = WCAG 2.1. (To the extent described in v3 clause 11.8.1, which is same as v4 5.10.1 with only minor editorial differences.)
+      * Expectation 1b: s/enables/guides/
+    * Case b
+      * Applicability condition 2: Same as v4 with minor editorial differences.
+      * Expectation 2a: Similar to v4, except clause 10 +- WCAG 2.1, and has other differences from v4. (To the extent described in v3 clause 11.8.1, which is same as v4 5.10.1 with only minor editorial differences.)
+      * Expectation 2b: s/enables/guides/
+    * Case c, for a content creation tool that creates non-web software content, is not addressed in v3.
+  * 11.8.3 *Preservation of accessibility information in transformations*
+    * Applicability: Same as v4 with minor editorial differences.
+    * Expectation: Same as v4 with identical text.
+  * 11.8.4 *Repair assistance*
+    * Applicability: like 5.10.2, and the tool detects failures of 9 or 10.
+      * Similar to v4, except:
+        * Clause 9 = WCAG 2.1
+        * Clause 10 +- WCAG 2.1, and has other differences from v4
+        * A content creation tool that creates non-web software content is not addressed in v3.
+    * Expectation: Inform the user and help them fix the problems. For details see 11.8.4 and its notes in the original source.
+  * 11.8.5 *Templates*
+    * Applicability: like 11.8.2, and the tool has templates
+      * Similar to v4, except a content creation tool that creates non-web software content is not addressed in v3.
+    * Expectation 1: One or more templates meet the expectations of 11.8.2.
+      * Similar to v4, except a content creation tool that creates non-web software content is not addressed in v3.
+    * Expectation 2: Users are accurately informed of at least one template meeting expectation 1.
+      * Sames as v4 with identical text.
 * EN 301 549 v4:
   * 5.10.2 *Accessible content creation*
     * Case a
@@ -136,24 +207,25 @@ This is a first attempt at mapping similar expectations to each other in several
     * Expectation: the accessibility information is preserved in the output, to the extent described in clause 5.10.1.
       * Rationale: ASKM interprets 5.10.1 "to the extent supported" as meaning the same as 5.10.3 "if mechanisms exist".
     * In context of 5.10.3, "accessibility information" is not limited to info required for clauses 9–11. So 5.10.3 could apply to language-of-parts information in non-web software content as input, depending on its format and technology. And 5.10.3 could expect preservation of language-of-parts information in non-web software content as output, depending on its format and technology.
-  * 5.10.4 Repair assistance
+  * 5.10.4 *Repair assistance*
     * Applicability: like 5.10.2, and the tool detects failures of 9, 10, or 11
       * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
-    * Expectation: inform the user and help them fix the problems (see 5.10.4 and its notes)
+    * Expectation: Inform the user and help them fix the problems. See the original source for details and notes.
   * 5.10.5 *Templates*
     * Applicability: like 5.10.2, and the tool has templates
     * Expectation 1: One or more templates meet the expectations of 5.10.2.
       * Rationale: ASKM interprets 5.10.5 "supports" to mean the same as 5.10.2 "enable and guide".
       * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
     * Expectation 2: Users are accurately informed of at least one template meeting expectation 1.
-* EAA TODO
+* EAA TODO from EN 301 549 v4 Annex ZB
 
-### (B) Guidelines expecting characteristics of speech output
+### (C) Guidelines expecting language of parts as a characteristic of speech output
 
-* EN 301 549 v3.2.1 → 5.1.3.14 Spoken languages
-  * Applicability condition: "Where speech output is provided as non-visual access to closed functionality"
+* EN 301 549 v3.2.1 clause 5.1.3.14 Spoken languages
+  * Applicability condition: Speech output for non-web software closed to assistive technology
+    * Precondition "Where speech output is provided as non-visual access to closed functionality"
   * Expectation: The human language of speech output is the same as the human language of the visual content. (Paraphrased; see the source for exceptions.)
-* EN 301 549 v4 → 5.1.3.14 Spoken languages
+* EN 301 549 v4 clause 5.1.3.14 Spoken languages
   * Applicability condition: "Where ICT includes closed functionality, and speech output is provided as non-visual access to closed functionality"
   * Expectation: The human language of speech output is the same as the human language of the visual content. (Paraphrased; see the source for exceptions.)
 * Relationship between the above:
@@ -171,13 +243,21 @@ This is a first attempt at mapping similar expectations to each other in several
   * EAA Annex I(I)(2)(o)(i) Self-service terminals: "provide for text-to-speech technology"
   * Rationale: EN 301 549 v4 Table ZB.2 maps its clause 5.1.3.14 "Spoken languages" to the aforementioned EAA source fragments (provisions).
 
-### (C) Relationship between (A) and (B)
+### Relationships
+
+#### A to C: open vs. closed
 
 * Applicability conditions: Different.
 * Expectation: Similar.
-* Rationale:
-  * According to [Understanding SC 3.1.2](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html), part of the intent is "Screen readers can use the pronunciation rules of the language of the text." (Retrieved 2026-07-12)
-  * According to WCAG2ICT fragment A_3.26, the intent of WCAG 3.1.2 is correct pronunciation.
+  * Rationale:
+    * According to [Understanding SC 3.1.2](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html), part of the intent is "Screen readers can use the pronunciation rules of the language of the text." (Retrieved 2026-07-12)
+    * According to WCAG2ICT fragment A_3.26, the intent of WCAG 3.1.2 is correct pronunciation.
+
+#### A to B: open content vs. authoring of open content
+
+TODO: I want to write a special kind of relationship between an authoring tool requirement evaluated on the authored content, and the same or similar requirement on content that's not authored content.
+
+(It will be similar for software development tools in Section 508. I can't think of any other examples of this special kind of relationship.)
 
 ### (D) Non-expectations
 
@@ -227,17 +307,40 @@ Rationale:
 
 ### Learnings from this example
 
+#### general
+
 Overall this was a good exercise. It shows how relationships can work among specific guideline fragments. It also led to ASKM content that will get reused for many fragments (e.g., WCAG 2 applicability as a whole; guidelines for authoring tools).
 
-Each source document should be an object in the model.
+Overall question: is this easy enough, lightweight enough? While also being well grounded in evidence?
 
-Each source fragment should be an object in the model.
+It was a bit daunting to work out the relationships. Even with just WCAG, WCAG2ICT, and two EN versions there were many possible comparisons across the different criteria and ICT Types. This should help:
 
-Each referral to a source should point to the source's object in the model, not directly to a URL of the source.
+* There's no expectation that all possible relationships be described.
+* I'll look for relationships between whole documents and larger fragments (e.g., chapters), and let them inherit into their constituent fragments.
+* I'll look for repeated patterns in relationships between granular fragments, and see if it makes sense to reuse a relationship object.
+
+Important next steps:
+
+* Concentrate first on EAA, EN 301 549 v3, EN 301 549 v4, and WCAG.
+* Show how larger groups of source fragments can be aligned with each other efficiently between documents. Possible examples:
+  * All of EN 301 549 v3 clause 9, all of WCAG 2.1, and the corresponding parts of EN 301 549 clause 9. The key point is the move from WCAG 2.1 to 2.2. See if I can state this relationship at the whole clause-9 level instead of one SC at a time.
+  * Clause-by-clause for closed functionality and hardware.
+* Add Section 508.
+* Add ADA Design Standards.
+* Not my priority: lots of other source documents.
+
+#### sources, citations, and rationales
+
+Decision: Each source document should be an object in the model.
+
+Decision: Each source fragment should be an object in the model.
+
+Decision: Each referral to a source should point to the source's object in the model, not directly to a URL of the source. Because:
+
 * Easier for maintenance
 * Prevents ambiguity, e.g. in EN 301 549 where source fragments don't have unique URLs.
 
-It's too time-consuming to write each source fragment manually in each citation, especially when they are not numbered in the source document. These things will help:
+It's too time-consuming to write our each source fragment manually when drafting each citation, especially when they are not numbered in the source document. These things will help:
 
 * To the extent allowed by copyright, index the whole source document in the model my numbering all major source fragments.
 * When drafting content before the cited source fragments have been indexed:
@@ -251,24 +354,79 @@ For WCAG applied to non-web, I'll need to decide how to cite sources.
 
 Provisional decision: Don't record two contradictory relationships. Instead, each claim (or "statement"? or "assertion"?) in the model (e.g. "relationship" or "is named") should have a rationale. A rationale contains one or more pro arguments, and zero or more con arguments.
 
-There should be a way to indicate a "TODO"-equivalent directly in the model.
-* Because there will be so many TODOs it would overwhelm the issue tracker.
-* Because even just a "TODO" in the model is a signal to somebody reading the model that there's a potential connection.
+It's common for a rationale argument to cite one or more sources. The model will need to support application renderings of these citations. TBD: how flexible?
 
-Applicability conditions should have a short form to normalize them, making comparison straightforward regardless of different wording.
+* Here are some possible renderings.
+  * WCAG 2.2 > Introduction > "This paragraph says..."
+  * WCAG 2.2 > paragraph _0.1.1 "This paragraph says..."
+  * WCAG 2.2 > 3.1.2 *Language of Parts*
+  * WCAG 2.2 fragment 3.1.2 *Language of Parts* > fragment Note 1
+  * WCAG 2.2 SC 3.1.2 Note 1
+* ">" and "fragment" mean the same thing, but "paragraph" is a decision of the ASKM contributor, and "SC" is specific to WCAG.
+* Decision: each fragment should have a "fragment class". It's optional but commonly used.
+  * The instance value for a fragment class can be plain text or a pointer to a reusable object. (More on this below: see "automatic type conversion")
+  * The object can have properties like full name ("Success Criterion"), short name ("SC"), grammatical forms of each (just plural in English), and rationale (why we named it).
 
-Open question: how structured are rationales and arguments?
+How structured are rationales and arguments?
+
 * I feel there should be an enumerated type, with values such such as:
   * "plain reading" with a source object
   * "interpreted reading" with the interpretation and one or more source object
   * "identical text" as evidence of a relationship
 * Is "analysis" another thing? A prose explanation, which can have additional rationale.
 
-Open question: how should the model represent "my comments"?
+I'll probably need a way to mark "citation needed", so I can record a more or less established opinion quickly without getting sidetracked on finding exact sources. 
 
-Open question: is this easy enough, lightweight enough? While also being well grounded in evidence?
+* The "citation needed" can also have a prose comment, like "probably in WCAG2ICT"
+* This could be a "TODO" value of the usual citation property.
+* Putting those two together: actually an instance of a "TODO" value could also have a prose comment.
 
-I'll probably need a way to mark "citation needed", so I can record a more or less established opinion quickly without getting sidetracked on finding exact sources. The "citation needed" can also have a prose comment, like "probably in WCAG2ICT"
+I've been blurring some concepts, which will need to settle down into formal features of the model.
+
+* citation - is this a thing in the model, a pattern arising from recommended usage of the model, or a rendering in an application?
+* provenance (could be a source, could be ASKM original content)
+* source — it's becoming clear, but worth mentioning that sometimes I mean the real-world document or fragment, or sometimes the concept in the model, or sometimes an instance in the model. Actually it's good if these are all almost the same thing, as long as contributors can distinguish them when necessary.
+
+### paraphrasing
+
+Currently the examples say "paraphrased" a few times. This is too much clutter. What to do about it:
+
+* In rich text, quotation marks indicate direct quotes.
+  * Annotate the quoted text in the model, tying it to its provenance.
+  * The provenance could be an external source, or another content object in ASKM.
+  * How to render these citations for users? Each application can decide. For example, an application could include a user preference for how much citation detail they want to see.
+* For fragment names, distinguish in the model what is a paraphrase and what is a direct quote. But usually don't render this distinction for users. Or could be something subtle like a `title` attribute (and accessible drilldown somehow).
+  * Full quoted name only: the default
+  * Paraphrased name only: identify as such
+  * Paraphrased for brevity, and full name also stored in the model: could appear as a `title`
+  * It should be possible to cite source 1, while separately citing source 2 for the full name of source 1, and source 3 for the paraphrased name of source 1. I hope this is rare. When not citing a source for the full name and paraphrased name, it should be assumed that their source is just all source 1.
+* Names of source documents: Citation structure is the same as for fragment names, except that surfacing the extra details might be more important.
+
+"WCAG" and "WCAG 2" refer equally to WCAG 2.0, 2.1, and 2.2.
+
+* This would still be true in the unlikely case that we added WCAG 1, because it's obsolete.
+* This would need to change with the expected future addition of WCAG 3, but we don't have a timeline for that.
+
+### automatic type conversion
+
+* Examples
+  * Property "fragment class" (see above) can have a plain text value, or a pointer to an object in the model.
+  * Property "rationale" can have a plain text value (for faster one-offs), or a structured object
+  * "TODO" could be a special object acting as a value for several kinds of properties. (Or "TODO" could be a status attached to the property in a different way, not as a value of the property.)
+* Behavior
+  * A property can have a value which is a string.
+  * The same property can have a value that is an object.
+  * Does the referenced object know how to render itself as a string? Or does the referring object know how to turn that kind of referenced object into a string?
+
+### more learnings and ideas
+
+Open question: how should the model represent an "ASKM comment" like those for the non-expecations?
+
+There should be a way to indicate a "TODO"-equivalent directly in the model.
+* Because there will be so many TODOs it would overwhelm the issue tracker.
+* Because even just a "TODO" in the model is a signal to somebody reading the model that there's a potential connection.
+
+Applicability conditions should have a short form to normalize them, making comparison straightforward regardless of different wording.
 
 The whole model will need to be localizable, while meeting this same language-of-parts requirement.
 * Can the default language be English, while allowing any tree or leaf to override the language?
