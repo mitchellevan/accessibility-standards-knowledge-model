@@ -195,43 +195,39 @@ This is a first attempt at mapping similar expectations to each other in several
   * Source document retrieved: 2026-07-10
   * ASKM comment: Omission of a language-of-parts guideline is not consistent with the scope of "WCAG2ICT-Test (App) (BIK)". The scope (https://bitvtest.de/tests-und-beratung/bik-bitv-test-app) is the WCAG requirements that apply to mobile apps, based on WCAG2ICT (https://www.w3.org/TR/wcag2ict/#language-of-parts). However, WCAG2ICT does provide such guidance.
 
-### WCAG applicability to web
+### Applicability conditions for WCAG 2 as a whole
 
-Applicability conditions for WCAG 2:
-* Summary: WCAG 2 applies to web pages, online and offline documents, and open software applications (those that can interoperate with assistive technology). Some WCAG success critera apply to closed software.
-
-* WCAG 2 applies to anything served from a URL and presented in a user agent. Web pages are the foremost example. Another example is PDF viewable in a browser.
-  * TODO definition of 'web page'
-  * TODO integrate these summaries into the Rationale.
-* WCAG 2 applies to non-web documents and non-web software as described in WCAG2ICT.
-* WCAG 2 does not have formal preconditions that would limit the applicability of WCAG as a whole
+WCAG 2 applies to web pages, online and offline documents, and open software applications (those that can interoperate with assistive technology). Some WCAG success criteria apply to closed software.
 
 Rationale:
 
-* WCAG Overview fragment _1 [Introduction](https://www.w3.org/WAI/standards-guidelines/wcag/#intro), fragment _1.3 (retrieved 2026-07-12): "WCAG applies to dynamic content, multimedia, web on mobile, and AI web interfaces. WCAG can also be applied to non-web information and communications technologies (ICT) such as native apps, software, and documents, as described in [WCAG2ICT](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/)." The link goes to the source document "WCAG2ICT Overview".
-* WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.1: "Web Content Accessibility Guidelines (WCAG) 2.2 covers a wide range of recommendations for making web content more accessible."
-* WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.2: "WCAG 2.2 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/) for an introduction and links to WCAG technical and educational material."
-  * See "WCAG2ICT applicability" in ASKM notes.
-* WCAG 2.2 fragment _0.3.4 [Requirements for WCAG 2.2](https://www.w3.org/TR/WCAG22/#requirements-for-wcag-2-2): "WCAG 2.2 meets a set of [requirements for WCAG 2.2](https://w3c.github.io/wcag/requirements/22/) which, in turn, inherit requirements from previous WCAG 2 versions." The link goes to the source document "Requirements for Web Content Accessibility Guidelines 2.2" (paraphrased: "Requirements for WCAG 2.2").
-  * Requirements for WCAG 2.2 fragment 1 [Introduction](https://w3c.github.io/wcag/requirements/22/#introduction), fragment 1_2 (retrieved 2026-07-12): "The underlying goal of WCAG 2.2 requirements are the same as for WCAG 2.0 and WCAG 2.1 – to promote accessibility of Web content."
-  * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_6 (retrieved 2026-07-12): "Success criteria should... Apply to all content across all websites unless preconditions for the application of the success criteria are explicitly identified (e.g. 'except interruptions involving an emergency')."
-  * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_7 (retrieved 2026-07-12): "Success criteria should... Apply across technologies to the greatest extent possible."
-
-### WCAG applicability to non-web, via WCAG2ICT
-
-WCAG 2.2 can be applied to non-web documents and software, with case-by-case exceptions.
-
-Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG interpreted by WCAG2ICT.
-
-Rationale:
-
-* WCAG Overview fragment _1
-* [WCAG2ICT Overview](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/) fragment _0.0 Summary (retrieved 2026-07-12): "[WCAG2ICT](https://www.w3.org/TR/wcag2ict/)... describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to documents, software, and other information and communications technologies (ICT)." The link goes to the source document "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)" (paraphrased name: WCAG2ICT)
-* WCAG2ICT fragment _1 [Abstract](https://www.w3.org/TR/wcag2ict/#abstract) (retrieved 2026-07-12): "This document describes how the Web Content Accessibility Guidelines (WCAG) versions 2.0 [WCAG20], 2.1 [WCAG21], and 2.2 [WCAG22] principles, guidelines, and success criteria can be applied to non-web Information and Communications Technologies (ICT), specifically to non-web documents and software. It provides informative guidance (guidance that is not normative and does not set requirements)."
-* WCAG2ICT fragment _3.2.1 [Interpretation of web terminology in a non-web context](https://w3c.github.io/wcag2ict/#interpretation-of-web-terminology-in-a-non-web-context), fragment _3.2.1.3 (editor's draft retrieved 2026-07-12):
-  * "Not all success criteria have been fully adopted in all local standards, regulations, and legislation, and may not be applicable to all technologies. WCAG2ICT has been used in some standards and regulations to determine whether or not to apply certain success criteria. Some standards (for example, Section 508 in the U.S., and EN 301 549 in Europe) do not apply WCAG 2 Success Criteria 2.4.1 Bypass Blocks, 2.4.5 Multiple Ways, 3.2.3 Consistent Navigation, and 3.2.4 Consistent Identification to non-web documents and non-web software. In addition, EN 301 549 does not apply 2.4.2 Page Titled and 3.1.2 Language of Parts to non-web software. In contrast, the U.S. Department of Justice [Guidance to Revisions to ADA Title II Regulation on Accessibility of Web Information and Services of State and Local Government Entities, Appendix D to Part 35, Title 28](https://www.ecfr.gov/current/title-28/chapter-I/part-35/appendix-Appendix%20D%20to%20Part%2035), directs implementers to utilize the guidance in WCAG2ICT to determine the applicability of success criteria and how to apply the requirements to mobile applications. Since WCAG2ICT does not specifically say which criteria can or should apply, those implementing WCAG2ICT should consider the applicability of individual success criteria to non-web documents and non-web software."
+* WCAG 2 does not have a formal precondition that would limit the applicability of all its success criteria. WCAG 2 and its related documents do describe the kinds of ICT where WCAG 2 is relevant.
+  * WCAG Overview fragment _1 [Introduction](https://www.w3.org/WAI/standards-guidelines/wcag/#intro), fragment _1.3 (retrieved 2026-07-12): "WCAG applies to dynamic content, multimedia, web on mobile, and AI web interfaces. WCAG can also be applied to non-web information and communications technologies (ICT) such as native apps, software, and documents, as described in [WCAG2ICT](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/)." The link goes to the source document "WCAG2ICT Overview".
+* WCAG 2 is directly relevant to web content. This means HTML web pages and some other kinds of content.
+  * WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.1: "Web Content Accessibility Guidelines (WCAG) 2.2 covers a wide range of recommendations for making web content more accessible."
+  * WCAG 2.2 fragment _0.1 [Abstract](https://www.w3.org/TR/WCAG22/#abstract), fragment _0.1.2: "WCAG 2.2 success criteria are written as testable statements that are not technology-specific."
+  * WCAG 2.2 fragment _0.3.4 [Requirements for WCAG 2.2](https://www.w3.org/TR/WCAG22/#requirements-for-wcag-2-2) links to the source document "Requirements for Web Content Accessibility Guidelines 2.2" (paraphrased name: Requirements for WCAG 2.2).
+    * Requirements for WCAG 2.2 fragment 1 [Introduction](https://w3c.github.io/wcag/requirements/22/#introduction), fragment 1_2 (retrieved 2026-07-12): "The underlying goal of WCAG 2.2 requirements are the same as for WCAG 2.0 and WCAG 2.1 – to promote accessibility of Web content."
+    * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_6 (retrieved 2026-07-12): "Success criteria should... Apply to all content across all websites unless preconditions for the application of the success criteria are explicitly identified (e.g. 'except interruptions involving an emergency')."
+    * Requirements for WCAG 2.2 fragment 3.1 [Success Criterion Characteristics](https://w3c.github.io/wcag/requirements/22/#success-criterion-characteristics), fragment 3.1_7 (retrieved 2026-07-12): "Success criteria should... Apply across technologies to the greatest extent possible."
+  * "Web" is not defined. "Web page" means anything served from a URL and presented in a user agent. "Web content" also relies on a user agent.
+    * WCAG 2.2 fragment 6 *Glossary:* [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)
+    * WCAG 2.2 fragment 6 *Glossary:* [content](https://www.w3.org/TR/WCAG22/#dfn-content)
+  * "Technologies" means web content technologies.
+    * WCAG 2.2 fragment 6 *Glossary:* [technology](https://www.w3.org/TR/WCAG22/#dfn-technologies)
+    * [Understanding Techniques for WCAG 2.2 Success Criteria](https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques)
+    * [Techniques for WCAG 2.2](https://www.w3.org/WAI/WCAG22/Techniques/) (retrieved 2026-07-15) lists these web content technologies: ARIA, client-side script, CSS, HTML, PDF, server-side script, SMIL, and plain text.
+* WCAG 2 can be applied to non-web documents and software, with some exceptions.
+  * [WCAG2ICT Overview](https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/) fragment _0.0 Summary (retrieved 2026-07-12): "[WCAG2ICT](https://www.w3.org/TR/wcag2ict/)... describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to documents, software, and other information and communications technologies (ICT)." The link goes to the source document "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)" (paraphrased name: WCAG2ICT)
+  * WCAG2ICT fragment _1 [Abstract](https://www.w3.org/TR/wcag2ict/#abstract) (retrieved 2026-07-12): "This document describes how the Web Content Accessibility Guidelines (WCAG) versions 2.0 [WCAG20], 2.1 [WCAG21], and 2.2 [WCAG22] principles, guidelines, and success criteria can be applied to non-web Information and Communications Technologies (ICT), specifically to non-web documents and software. It provides informative guidance (guidance that is not normative and does not set requirements)."
+  * WCAG2ICT fragment _3.2.1 [Interpretation of web terminology in a non-web context](https://w3c.github.io/wcag2ict/#interpretation-of-web-terminology-in-a-non-web-context), fragment _3.2.1.3 (editor's draft retrieved 2026-07-12):
+    * "Not all success criteria have been fully adopted in all local standards, regulations, and legislation, and may not be applicable to all technologies. WCAG2ICT has been used in some standards and regulations to determine whether or not to apply certain success criteria. Some standards (for example, Section 508 in the U.S., and EN 301 549 in Europe) do not apply WCAG 2 Success Criteria 2.4.1 Bypass Blocks, 2.4.5 Multiple Ways, 3.2.3 Consistent Navigation, and 3.2.4 Consistent Identification to non-web documents and non-web software. In addition, EN 301 549 does not apply 2.4.2 Page Titled and 3.1.2 Language of Parts to non-web software. In contrast, the U.S. Department of Justice [Guidance to Revisions to ADA Title II Regulation on Accessibility of Web Information and Services of State and Local Government Entities, Appendix D to Part 35, Title 28](https://www.ecfr.gov/current/title-28/chapter-I/part-35/appendix-Appendix%20D%20to%20Part%2035), directs implementers to utilize the guidance in WCAG2ICT to determine the applicability of success criteria and how to apply the requirements to mobile applications. Since WCAG2ICT does not specifically say which criteria can or should apply, those implementing WCAG2ICT should consider the applicability of individual success criteria to non-web documents and non-web software."
+  * TODO applied to text-based terminal applications
+  * TODO problematic for closed
 
 ### Learnings from this example
+
+Overall this was a good exercise. It shows how relationships can work among specific guideline fragments. It also led to ASKM content that will get reused for many fragments (e.g., WCAG 2 applicability as a whole; guidelines for authoring tools).
 
 Each source document should be an object in the model.
 
@@ -247,6 +243,11 @@ It's too time-consuming to write each source fragment manually in each citation,
 * When drafting content before the cited source fragments have been indexed:
   * Cite a higher-level source, even the whole document, and quote the source.
   * Cite the section by name only (e.g., its heading) when there is no numerical identifier.
+
+For WCAG applied to non-web, I'll need to decide how to cite sources.
+
+* Option: Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG interpreted by WCAG2ICT.
+* Option: Cite both WCAG2ICT and WCAG each time.
 
 Provisional decision: Don't record two contradictory relationships. Instead, each claim (or "statement"? or "assertion"?) in the model (e.g. "relationship" or "is named") should have a rationale. A rationale contains one or more pro arguments, and zero or more con arguments.
 
