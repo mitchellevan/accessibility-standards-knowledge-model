@@ -347,6 +347,11 @@ It's too time-consuming to write our each source fragment manually when drafting
   * Cite a higher-level source, even the whole document, and quote the source.
   * Cite the section by name only (e.g., its heading) when there is no numerical identifier.
 
+Defined terms are special.
+
+* Numbering them is too much work, too brittle. So we'll cite them by the whole Terms section (by the name or identifier of the whole fragment containing all the terms), then by the term itself.
+* Working plan: use the same capitalization, space characters, and punctuation as in the source document where the term is defined. (It's not a file system, we can do this.)
+
 For WCAG applied to non-web, I'll need to decide how to cite sources.
 
 * Option: Where ASKM cites a guideline in WCAG2ICT, it should be understood as citing WCAG interpreted by WCAG2ICT.
@@ -387,7 +392,7 @@ I've been blurring some concepts, which will need to settle down into formal fea
 * provenance (could be a source, could be ASKM original content)
 * source — it's becoming clear, but worth mentioning that sometimes I mean the real-world document or fragment, or sometimes the concept in the model, or sometimes an instance in the model. Actually it's good if these are all almost the same thing, as long as contributors can distinguish them when necessary.
 
-### paraphrasing
+#### paraphrasing
 
 Currently the examples say "paraphrased" a few times. This is too much clutter. What to do about it:
 
@@ -407,7 +412,7 @@ Currently the examples say "paraphrased" a few times. This is too much clutter. 
 * This would still be true in the unlikely case that we added WCAG 1, because it's obsolete.
 * This would need to change with the expected future addition of WCAG 3, but we don't have a timeline for that.
 
-### automatic type conversion
+#### automatic type conversion
 
 * Examples
   * Property "fragment class" (see above) can have a plain text value, or a pointer to an object in the model.
@@ -418,7 +423,7 @@ Currently the examples say "paraphrased" a few times. This is too much clutter. 
   * The same property can have a value that is an object.
   * Does the referenced object know how to render itself as a string? Or does the referring object know how to turn that kind of referenced object into a string?
 
-### more learnings and ideas
+#### more learnings and ideas
 
 Open question: how should the model represent an "ASKM comment" like those for the non-expecations?
 
