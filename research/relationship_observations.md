@@ -342,7 +342,7 @@ Decision: Each referral to a source should point to the source's object in the m
 
 It's too time-consuming to write our each source fragment manually when drafting each citation, especially when they are not numbered in the source document. These things will help:
 
-* To the extent allowed by copyright, index the whole source document in the model my numbering all major source fragments.
+* To the extent allowed by copyright, index the whole source document in the model by numbering all major source fragments.
 * When drafting content before the cited source fragments have been indexed:
   * Cite a higher-level source, even the whole document, and quote the source.
   * Cite the section by name only (e.g., its heading) when there is no numerical identifier.
