@@ -81,7 +81,7 @@ Possibilities:
 * Reference
 * Guideline
 
-## First attempt at relationship mapping: "language of parts" applied to non-web
+## First attempt at relationship mapping: "language of parts"
 
 This is a first attempt at mapping similar expectations to each other in several source documents. The goal of this attempt is to exercise the ontology.
 
