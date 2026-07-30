@@ -1,8 +1,13 @@
+<div ai-disclosure="human-only">
+
 # Contribution Guide for the Accessibility Standards Knowledge Model (ASKM)
 
 ## How to use GitHub
 
 This repo works in a typical GithUb way, with the owner approving pull requests. (Details to come.)
+
+</div>
+<div ai-disclosure="ai-assisted" ai-assisted-percent="40">
 
 ## Important: respecting copyright of sources
 
@@ -20,3 +25,5 @@ ASKM encourages its users to consult the original sources. When an accessibility
 ### What ASKM should not include
 
 ASKM should not include substantial portions of copyright-protected sources.
+
+</div>

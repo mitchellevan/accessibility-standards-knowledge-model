@@ -1,3 +1,5 @@
+<div ai-disclosure="human-only">
+
 ## General principles
 
 All knowledge in ASKM should be clearly attributed to its provenance.
@@ -45,3 +47,5 @@ Many source documents are protected by copyright that restricts copying from the
 | When citing a fragment without its own heading: cite a parent heading, page number, sequential paragraph number, quoted text to the extent allowed by policy, or paraphrase. | Quote the start of the paragraph. This makes it simple for model contributors, and easier for users to follow the citation to the original. |
 
 Not all fragments need to be named in advance. "Reserved" fragments are not currently used in ASKM relationships or commentary, but help explain ASKM's identifier numbering scheme.
+
+</div>

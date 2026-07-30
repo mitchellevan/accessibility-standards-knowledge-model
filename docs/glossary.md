@@ -1,3 +1,5 @@
+<div ai-disclosure="ai-assisted" ai-assisted-percent="20"> <!-- While writing this file manually I brainstormed some of the concepts with AI chat. -->
+
 ## Terms in the formal model
 
 ### applicability condition
@@ -50,3 +52,5 @@ A source fragment within certain source documents. For example, EU directives co
 ### success criterion
 
 A guideline in certain source documents. For example, in WCAG 2, numbered success criteria are normative and do not contain other success criteria.
+
+</div>

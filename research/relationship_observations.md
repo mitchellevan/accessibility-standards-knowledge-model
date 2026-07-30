@@ -1,4 +1,4 @@
-(Stub)
+<div ai-disclosure="ai-assisted" ai-assisted-percent="5"> <!-- I wrote this file manually. I brainstormed some naming of terms with an AI chat. -->
 
 Here's where I will write my prose observations of how standards relate to each other.
 
@@ -80,6 +80,8 @@ Possibilities:
 * Source
 * Reference
 * Guideline
+
+Decision: "source document" and "source fragment"
 
 ## First attempt at relationship mapping: "language of parts"
 
@@ -340,7 +342,7 @@ Decision: Each referral to a source should point to the source's object in the m
 * Easier for maintenance
 * Prevents ambiguity, e.g. in EN 301 549 where source fragments don't have unique URLs.
 
-It's too time-consuming to write our each source fragment manually when drafting each citation, especially when they are not numbered in the source document. These things will help:
+It's too time-consuming to write out each source fragment manually when drafting each citation, especially when they are not numbered in the source document. These things will help:
 
 * To the extent allowed by copyright, index the whole source document in the model by numbering all major source fragments.
 * When drafting content before the cited source fragments have been indexed:
@@ -436,3 +438,5 @@ Applicability conditions should have a short form to normalize them, making comp
 The whole model will need to be localizable, while meeting this same language-of-parts requirement.
 * Can the default language be English, while allowing any tree or leaf to override the language?
 * I'll probably need to mix languages within a text string, such as a comment or rationale. Plan to beat: span element with lang attribute.
+
+</div>

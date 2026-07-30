@@ -1,3 +1,5 @@
+<div ai-disclosure="human-only">
+
 ## Source document official names and links
 
 [EN 301 549 V3.2.1 (2021-03) Accessibility requirements for ICT products and services](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf)
@@ -118,3 +120,5 @@ The word 'shall' (and potentially other words) indicate a normative conformance 
 Notes and examples are informative. Rationale:
 
 * [EDR clause 5.5.1](https://portal.etsi.org/directives/52_ETSI_directives_dec_2025.pdf#page=254) *Notes and examples* are not allowed to convey requirements.
+
+</div>

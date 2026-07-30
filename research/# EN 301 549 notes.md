@@ -1,3 +1,5 @@
+<div ai-disclosure="human-only">
+
 # EN 301 549 notes
 
 ## Things to research and document
@@ -230,3 +232,5 @@ C.11.7 User preferences
 C.12.3	Accessibility and compatibility features
 
 - Possible issue: the conformance test omits the requirement to provide information about support services relevant to accessibility.
+
+</div>
