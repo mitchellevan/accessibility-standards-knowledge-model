@@ -1,0 +1,609 @@
+ai-disclosure: ai-autonomous
+
+id: language-of-parts
+type: relationship-example
+name: Language of parts
+status: draft
+language: en
+
+provenance:
+  kind: askm-original-analysis
+  contributor: Mitchell Evan
+  source:
+    path: ../research/relationship_observations.md
+    section: First attempt at relationship mapping — "language of parts"
+  note: >-
+    This is a structured draft of the contributor's prose research. Inclusion
+    here does not mean that an accessibility interpretation has been validated
+    or accepted into a formal ASKM model.
+
+source_documents:
+  wcag22:
+    type: source-document
+    name: Web Content Accessibility Guidelines (WCAG) 2.2
+    short_name: WCAG 2.2
+    uri: https://www.w3.org/TR/WCAG22/
+
+  wcag2ict:
+    type: source-document
+    name: >-
+      Guidance on Applying WCAG 2 to Non-Web Information and Communications
+      Technologies (WCAG2ICT)
+    short_name: WCAG2ICT
+    uri: https://www.w3.org/TR/wcag2ict/
+
+  en301549v321:
+    type: source-document
+    name: >-
+      EN 301 549 V3.2.1 (2021-03) Accessibility requirements for ICT products
+      and services
+    short_name: EN 301 549 V3.2.1
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
+
+  en301549v411:
+    type: source-document
+    name: >-
+      EN 301 549 V4.1.0 (2026-06) Accessibility requirements for ICT products
+      and services
+    short_name: EN 301 549 V4.1.0
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf
+
+  eaa:
+    type: source-document
+    name: European Accessibility Act
+    short_name: EAA
+    uri: https://eur-lex.europa.eu/eli/dir/2019/882
+
+  bik_bitv_test_app:
+    type: source-document
+    name: BIK BITV-Test (App)
+    uri: https://bitvtest.de/pruefverfahren/bitv-20-app
+
+  bik_bitv_wcag22_app:
+    type: source-document
+    name: BIK BITV-Test + WCAG 2.2 (App)
+    uri: https://bitvtest.de/pruefverfahren/bitv-20-plus-app
+
+  bik_wcag2ict_test_app:
+    type: source-document
+    name: WCAG2ICT-Test (App) (BIK)
+    uri: https://bitvtest.de/pruefverfahren/bitv-20-app
+
+technology_types:
+  web:
+    name: Web content
+  non_web_document:
+    name: Non-web document
+  open_non_web_software:
+    name: Non-web software open to assistive technology
+  closed_functionality:
+    name: Functionality closed to assistive technology
+  non_digital_documentation:
+    name: Non-digital documentation
+
+fragments:
+  wcag22_3_1_2:
+    type: source-fragment
+    source_document: wcag22
+    identifier: "3.1.2"
+    fragment_class: success-criterion
+    name: Language of Parts
+    uri: https://www.w3.org/TR/WCAG22/#language-of-parts
+    guideline:
+      applicability_conditions:
+        - technology: web
+      expectations:
+        - id: identify-language-of-parts
+          text: The human language of each phrase is programmatically identified.
+          text_kind: paraphrase
+
+  wcag2ict_3_1_2:
+    type: source-fragment
+    source_document: wcag2ict
+    identifier: "3.1.2"
+    fragment_class: success-criterion
+    name: Language of Parts
+    uri: https://www.w3.org/TR/wcag2ict/#language-of-parts
+    guideline:
+      applicability_conditions:
+        - technology: non_web_document
+        - technology: open_non_web_software
+      expectations:
+        - id: identify-language-of-parts
+          text: >-
+            The expectation is the same as WCAG 2.2 SC 3.1.2, with a minor
+            substitution of non-web terminology and with added notes.
+          text_kind: contributor-analysis
+
+  en301549v321_9_3_1_2:
+    type: source-fragment
+    source_document: en301549v321
+    identifier: "9.3.1.2"
+    fragment_class: clause
+    name: Language of parts
+    guideline:
+      applicability_conditions:
+        - technology: web
+      expectations:
+        - id: identify-language-of-parts
+          text: Same as the corresponding V4.1.0 clause, with minor editorial differences.
+          text_kind: contributor-analysis
+
+  en301549v321_10_3_1_2:
+    type: source-fragment
+    source_document: en301549v321
+    identifier: "10.3.1.2"
+    fragment_class: clause
+    name: Language of parts
+    guideline:
+      applicability_conditions:
+        - technology: non_web_document
+      expectations:
+        - id: identify-language-of-parts
+          text: Same as the corresponding V4.1.0 clause, with minor editorial differences.
+          text_kind: contributor-analysis
+
+  en301549v411_9_3_1_2:
+    type: source-fragment
+    source_document: en301549v411
+    identifier: "9.3.1.2"
+    fragment_class: clause
+    name: Language of parts
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=67
+    guideline:
+      applicability_conditions:
+        - technology: web
+      expectations:
+        - id: identify-language-of-parts
+          text: Includes WCAG 2.2 SC 3.1.2 by reference.
+          text_kind: contributor-analysis
+
+  en301549v411_10_3_1_2:
+    type: source-fragment
+    source_document: en301549v411
+    identifier: "10.3.1.2"
+    fragment_class: clause
+    name: Language of parts
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82
+    guideline:
+      applicability_conditions:
+        - technology: non_web_document
+      expectations:
+        - id: identify-language-of-parts
+          text: The human language of each phrase is programmatically identified.
+          text_kind: paraphrase
+
+  en301549v321_12_1_2:
+    type: source-fragment
+    source_document: en301549v321
+    identifier: "12.1.2"
+    fragment_class: clause
+    name: Accessible documentation
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=84
+    guideline:
+      cases:
+        - id: documentation-in-any-format
+          applicability_conditions:
+            - text: Product documentation is provided with the ICT in any format.
+          expectations:
+            - text: >-
+                The product documentation is made available in a web format or
+                non-web document format.
+              text_kind: paraphrase
+        - id: documentation-in-web-format
+          applicability_conditions:
+            - technology: web
+            - text: Product documentation in web format is provided with the ICT.
+          expectations:
+            - text: The product documentation meets clause 9.
+              text_kind: contributor-analysis
+        - id: documentation-in-non-web-format
+          applicability_conditions:
+            - technology: non_web_document
+            - text: >-
+                Product documentation in a non-web document format is provided
+                with the ICT.
+          expectations:
+            - text: The product documentation meets clause 10.
+              text_kind: contributor-analysis
+
+  en301549v321_12_2_4:
+    type: source-fragment
+    source_document: en301549v321
+    identifier: "12.2.4"
+    fragment_class: clause
+    name: Accessible documentation
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=85
+    guideline:
+      cases:
+        - id: support-documentation-in-any-format
+          applicability_conditions:
+            - text: Documentation is provided in any format by support services.
+          expectations:
+            - text: >-
+                The documentation is made available in a web format or non-web
+                document format.
+              text_kind: paraphrase
+        - id: support-documentation-in-web-format
+          applicability_conditions:
+            - technology: web
+            - text: Documentation in web format is provided by support services.
+          expectations:
+            - text: The documentation meets clause 9.
+              text_kind: contributor-analysis
+        - id: support-documentation-in-non-web-format
+          applicability_conditions:
+            - technology: non_web_document
+            - text: >-
+                Documentation in a non-web document format is provided by
+                support services.
+          expectations:
+            - text: The documentation meets clause 10.
+              text_kind: contributor-analysis
+
+  en301549v411_12_1:
+    type: source-fragment
+    source_document: en301549v411
+    identifier: "12.1"
+    fragment_class: clause
+    name: Accessibility information about products
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=106
+    guideline:
+      cases:
+        - id: product-information-in-web-content
+          applicability_conditions:
+            - technology: web
+            - text: Web content provides information about a product.
+          expectations:
+            - text: The information meets clause 9.
+              text_kind: contributor-analysis
+        - id: product-information-in-non-web-document
+          applicability_conditions:
+            - technology: non_web_document
+            - text: A non-web document provides information about a product.
+          expectations:
+            - text: The information meets clause 10.
+              text_kind: contributor-analysis
+        - id: product-information-in-non-web-software
+          applicability_conditions:
+            - technology: open_non_web_software
+            - text: Non-web software provides information about a product.
+          expectations:
+            - text: The information meets clause 11.
+              text_kind: contributor-analysis
+
+  en301549v411_12_2:
+    type: source-fragment
+    source_document: en301549v411
+    identifier: "12.2"
+    fragment_class: clause
+    name: Accessibility information about services
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107
+    guideline:
+      cases:
+        - id: service-information-in-web-content
+          applicability_conditions:
+            - technology: web
+            - text: Web content provides information about a service.
+          expectations:
+            - text: The information meets clause 9.
+              text_kind: contributor-analysis
+        - id: service-information-in-non-web-document
+          applicability_conditions:
+            - technology: non_web_document
+            - text: A non-web document provides information about a service.
+          expectations:
+            - text: The information meets clause 10.
+              text_kind: contributor-analysis
+        - id: service-information-in-non-web-software
+          applicability_conditions:
+            - technology: open_non_web_software
+            - text: Non-web software provides information about a service.
+          expectations:
+            - text: The information meets clause 11.
+              text_kind: contributor-analysis
+
+  en301549v321_11_8_2:
+    type: source-fragment
+    source_document: en301549v321
+    identifier: "11.8.2"
+    fragment_class: clause
+    name: Accessible content creation
+    guideline:
+      cases:
+        - id: creates-web-content
+          applicability_conditions:
+            - text: A content creation tool creates web content.
+          expectations:
+            - text: >-
+                The tool enables and guides users to create content meeting
+                clause 9, to the extent described in clause 11.8.1.
+              text_kind: contributor-analysis
+        - id: creates-non-web-documents
+          applicability_conditions:
+            - text: A content creation tool creates non-web document content.
+          expectations:
+            - text: >-
+                The tool enables and guides users to create content meeting
+                clause 10, to the extent described in clause 11.8.1.
+              text_kind: contributor-analysis
+
+  en301549v411_5_10_2:
+    type: source-fragment
+    source_document: en301549v411
+    identifier: "5.10.2"
+    fragment_class: clause
+    name: Accessible content creation
+    guideline:
+      cases:
+        - id: creates-web-content
+          applicability_conditions:
+            - text: An authoring tool creates web content.
+          expectations:
+            - text: >-
+                The tool enables and guides users to create content meeting
+                clause 9, to the extent described in clause 5.10.1.
+              text_kind: contributor-analysis
+        - id: creates-non-web-documents
+          applicability_conditions:
+            - text: An authoring tool creates non-web document content.
+          expectations:
+            - text: >-
+                The tool enables and guides users to create content meeting
+                clause 10, to the extent described in clause 5.10.1.
+              text_kind: contributor-analysis
+        - id: creates-non-web-software
+          applicability_conditions:
+            - text: An authoring tool creates non-web software content.
+          expectations:
+            - text: >-
+                The tool enables and guides users to create content meeting
+                clause 11, to the extent described in clause 5.10.1.
+              text_kind: contributor-analysis
+
+  en301549v321_5_1_3_14:
+    type: source-fragment
+    source_document: en301549v321
+    identifier: "5.1.3.14"
+    fragment_class: clause
+    name: Spoken languages
+    guideline:
+      applicability_conditions:
+        - technology: closed_functionality
+        - text: Speech output is provided as non-visual access to closed functionality.
+      expectations:
+        - id: match-spoken-and-visual-language
+          text: >-
+            The human language of speech output is the same as the human
+            language of the visual content, subject to exceptions in the source.
+          text_kind: paraphrase
+
+  en301549v411_5_1_3_14:
+    type: source-fragment
+    source_document: en301549v411
+    identifier: "5.1.3.14"
+    fragment_class: clause
+    name: Spoken languages
+    guideline:
+      applicability_conditions:
+        - technology: closed_functionality
+        - text: >-
+            ICT includes closed functionality, and speech output is provided as
+            non-visual access to that closed functionality.
+      expectations:
+        - id: match-spoken-and-visual-language
+          text: >-
+            The human language of speech output is the same as the human
+            language of the visual content, subject to exceptions in the source.
+          text_kind: paraphrase
+
+  wcag2ict_A_3_26:
+    type: source-fragment
+    source_document: wcag2ict
+    identifier: A_3.26
+    fragment_class: fragment
+    name: 3.1.2 Language of Parts
+    guideline:
+      applicability_conditions:
+        - technology: closed_functionality
+        - text: >-
+            Consider criterion-by-criterion applicability and alternate
+            accessibility provisions instead of assuming WCAG applies.
+          text_kind: contributor-analysis
+      expectations:
+        - text: Pronunciation is correct.
+          text_kind: paraphrase
+
+  en301549v321_11_3_1_2:
+    type: source-fragment
+    source_document: en301549v321
+    identifier: "11.3.1.2"
+    fragment_class: clause
+    name: Void
+    non_expectation:
+      text: >-
+        The note says that a language-of-parts requirement would be impossible
+        for software.
+      text_kind: paraphrase
+
+  en301549v411_11_3_1_2:
+    type: source-fragment
+    source_document: en301549v411
+    identifier: "11.3.1.2"
+    fragment_class: clause
+    name: Language of Parts (Void)
+    non_expectation:
+      text: >-
+        The note says that a language-of-parts requirement would be impossible
+        for software.
+      text_kind: paraphrase
+
+relationships:
+  - id: en-v3-documentation-clauses
+    type: similar
+    subjects:
+      - en301549v321_12_1_2
+      - en301549v321_12_2_4
+    aspects:
+      applicability:
+        assessment: similar
+        rationale:
+          arguments_for:
+            - >-
+              Both concern documentation, and their practical scopes can
+              overlap.
+          arguments_against:
+            - >-
+              They differ primarily in whether documentation is provided with
+              the ICT or by support services.
+            - >-
+              "Product documentation" can be narrower than "documentation."
+      expectations:
+        assessment: same
+        rationale:
+          arguments_for:
+            - >-
+              The expectations differ only in notes that do not change their
+              intent.
+
+  - id: en-v3-v4-product-and-service-information
+    type: similar
+    subjects:
+      - - en301549v321_12_1_2
+        - en301549v321_12_2_4
+      - - en301549v411_12_1
+        - en301549v411_12_2
+    aspects:
+      applicability:
+        assessment: similar
+        rationale:
+          arguments_for:
+            - Both versions apply to digital information.
+            - >-
+              The contributor interprets V3 "products" as substantially
+              overlapping with V4 "products and services."
+          arguments_against:
+            - >-
+              V3 also applies to non-digital information such as a print manual.
+            - >-
+              V4 service information can cover non-digital aspects of services
+              and therefore be broader than V3 product documentation.
+      expectations:
+        assessment: similar
+        rationale:
+          arguments_for:
+            - >-
+              References to clauses 9 and 10 produce many of the same WCAG-based
+              expectations.
+          arguments_against:
+            - V4 incorporates WCAG 2.2 and has other clause 9 and 10 differences.
+            - >-
+              V4 permits product information in non-web software, while V3
+              requires a web or non-web document format.
+
+  - id: en-spoken-languages-v3-v4
+    type: same
+    subjects:
+      - en301549v321_5_1_3_14
+      - en301549v411_5_1_3_14
+    aspects:
+      applicability:
+        assessment: same
+        rationale:
+          arguments_for:
+            - >-
+              The V4 wording is more precise but conveys the same intent as V3.
+      expectations:
+        assessment: same
+        rationale:
+          arguments_for:
+            - The source wording is identical.
+
+  - id: programmatic-language-vs-spoken-language
+    type: similar
+    subjects:
+      - - wcag22_3_1_2
+        - wcag2ict_3_1_2
+        - en301549v411_9_3_1_2
+        - en301549v411_10_3_1_2
+      - - en301549v321_5_1_3_14
+        - en301549v411_5_1_3_14
+        - wcag2ict_A_3_26
+    aspects:
+      applicability:
+        assessment: different
+        rationale:
+          arguments_for:
+            - The first group concerns open content; the second concerns closed functionality.
+      expectations:
+        assessment: similar
+        rationale:
+          arguments_for:
+            - >-
+              Understanding WCAG 2.2 SC 3.1.2 identifies correct screen-reader
+              pronunciation as part of the criterion's intent.
+            - >-
+              WCAG2ICT fragment A_3.26 likewise identifies correct pronunciation
+              as the intent.
+          citations:
+            - uri: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html
+              retrieved: 2026-07-12
+            - source_fragment: wcag2ict_A_3_26
+
+  - id: open-content-vs-authoring-open-content
+    type: todo
+    subjects:
+      - - wcag22_3_1_2
+        - wcag2ict_3_1_2
+      - - en301549v321_11_8_2
+        - en301549v411_5_10_2
+    note: >-
+      Define a relationship between a requirement evaluated on content and an
+      authoring-tool requirement evaluated through the content it produces.
+
+non_expectations:
+  - source_document: bik_bitv_test_app
+    subject: language-of-parts
+    observation: No test is present.
+    retrieved: 2026-07-10
+    comment: >-
+      The omission is consistent with the test's stated scope and EN 301 549
+      V3.2.1, which has no language-of-parts guideline for open non-web software.
+
+  - source_document: bik_bitv_wcag22_app
+    subject: language-of-parts
+    observation: No test is present.
+    retrieved: 2026-07-10
+    comment: Same rationale as BIK BITV-Test (App).
+
+  - source_document: bik_wcag2ict_test_app
+    subject: language-of-parts
+    observation: No test is present.
+    retrieved: 2026-07-10
+    comment: >-
+      The omission is not consistent with the stated WCAG2ICT-based scope,
+      because WCAG2ICT provides guidance for Language of Parts.
+
+todos:
+  - id: model-eaa-connections
+    text: Model EAA connections using EN 301 549 V4 Annex ZB.
+  - id: model-authoring-support
+    text: >-
+      Add preservation, repair-assistance, and template clauses from EN 301 549
+      V3.2.1 clauses 11.8.3–11.8.5 and V4.1.0 clauses 5.10.3–5.10.5.
+  - id: compare-en-clause-9
+    text: Compare clause 9 differences between EN 301 549 V3.2.1 and V4.1.0.
+  - id: compare-en-clause-10
+    text: Compare clause 10 differences between EN 301 549 V3.2.1 and V4.1.0.
+  - id: clarify-software-technology
+    text: >-
+      Review whether product or service information in non-web software should
+      be classified as open_non_web_software or a broader non-web software type.
