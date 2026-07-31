@@ -106,7 +106,10 @@ fragments:
       applicability_conditions:
         - technology: web
       expectations:
-        #TODO is this 'id' defining a shared object? If so then the same id shouldn't have different text when used elsewhere, but the different text can be a comment on the relationship.
+        #TODO is this 'id' defining a shared object? If so then the same id shouldn't have different text when used elsewhere, but that different text can be a comment on the relationship.
+        #TODO I don't like the made-up id value - it's descriptive, but too proprietary. It ends up giving each expectation too many unique identifiers.
+          # Better: Use the fragment token "wcag22_3_1_2" as the relationship key. When another fragment (e.g., wcag2ict_3_1_2) identifies its "expectations" as having a relationship with fragment "wcag22_3_1_2", it means that it is a relationship between the two fragments' respective expectations. The parallel numbering pattern also helps.
+          # Other cases won't have a parallel numbering pattern. An app can easily expose the names of the document and fragment in the relationship target. If a contributor wants to make the relationship target more human-readable, they can use a comment - either a YAML inline comment or a relationship comment. The former if its redundant to information already stored in the model; the latter if it would provide clarity via an app.
         - id: identify-language-of-parts
           text: The human language of each phrase is programmatically identified.
           text_kind: paraphrase
