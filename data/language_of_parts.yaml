@@ -1,11 +1,16 @@
+# AI automatically generated the structure. Values and text should have been copied verbatim from human-only content.
 ai-disclosure: ai-autonomous
 
+# what is this an id of? the relationship?
 id: language-of-parts
+#TODO what is 'type'?
 type: relationship-example
 name: Language of parts
+# TODO think about 'draft' status. Maybe make it more granular?
 status: draft
 language: en
 
+# TODO I don't see value in identifying provenance of the whole YAML file. Each fragment should cite its own provenance. But the idea might be useful, as a similar provenance object at a more granular level.
 provenance:
   kind: askm-original-analysis
   contributor: Mitchell Evan
@@ -17,6 +22,7 @@ provenance:
     here does not mean that an accessibility interpretation has been validated
     or accepted into a formal ASKM model.
 
+# TODO move source documents to their own file. They are not specific to language of parts.
 source_documents:
   wcag22:
     type: source-document
@@ -71,6 +77,7 @@ source_documents:
     name: WCAG2ICT-Test (App) (BIK)
     uri: https://bitvtest.de/pruefverfahren/bitv-20-app
 
+# TODO move technology types to their own file
 technology_types:
   web:
     name: Web content
@@ -84,17 +91,22 @@ technology_types:
     name: Non-digital documentation
 
 fragments:
+  # TODO check whether underscores in this token lose any meaningful distinction between . and _ in the identifier
   wcag22_3_1_2:
+    # TODO is 'type' redundant, given that we're in a section called 'fragments'?
     type: source-fragment
     source_document: wcag22
+    # TODO just for readability, move identifier and name to the top of each block.
     identifier: "3.1.2"
     fragment_class: success-criterion
     name: Language of Parts
     uri: https://www.w3.org/TR/WCAG22/#language-of-parts
+    # TODO think about this idea: "when" and "then" instead of "applicability_conditions" and "expectations"?
     guideline:
       applicability_conditions:
         - technology: web
       expectations:
+        #TODO is this 'id' defining a shared object? If so then the same id shouldn't have different text when used elsewhere, but the different text can be a comment on the relationship.
         - id: identify-language-of-parts
           text: The human language of each phrase is programmatically identified.
           text_kind: paraphrase
@@ -108,15 +120,21 @@ fragments:
     uri: https://www.w3.org/TR/wcag2ict/#language-of-parts
     guideline:
       applicability_conditions:
+        # TODO elsewhere a list of conditions is "and" (which is a sensible default). Here it's "or". How to express that?
         - technology: non_web_document
         - technology: open_non_web_software
       expectations:
         - id: identify-language-of-parts
+          #TODO How to structure relationships deterministically? This is currently just a prose description of a relationship.
+          #TODO Both the text and the text_kind read like a comment on the expectation. This is good, but it should be a 'comment' or 'analysis' property of the expectation, not just the 'text' of the expectation.
+          #TODO here and elsewhere, comments should identify whether they are 'pro' or 'con' for the thing commented on.
           text: >-
             The expectation is the same as WCAG 2.2 SC 3.1.2, with a minor
             substitution of non-web terminology and with added notes.
+          # TODO change this to provenance of the comment. Need to think about the available values. "Analysis" is too vague. It should cite the source, with the plain meaning of the fragment itself the most common one. (Since it's very common, should we state it, or is it assumed without stating it?) The citation becomes interesting when the it points somewhere else in the same source document or a different one.
           text_kind: contributor-analysis
 
+  # TODO is there a way we can generalize to all 9.x clauses, to avoid the high amount of repetition this would otherwise entail?
   en301549v321_9_3_1_2:
     type: source-fragment
     source_document: en301549v321
@@ -131,6 +149,7 @@ fragments:
           text: Same as the corresponding V4.1.0 clause, with minor editorial differences.
           text_kind: contributor-analysis
 
+  # TODO is there a way we can generalize to all 10.x clauses as the default, summarizing that some are IBR and some use word substitution? Only ones with substantive edits should get their own fragment analysis.
   en301549v321_10_3_1_2:
     type: source-fragment
     source_document: en301549v321
@@ -145,6 +164,7 @@ fragments:
           text: Same as the corresponding V4.1.0 clause, with minor editorial differences.
           text_kind: contributor-analysis
 
+  # TODO like v3
   en301549v411_9_3_1_2:
     type: source-fragment
     source_document: en301549v411
@@ -161,6 +181,7 @@ fragments:
           text: Includes WCAG 2.2 SC 3.1.2 by reference.
           text_kind: contributor-analysis
 
+  # TODO like v3
   en301549v411_10_3_1_2:
     type: source-fragment
     source_document: en301549v411
@@ -186,7 +207,9 @@ fragments:
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=84
     guideline:
+      # TODO guideline with 3 cases can work. But think about this alternative: 3 guidelines.
       cases:
+        # TODO is there a namespace within which these ids are unique?
         - id: documentation-in-any-format
           applicability_conditions:
             - text: Product documentation is provided with the ICT in any format.
@@ -196,6 +219,8 @@ fragments:
                 non-web document format.
               text_kind: paraphrase
         - id: documentation-in-web-format
+          applicability_conditions:
+            #TODO state in ASKM documentation that a list of applicability conditions is "and". This is fairly intuitive because the word "conditions" implies 'and', but should be made explicit in the ASKM documentation. (All the more so if I were to change "applicability_conditions" to "when".)
           applicability_conditions:
             - technology: web
             - text: Product documentation in web format is provided with the ICT.
@@ -233,6 +258,7 @@ fragments:
         - id: support-documentation-in-web-format
           applicability_conditions:
             - technology: web
+            # TODO Is "in web format" in the text redundant to 'technology: web' ? Here and elsewhere
             - text: Documentation in web format is provided by support services.
           expectations:
             - text: The documentation meets clause 9.
@@ -573,10 +599,13 @@ non_expectations:
   - source_document: bik_bitv_test_app
     subject: language-of-parts
     observation: No test is present.
+    # TODO document in ASKM documentation when to use 'retrieved' for the whole document vs. just for an observation. The latter doeesn't seem wrong but I don't want it to cause busy-work. Also 'retrieved' should be clearly associated with a document or a fragment - an observation is not 'retrieved'.
     retrieved: 2026-07-10
     comment: >-
       The omission is consistent with the test's stated scope and EN 301 549
       V3.2.1, which has no language-of-parts guideline for open non-web software.
+      # TODO move the comment text to 'text' so it can have other properties.
+      # TODO add citations to the comment
 
   - source_document: bik_bitv_wcag22_app
     subject: language-of-parts
@@ -591,7 +620,9 @@ non_expectations:
     comment: >-
       The omission is not consistent with the stated WCAG2ICT-based scope,
       because WCAG2ICT provides guidance for Language of Parts.
+    # TODO file an issue against BIK-BITV, then list a link to the issue here in a structured way.
 
+#TODO think about how to attach these to the affected objects
 todos:
   - id: model-eaa-connections
     text: Model EAA connections using EN 301 549 V4 Annex ZB.
