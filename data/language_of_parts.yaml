@@ -23,7 +23,6 @@ imports:
 fragments:
   # TODO check whether underscores in this token lose any meaningful distinction between . and _ in the identifier
   wcag22_3_1_2:
-    # TODO is 'type' redundant, given that we're in a section called 'fragments'?
     source_document: wcag22
     # TODO just for readability, move identifier and name to the top of each block.
     identifier: "3.1.2"
