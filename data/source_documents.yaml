@@ -3,13 +3,11 @@ ai-disclosure: ai-assisted
 
 source_documents:
   wcag22:
-    type: source-document
     name: Web Content Accessibility Guidelines (WCAG) 2.2
     short_name: WCAG 2.2
     uri: https://www.w3.org/TR/WCAG22/
 
   wcag2ict:
-    type: source-document
     name: >-
       Guidance on Applying WCAG 2 to Non-Web Information and Communications
       Technologies (WCAG2ICT)
@@ -17,7 +15,6 @@ source_documents:
     uri: https://www.w3.org/TR/wcag2ict/
 
   en301549v321:
-    type: source-document
     name: >-
       EN 301 549 V3.2.1 (2021-03) Accessibility requirements for ICT products
       and services
@@ -26,7 +23,6 @@ source_documents:
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
 
   en301549v411:
-    type: source-document
     name: >-
       EN 301 549 V4.1.0 (2026-06) Accessibility requirements for ICT products
       and services
@@ -35,22 +31,18 @@ source_documents:
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf
 
   eaa:
-    type: source-document
     name: European Accessibility Act
     short_name: EAA
     uri: https://eur-lex.europa.eu/eli/dir/2019/882
 
   bik_bitv_test_app:
-    type: source-document
     name: BIK BITV-Test (App)
     uri: https://bitvtest.de/pruefverfahren/bitv-20-app
 
   bik_bitv_wcag22_app:
-    type: source-document
     name: BIK BITV-Test + WCAG 2.2 (App)
     uri: https://bitvtest.de/pruefverfahren/bitv-20-plus-app
 
   bik_wcag2ict_test_app:
-    type: source-document
     name: WCAG2ICT-Test (App) (BIK)
     uri: https://bitvtest.de/pruefverfahren/bitv-20-app
