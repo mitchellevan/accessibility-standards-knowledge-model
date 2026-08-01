@@ -1,0 +1,11 @@
+technology_types:
+  web:
+    name: Web content
+  non_web_document:
+    name: Non-web document
+  open_non_web_software:
+    name: Non-web software open to assistive technology
+  closed_functionality:
+    name: Functionality closed to assistive technology
+  non_digital_documentation:
+    name: Non-digital documentation

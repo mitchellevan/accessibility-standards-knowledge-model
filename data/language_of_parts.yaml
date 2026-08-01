@@ -1,13 +1,7 @@
-# AI automatically generated the structure. Values and text should have been copied verbatim from human-only content.
-ai-disclosure: ai-autonomous
+# AI generated structure; human-reviewed. AI copied values and text from human-only research; human-reviewed.
+ai-disclosure: ai-assisted
 
-# what is this an id of? the relationship?
-id: language-of-parts
-#TODO what is 'type'?
-type: relationship-example
-name: Language of parts
-# TODO think about 'draft' status. Maybe make it more granular?
-status: draft
+#TODO make it clear what the scope of the language is
 language: en
 
 # TODO I don't see value in identifying provenance of the whole YAML file. Each fragment should cite its own provenance. But the idea might be useful, as a similar provenance object at a more granular level.
@@ -22,73 +16,9 @@ provenance:
     here does not mean that an accessibility interpretation has been validated
     or accepted into a formal ASKM model.
 
-# TODO move source documents to their own file. They are not specific to language of parts.
-source_documents:
-  wcag22:
-    type: source-document
-    name: Web Content Accessibility Guidelines (WCAG) 2.2
-    short_name: WCAG 2.2
-    uri: https://www.w3.org/TR/WCAG22/
-
-  wcag2ict:
-    type: source-document
-    name: >-
-      Guidance on Applying WCAG 2 to Non-Web Information and Communications
-      Technologies (WCAG2ICT)
-    short_name: WCAG2ICT
-    uri: https://www.w3.org/TR/wcag2ict/
-
-  en301549v321:
-    type: source-document
-    name: >-
-      EN 301 549 V3.2.1 (2021-03) Accessibility requirements for ICT products
-      and services
-    short_name: EN 301 549 V3.2.1
-    uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
-
-  en301549v411:
-    type: source-document
-    name: >-
-      EN 301 549 V4.1.0 (2026-06) Accessibility requirements for ICT products
-      and services
-    short_name: EN 301 549 V4.1.0
-    uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf
-
-  eaa:
-    type: source-document
-    name: European Accessibility Act
-    short_name: EAA
-    uri: https://eur-lex.europa.eu/eli/dir/2019/882
-
-  bik_bitv_test_app:
-    type: source-document
-    name: BIK BITV-Test (App)
-    uri: https://bitvtest.de/pruefverfahren/bitv-20-app
-
-  bik_bitv_wcag22_app:
-    type: source-document
-    name: BIK BITV-Test + WCAG 2.2 (App)
-    uri: https://bitvtest.de/pruefverfahren/bitv-20-plus-app
-
-  bik_wcag2ict_test_app:
-    type: source-document
-    name: WCAG2ICT-Test (App) (BIK)
-    uri: https://bitvtest.de/pruefverfahren/bitv-20-app
-
-# TODO move technology types to their own file
-technology_types:
-  web:
-    name: Web content
-  non_web_document:
-    name: Non-web document
-  open_non_web_software:
-    name: Non-web software open to assistive technology
-  closed_functionality:
-    name: Functionality closed to assistive technology
-  non_digital_documentation:
-    name: Non-digital documentation
+imports:
+  - source_documents.yaml
+  - vocabularies.yaml
 
 fragments:
   # TODO check whether underscores in this token lose any meaningful distinction between . and _ in the identifier
@@ -138,6 +68,7 @@ fragments:
           text_kind: contributor-analysis
 
   # TODO is there a way we can generalize to all 9.x clauses, to avoid the high amount of repetition this would otherwise entail?
+    # This implies that the notion of "all 9.x clauses" needs to be semantically available.
   en301549v321_9_3_1_2:
     type: source-fragment
     source_document: en301549v321
