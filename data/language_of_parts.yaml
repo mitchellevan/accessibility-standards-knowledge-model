@@ -23,11 +23,10 @@ imports:
 fragments:
   # TODO check whether underscores in this token lose any meaningful distinction between . and _ in the identifier
   wcag22_3_1_2:
-    source_document: wcag22
-    # TODO just for readability, move identifier and name to the top of each block.
     identifier: "3.1.2"
-    fragment_class: success-criterion
     name: Language of Parts
+    source_document: wcag22
+    fragment_class: success-criterion
     uri: https://www.w3.org/TR/WCAG22/#language-of-parts
     # TODO think about this idea: "when" and "then" instead of "applicability_conditions" and "expectations"?
     guideline:
@@ -43,10 +42,10 @@ fragments:
           text_kind: paraphrase
 
   wcag2ict_3_1_2:
-    source_document: wcag2ict
     identifier: "3.1.2"
-    fragment_class: success-criterion
     name: Language of Parts
+    source_document: wcag2ict
+    fragment_class: success-criterion
     uri: https://www.w3.org/TR/wcag2ict/#language-of-parts
     guideline:
       applicability_conditions:
@@ -67,10 +66,10 @@ fragments:
   # TODO is there a way we can generalize to all 9.x clauses, to avoid the high amount of repetition this would otherwise entail?
     # This implies that the notion of "all 9.x clauses" needs to be semantically available.
   en301549v321_9_3_1_2:
-    source_document: en301549v321
     identifier: "9.3.1.2"
-    fragment_class: clause
     name: Language of parts
+    source_document: en301549v321
+    fragment_class: clause
     guideline:
       applicability_conditions:
         - technology: web
@@ -81,10 +80,10 @@ fragments:
 
   # TODO is there a way we can generalize to all 10.x clauses as the default, summarizing that some are IBR and some use word substitution? Only ones with substantive edits should get their own fragment analysis.
   en301549v321_10_3_1_2:
-    source_document: en301549v321
     identifier: "10.3.1.2"
-    fragment_class: clause
     name: Language of parts
+    source_document: en301549v321
+    fragment_class: clause
     guideline:
       applicability_conditions:
         - technology: non_web_document
@@ -95,10 +94,10 @@ fragments:
 
   # TODO like v3
   en301549v411_9_3_1_2:
-    source_document: en301549v411
     identifier: "9.3.1.2"
-    fragment_class: clause
     name: Language of parts
+    source_document: en301549v411
+    fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=67
     guideline:
@@ -111,10 +110,10 @@ fragments:
 
   # TODO like v3
   en301549v411_10_3_1_2:
-    source_document: en301549v411
     identifier: "10.3.1.2"
-    fragment_class: clause
     name: Language of parts
+    source_document: en301549v411
+    fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82
     guideline:
@@ -126,10 +125,10 @@ fragments:
           text_kind: paraphrase
 
   en301549v321_12_1_2:
-    source_document: en301549v321
     identifier: "12.1.2"
-    fragment_class: clause
     name: Accessible documentation
+    source_document: en301549v321
+    fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=84
     guideline:
@@ -164,10 +163,10 @@ fragments:
               text_kind: contributor-analysis
 
   en301549v321_12_2_4:
-    source_document: en301549v321
     identifier: "12.2.4"
-    fragment_class: clause
     name: Accessible documentation
+    source_document: en301549v321
+    fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=85
     guideline:
@@ -199,10 +198,10 @@ fragments:
               text_kind: contributor-analysis
 
   en301549v411_12_1:
-    source_document: en301549v411
     identifier: "12.1"
-    fragment_class: clause
     name: Accessibility information about products
+    source_document: en301549v411
+    fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=106
     guideline:
@@ -230,10 +229,10 @@ fragments:
               text_kind: contributor-analysis
 
   en301549v411_12_2:
-    source_document: en301549v411
     identifier: "12.2"
-    fragment_class: clause
     name: Accessibility information about services
+    source_document: en301549v411
+    fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107
     guideline:
@@ -261,10 +260,10 @@ fragments:
               text_kind: contributor-analysis
 
   en301549v321_11_8_2:
-    source_document: en301549v321
     identifier: "11.8.2"
-    fragment_class: clause
     name: Accessible content creation
+    source_document: en301549v321
+    fragment_class: clause
     guideline:
       cases:
         - id: creates-web-content
@@ -285,10 +284,10 @@ fragments:
               text_kind: contributor-analysis
 
   en301549v411_5_10_2:
-    source_document: en301549v411
     identifier: "5.10.2"
-    fragment_class: clause
     name: Accessible content creation
+    source_document: en301549v411
+    fragment_class: clause
     guideline:
       cases:
         - id: creates-web-content
@@ -317,10 +316,10 @@ fragments:
               text_kind: contributor-analysis
 
   en301549v321_5_1_3_14:
-    source_document: en301549v321
     identifier: "5.1.3.14"
-    fragment_class: clause
     name: Spoken languages
+    source_document: en301549v321
+    fragment_class: clause
     guideline:
       applicability_conditions:
         - technology: closed_functionality
@@ -333,10 +332,10 @@ fragments:
           text_kind: paraphrase
 
   en301549v411_5_1_3_14:
-    source_document: en301549v411
     identifier: "5.1.3.14"
-    fragment_class: clause
     name: Spoken languages
+    source_document: en301549v411
+    fragment_class: clause
     guideline:
       applicability_conditions:
         - technology: closed_functionality
@@ -351,10 +350,10 @@ fragments:
           text_kind: paraphrase
 
   wcag2ict_A_3_26:
-    source_document: wcag2ict
     identifier: A_3.26
-    fragment_class: fragment
     name: 3.1.2 Language of Parts
+    source_document: wcag2ict
+    fragment_class: fragment
     guideline:
       applicability_conditions:
         - technology: closed_functionality
@@ -367,10 +366,10 @@ fragments:
           text_kind: paraphrase
 
   en301549v321_11_3_1_2:
-    source_document: en301549v321
     identifier: "11.3.1.2"
-    fragment_class: clause
     name: Void
+    source_document: en301549v321
+    fragment_class: clause
     non_expectation:
       text: >-
         The note says that a language-of-parts requirement would be impossible
@@ -378,10 +377,10 @@ fragments:
       text_kind: paraphrase
 
   en301549v411_11_3_1_2:
-    source_document: en301549v411
     identifier: "11.3.1.2"
-    fragment_class: clause
     name: Language of Parts (Void)
+    source_document: en301549v411
+    fragment_class: clause
     non_expectation:
       text: >-
         The note says that a language-of-parts requirement would be impossible
