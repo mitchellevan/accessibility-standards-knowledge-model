@@ -388,116 +388,83 @@ fragments:
       text_kind: paraphrase
 
 relationships:
-  - id: en-v3-documentation-clauses
-    type: similar
+  - id: en301549v321-documentation-is-accessible
+    #TODO (wait and see): Instead of listing the subjects here, consider listing the relationship id in each fragment. Programmatically it's the same, but it might make the YAML more human-readable, easier to write by hand.
     subjects:
       - en301549v321_12_1_2
       - en301549v321_12_2_4
+    #TODO okay for now, but "aspects", "applicability", "relationship" feel a bit abstract. Wait and see, it might be possible to simplify this structure.
     aspects:
       applicability:
-        assessment: similar
+        relationship: overlapping
+        #TODO consider formalizing applicability differences like the following examples. This would make the content more compatible with a decision-tree app. (These examples are human-written.)
+          # Both clauses: The component is product documentation. The component is provided with the ICT. The component is also provided by support services.
+          # 12.1.2 only: The component is product documentation. The component is provided with the ICT. The component is not provided by support services.
+          # 12.2.4 only: The component is product documentation. The component is not provided with the ICT. The component is provided by support services.
+          # 12.2.4 only: The component is documentation, The component is not product documentation. The component is provided by support services. (Hypothetical)
+        similarities:
+          - >- #human
+            [Clause 12.1.2](en301549v321_12_1_2) applies to content provided "with the ICT", while [clause 12.2.4](en301549v321_12_2_4) applies to content provided "by support services". In practice this could often be the same content, e.g. online documentation could be provided via a link from the digital product and also provided via a link from support chat.
+          - >- #human
+            [Clause 12.1.2](en301549v321_12_1_2) applies to "product documentation" while [clause 12.2.4](en301549v321_12_2_4) applies to "documentation". In practice, most documentation related to ICT is product documentation.
+        differences:
+          - >- #human
+            [Clause 12.1.2](en301549v321_12_1_2) applies to content provided "with the ICT", while [clause 12.2.4](en301549v321_12_2_4) applies to content provided "by support services". In practice these could sometimes be different resources.
+          - >- #human
+            [Clause 12.1.2](en301549v321_12_1_2) applies to "product documentation" while [clause 12.2.4](en301549v321_12_2_4) applies to "documentation". Hypothetically, support services could provide some other kind of documentation that is not "product documentation".
         rationale:
           arguments_for:
-            - >-
-              Both concern documentation, and their practical scopes can
-              overlap.
-          arguments_against:
-            - >-
-              They differ primarily in whether documentation is provided with
-              the ICT or by support services.
-            - >-
-              "Product documentation" can be narrower than "documentation."
+            - >- #human
+              Rules as written.
+            - >- #human
+              Practical experience with real-world ICT.
       expectations:
-        assessment: same
+        relationship: same
         rationale:
           arguments_for:
-            - >-
-              The expectations differ only in notes that do not change their
-              intent.
+            - >- #human
+              Rules as written. The expectations differ only in the Notes, which do not change the intent.
 
-  - id: en-v3-v4-product-and-service-information
-    type: similar
-    subjects:
-      - - en301549v321_12_1_2
-        - en301549v321_12_2_4
-      - - en301549v411_12_1
-        - en301549v411_12_2
-    aspects:
-      applicability:
-        assessment: similar
-        rationale:
-          arguments_for:
-            - Both versions apply to digital information.
-            - >-
-              The contributor interprets V3 "products" as substantially
-              overlapping with V4 "products and services."
-          arguments_against:
-            - >-
-              V3 also applies to non-digital information such as a print manual.
-            - >-
-              V4 service information can cover non-digital aspects of services
-              and therefore be broader than V3 product documentation.
-      expectations:
-        assessment: similar
-        rationale:
-          arguments_for:
-            - >-
-              References to clauses 9 and 10 produce many of the same WCAG-based
-              expectations.
-          arguments_against:
-            - V4 incorporates WCAG 2.2 and has other clause 9 and 10 differences.
-            - >-
-              V4 permits product information in non-web software, while V3
-              requires a web or non-web document format.
-
-  - id: en-spoken-languages-v3-v4
-    type: same
+  - id: en301549-v321-v410-language-of-parts-speech-output
     subjects:
       - en301549v321_5_1_3_14
       - en301549v411_5_1_3_14
     aspects:
       applicability:
-        assessment: same
-        rationale:
-          arguments_for:
-            - >-
-              The V4 wording is more precise but conveys the same intent as V3.
+        relationship: same
+        similarities:
+          - >- #human
+            The [phrase in v4](en301549v411_5_1_3_14) is more precise but conveys the same intent as in [v3.2.1](en301549v321_5_1_3_14).
       expectations:
-        assessment: same
-        rationale:
-          arguments_for:
-            - The source wording is identical.
+        relationship: same
+        similarities:
+          - >- #human
+            The words are identical.
 
+  #TODO These are less similar than some others marked similar. Is that an issue?
+  #TODO Better would be showing similarities between the programmatic group and the pronunciation group of fragments. See if I can implement this in the fragments themselves.
+  #TODO check YAML syntax for the similarities.
   - id: programmatic-language-vs-spoken-language
     type: similar
     subjects:
-      - - wcag22_3_1_2
-        - wcag2ict_3_1_2
-        - en301549v411_9_3_1_2
-        - en301549v411_10_3_1_2
-      - - en301549v321_5_1_3_14
-        - en301549v411_5_1_3_14
-        - wcag2ict_A_3_26
+      - wcag22_3_1_2
+      - en301549v411_5_1_3_14
     aspects:
       applicability:
-        assessment: different
-        rationale:
-          arguments_for:
-            - The first group concerns open content; the second concerns closed functionality.
+        relationship: see_fragments
       expectations:
-        assessment: similar
-        rationale:
-          arguments_for:
-            - >-
-              Understanding WCAG 2.2 SC 3.1.2 identifies correct screen-reader
-              pronunciation as part of the criterion's intent.
-            - >-
-              WCAG2ICT fragment A_3.26 likewise identifies correct pronunciation
-              as the intent.
-          citations:
-            - uri: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html
-              retrieved: 2026-07-12
-            - source_fragment: wcag2ict_A_3_26
+        relationship: similar
+        similarities:
+          - text: >- #human
+              According to [Understanding SC 3.1.2](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html), part of the intent is "Screen readers can use the pronunciation rules of the language of the text." (Retrieved 2026-07-12)Understanding WCAG 2.2 SC 3.1.2 identifies correct screen-reader pronunciation as part of the criterion's intent.
+            citations:
+              - note1
+                uri: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html
+                retrieved: 2026-07-12
+          - >- #human
+            According to [WCAG2ICT "Problematic for closed"](wcag2ict_A_3_26), the intent of WCAG 3.1.2 is correct pronunciation.
+        differences:
+          - 
 
   - id: open-content-vs-authoring-open-content
     type: todo
@@ -506,9 +473,8 @@ relationships:
         - wcag2ict_3_1_2
       - - en301549v321_11_8_2
         - en301549v411_5_10_2
-    note: >-
-      Define a relationship between a requirement evaluated on content and an
-      authoring-tool requirement evaluated through the content it produces.
+    note: >- #human
+      I want to write a special kind of relationship between an authoring tool requirement evaluated on the authored content, and the same or similar requirement on content that's not authored content.
 
 non_expectations:
   - source_document: bik_bitv_test_app

@@ -121,7 +121,7 @@ b) a non-web format that conforms to clause 10.
     * Expectation 2: The documentation meets clause 9 (same as WCAG 2.1).
     * Applicability condition 3: Documentation in a non-web document format is provided by support services.
     * Expectation 3: The documentation meets clause 9 (+- WCAG 2.1).
-  * Relationship of v3 clauses 12.1.2 and 12.2.4
+  * Relationship of v3 clauses 12.1.2 and 12.2.4 [done: rendered into YAML en301549v321-documentation-is-accessible]
     * Applicability is similar.
       * They differ mainly by how the documentation is provided. In practice these may overlap, e.g. online documentation could be linked from a web-based product and also provided by support services.
       * Clause 12.1.2 applies to "product documentation" while clause 12.2.4 applies to "documentation". While these two concepts could be identical in many cases, there could also hypothetically be a scenario where support services would provide another kind of documentation that is not "product documentation".
@@ -143,7 +143,7 @@ b) a non-web format that conforms to clause 10.
       * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
   * [12.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107) *Accessibility information about services*
     * Like 12.1: s/product/service/
-* Relationship of v3 clauses 12.1.2 and 12.2.4 taken together, compared with v4 clauses 12.1 and 12.2 taken together
+* Relationship of v3 clauses 12.1.2 and 12.2.4 taken together, compared with v4 clauses 12.1 and 12.2 taken together [TODO decide should this be in YAML at all, or is it too complex? If so, maybe call it YAML en-v3-v4-documentation-is-accessible]
   * Applicability is similar.
     * Similarity: The v3 and v4 clauses apply to digital information.
     * Difference: The v3 clauses also apply to non-digital information, such as a print manual, while the v4 clauses do not.
@@ -230,7 +230,7 @@ b) a non-web format that conforms to clause 10.
 * EN 301 549 v4 clause 5.1.3.14 Spoken languages
   * Applicability condition: "Where ICT includes closed functionality, and speech output is provided as non-visual access to closed functionality"
   * Expectation: The human language of speech output is the same as the human language of the visual content. (Paraphrased; see the source for exceptions.)
-* Relationship between the above:
+* Relationship between the above: [done in YAML]
   * Applicability conditions: Same.
     * Rationale: The phrase is more precise in v4 but conveys the same intent as in v3.2.1.
   * Expectation: Same.
