@@ -107,14 +107,14 @@ b) a non-web format that conforms to clause 10.
 * EN 301 549 v3:
   * 9.3.1.2 *Language of parts:* Same as v4 with only minor editorial differences.
   * 10.3.1.2 *Language of parts:* Same as v4 with only minor editorial differences.
-  * [12.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=84) *Accessible documentation*
+  * [12.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=84) *Accessible documentation*
     * Applicability condition 1: Product documentation is provided in any format with the ICT, including non-digital.
     * Expectation 1: The product documentation is made available in web format or non-web document format.
     * Applicability condition 2: Product documentation in web format is provided with the ICT.
     * Expectation 2: The product documentation meets clause 9 (same as WCAG 2.1).
     * Applicability condition 3: Product documentation in a non-web document format is provided with the ICT.
     * Expectation 3: The product documentation meets clause 9 (+- WCAG 2.1).
-  * [12.2.4](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=85) *Accessible documentation*
+  * [12.2.4](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=85) *Accessible documentation*
     * Applicability condition 1: Documentation is provided in any format by support services, including non-digital.
     * Expectation 1: The documentation is made available in web format or non-web document format.
     * Applicability condition 2: Documentation in web format is provided by support services.
@@ -127,13 +127,13 @@ b) a non-web format that conforms to clause 10.
       * Clause 12.1.2 applies to "product documentation" while clause 12.2.4 applies to "documentation". While these two concepts could be identical in many cases, there could also hypothetically be a scenario where support services would provide another kind of documentation that is not "product documentation".
     * Expectations are the same, differing only in the Notes without changing the intent.
 * EN 301 549 v4:
-  * [9.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=67) *Language of parts*
+  * [9.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=67) *Language of parts*
     * Applicability condition: web
     * Expectation: includes WCAG SC 3.1.2 by reference.
-  * [10.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82) *Language of parts*
+  * [10.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=82) *Language of parts*
     * Applicability condition: non-web document
     * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
-  * [12.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=106) *Accessibility information about products*
+  * [12.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=106) *Accessibility information about products*
     * Applicability condition 1: Web content provides information about a product.
     * Expectation 1: This information in web content meets clause 9 (+- WCAG 2.2).
     * Applicability condition 2: A non-web document provides information about a product.
@@ -141,7 +141,7 @@ b) a non-web format that conforms to clause 10.
     * Applicability condition 3: Non-web software provides information about a product.
     * Expectation 3: This information in non-web software meets clause 11 (+- WCAG 2.2).
       * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
-  * [12.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107) *Accessibility information about services*
+  * [12.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=107) *Accessibility information about services*
     * Like 12.1: s/product/service/
 * Relationship of v3 clauses 12.1.2 and 12.2.4 taken together, compared with v4 clauses 12.1 and 12.2 taken together [TODO decide should this be in YAML at all, or is it too complex? If so, maybe call it YAML en-v3-v4-documentation-is-accessible]
   * Applicability is similar.

@@ -99,7 +99,7 @@ fragments:
     source_document: en301549v411
     fragment_class: clause
     uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=67
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=67
     guideline:
       applicability_conditions:
         - technology: web
@@ -115,7 +115,7 @@ fragments:
     source_document: en301549v411
     fragment_class: clause
     uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=82
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=82
     guideline:
       applicability_conditions:
         - technology: non_web_document
@@ -130,7 +130,7 @@ fragments:
     source_document: en301549v321
     fragment_class: clause
     uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=84
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=84
     guideline:
       # TODO guideline with 3 cases can work. But think about this alternative: 3 guidelines.
       cases:
@@ -168,7 +168,7 @@ fragments:
     source_document: en301549v321
     fragment_class: clause
     uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf?page=85
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=85
     guideline:
       cases:
         - id: support-documentation-in-any-format
@@ -203,7 +203,7 @@ fragments:
     source_document: en301549v411
     fragment_class: clause
     uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=106
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=106
     guideline:
       cases:
         - id: product-information-in-web-content
@@ -234,7 +234,7 @@ fragments:
     source_document: en301549v411
     fragment_class: clause
     uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf?page=107
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=107
     guideline:
       cases:
         - id: service-information-in-web-content
