@@ -45,6 +45,10 @@ Part of a source document.
 
 A source fragment within certain source documents. For example, in EN 301 549 a numbered clause may be normative or informative, and may contain other numbered clauses.
 
+### IBR
+
+Incorporation by reference
+
 ### provision
 
 A source fragment within certain source documents. For example, EU directives contain provisions.

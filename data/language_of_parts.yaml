@@ -4,18 +4,6 @@ ai-disclosure: ai-assisted
 #TODO make it clear what the scope of the language is
 language: en
 
-# TODO I don't see value in identifying provenance of the whole YAML file. Each fragment should cite its own provenance. But the idea might be useful, as a similar provenance object at a more granular level.
-provenance:
-  kind: askm-original-analysis
-  contributor: Mitchell Evan
-  source:
-    path: ../research/relationship_observations.md
-    section: First attempt at relationship mapping — "language of parts"
-  note: >-
-    This is a structured draft of the contributor's prose research. Inclusion
-    here does not mean that an accessibility interpretation has been validated
-    or accepted into a formal ASKM model.
-
 imports:
   - source_documents.yaml
   - vocabularies.yaml
@@ -28,18 +16,11 @@ fragments:
     source_document: wcag22
     fragment_class: success-criterion
     uri: https://www.w3.org/TR/WCAG22/#language-of-parts
-    # TODO think about this idea: "when" and "then" instead of "applicability_conditions" and "expectations"?
     guideline:
       applicability_conditions:
         - technology: web
       expectations:
-        #TODO is this 'id' defining a shared object? If so then the same id shouldn't have different text when used elsewhere, but that different text can be a comment on the relationship.
-        #TODO I don't like the made-up id value - it's descriptive, but too proprietary. It ends up giving each expectation too many unique identifiers.
-          # Better: Use the fragment token "wcag22_3_1_2" as the relationship key. When another fragment (e.g., wcag2ict_3_1_2) identifies its "expectations" as having a relationship with fragment "wcag22_3_1_2", it means that it is a relationship between the two fragments' respective expectations. The parallel numbering pattern also helps.
-          # Other cases won't have a parallel numbering pattern. An app can easily expose the names of the document and fragment in the relationship target. If a contributor wants to make the relationship target more human-readable, they can use a comment - either a YAML inline comment or a relationship comment. The former if its redundant to information already stored in the model; the latter if it would provide clarity via an app.
-        - id: identify-language-of-parts
           text: The human language of each phrase is programmatically identified.
-          text_kind: paraphrase
 
   wcag2ict_3_1_2:
     identifier: "3.1.2"
@@ -53,15 +34,15 @@ fragments:
         - technology: non_web_document
         - technology: open_non_web_software
       expectations:
-        - id: identify-language-of-parts
-          #TODO How to structure relationships deterministically? This is currently just a prose description of a relationship.
-          #TODO Both the text and the text_kind read like a comment on the expectation. This is good, but it should be a 'comment' or 'analysis' property of the expectation, not just the 'text' of the expectation.
-          #TODO here and elsewhere, comments should identify whether they are 'pro' or 'con' for the thing commented on.
-          text: >-
-            The expectation is the same as WCAG 2.2 SC 3.1.2, with a minor
-            substitution of non-web terminology and with added notes.
-          # TODO change this to provenance of the comment. Need to think about the available values. "Analysis" is too vague. It should cite the source, with the plain meaning of the fragment itself the most common one. (Since it's very common, should we state it, or is it assumed without stating it?) The citation becomes interesting when the it points somewhere else in the same source document or a different one.
-          text_kind: contributor-analysis
+          text: >- #human
+            [WCAG 2.2 SC 3.1.2](wcag22_3_1_2) → expectations
+          # TODO Should rationale arguments be categorized with a programmatic distinction, like "ASKM human analysis"? Deferring this question until we have a need for it in an app.
+          rationale:
+            arguments_for:
+              - >- #human
+                Rules as written. There is word substitution for non-web terminology. Differences in the Notes do not change the intent.
+
+  # TODO Should rationale arguments be categorized with a programmatic distinction, like "ASKM human analysis"? Deferring this question until we have a need for it in an app.
 
   # TODO is there a way we can generalize to all 9.x clauses, to avoid the high amount of repetition this would otherwise entail?
     # This implies that the notion of "all 9.x clauses" needs to be semantically available.
@@ -74,9 +55,12 @@ fragments:
       applicability_conditions:
         - technology: web
       expectations:
-        - id: identify-language-of-parts
-          text: Same as the corresponding V4.1.0 clause, with minor editorial differences.
-          text_kind: contributor-analysis
+          text: >- #human
+            [EN 301 549 v4.1.0 clause 9.3.1.2](en301549v410_9_3_1_2) → expectations
+          rationale:
+            arguments_for:
+              - >- #human
+                 Rules as written. Same with minor editorial differences.
 
   # TODO is there a way we can generalize to all 10.x clauses as the default, summarizing that some are IBR and some use word substitution? Only ones with substantive edits should get their own fragment analysis.
   en301549v321_10_3_1_2:
@@ -88,15 +72,18 @@ fragments:
       applicability_conditions:
         - technology: non_web_document
       expectations:
-        - id: identify-language-of-parts
-          text: Same as the corresponding V4.1.0 clause, with minor editorial differences.
-          text_kind: contributor-analysis
+          text: >- #human
+            [EN 301 549 v4.1.0 clause 10.3.1.2](en301549v410_10_3_1_2) → expectations
+          rationale:
+            arguments_for:
+              - >- #human
+                 Rules as written. Same with minor editorial differences.
 
   # TODO like v3
-  en301549v411_9_3_1_2:
+  en301549v410_9_3_1_2:
     identifier: "9.3.1.2"
     name: Language of parts
-    source_document: en301549v411
+    source_document: en301549v410
     fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=67
@@ -104,15 +91,19 @@ fragments:
       applicability_conditions:
         - technology: web
       expectations:
-        - id: identify-language-of-parts
-          text: Includes WCAG 2.2 SC 3.1.2 by reference.
-          text_kind: contributor-analysis
+          text: Incorporates WCAG 2.2 SC 3.1.2 by reference.
+          text: >- #human
+            [WCAG 2.2 SC 3.1.2](wcag22_3_1_2) → expectations
+          rationale:
+            arguments_for:
+              - >- #human
+                IBR
 
   # TODO like v3
-  en301549v411_10_3_1_2:
+  en301549v410_10_3_1_2:
     identifier: "10.3.1.2"
     name: Language of parts
-    source_document: en301549v411
+    source_document: en301549v410
     fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=82
@@ -120,9 +111,8 @@ fragments:
       applicability_conditions:
         - technology: non_web_document
       expectations:
-        - id: identify-language-of-parts
-          text: The human language of each phrase is programmatically identified.
-          text_kind: paraphrase
+          text: >- #human
+            The human language of each phrase is programmatically identified.
 
   en301549v321_12_1_2:
     identifier: "12.1.2"
@@ -137,30 +127,30 @@ fragments:
         # TODO is there a namespace within which these ids are unique?
         - id: documentation-in-any-format
           applicability_conditions:
-            - text: Product documentation is provided with the ICT in any format.
+            - text: >- #human
+                Product documentation is provided in any format with the ICT, including non-digital.
           expectations:
-            - text: >-
-                The product documentation is made available in a web format or
-                non-web document format.
-              text_kind: paraphrase
+            - text: >- #human
+                The product documentation is made available in web format or a non-web document format.
         - id: documentation-in-web-format
-          applicability_conditions:
-            #TODO state in ASKM documentation that a list of applicability conditions is "and". This is fairly intuitive because the word "conditions" implies 'and', but should be made explicit in the ASKM documentation. (All the more so if I were to change "applicability_conditions" to "when".)
+          #TODO state in ASKM documentation that a list of applicability conditions is "and". This is fairly intuitive because the word "conditions" implies 'and', but should be made explicit.
           applicability_conditions:
             - technology: web
-            - text: Product documentation in web format is provided with the ICT.
+            - text: >- #human
+                Product documentation in web format is provided with the ICT.
           expectations:
-            - text: The product documentation meets clause 9.
-              text_kind: contributor-analysis
+            #TODO move the equivalence to a relationship
+            - text: >- #human
+                The product documentation meets clause 9 (equivalent to WCAG 2.1).
         - id: documentation-in-non-web-format
           applicability_conditions:
             - technology: non_web_document
-            - text: >-
-                Product documentation in a non-web document format is provided
-                with the ICT.
+            - text: >- #human
+                Product documentation in a non-web document format is provided with the ICT.
           expectations:
-            - text: The product documentation meets clause 10.
-              text_kind: contributor-analysis
+            #TODO move the overlap to a relationship
+            - text: >- #human
+                The product documentation meets clause 10 (overlaps with WCAG 2.1).
 
   en301549v321_12_2_4:
     identifier: "12.2.4"
@@ -173,34 +163,34 @@ fragments:
       cases:
         - id: support-documentation-in-any-format
           applicability_conditions:
-            - text: Documentation is provided in any format by support services.
+            - text: >- #human
+                Documentation is provided in any format by support services, including non-digital.
           expectations:
-            - text: >-
-                The documentation is made available in a web format or non-web
-                document format.
-              text_kind: paraphrase
+            - text: >- #human
+                The documentation is made available in web format or a non-web document format.
         - id: support-documentation-in-web-format
           applicability_conditions:
             - technology: web
-            # TODO Is "in web format" in the text redundant to 'technology: web' ? Here and elsewhere
-            - text: Documentation in web format is provided by support services.
+            - text: >- #human
+                Documentation in web format is provided by support services.
           expectations:
-            - text: The documentation meets clause 9.
-              text_kind: contributor-analysis
+            #TODO move the equivalence to a relationship
+            - text: >- #human
+                The documentation meets clause 9 (equivalent to WCAG 2.1).
         - id: support-documentation-in-non-web-format
           applicability_conditions:
             - technology: non_web_document
-            - text: >-
-                Documentation in a non-web document format is provided by
-                support services.
+            - text: >- #human
+                Documentation in a non-web document format is provided by support services.
           expectations:
-            - text: The documentation meets clause 10.
-              text_kind: contributor-analysis
+            #TODO move the overlap to a relationship
+            - text: >- #human
+                The documentation meets clause 10 (overlaps with WCAG 2.1).
 
-  en301549v411_12_1:
+  en301549v410_12_1:
     identifier: "12.1"
     name: Accessibility information about products
-    source_document: en301549v411
+    source_document: en301549v410
     fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=106
@@ -209,29 +199,32 @@ fragments:
         - id: product-information-in-web-content
           applicability_conditions:
             - technology: web
-            - text: Web content provides information about a product.
+            - text: >- #human
+                Web content provides information about a product.
           expectations:
-            - text: The information meets clause 9.
-              text_kind: contributor-analysis
+            - text: >- #human
+                This information in web content meets clause 9 (overlaps WCAG 2.2).
         - id: product-information-in-non-web-document
           applicability_conditions:
             - technology: non_web_document
-            - text: A non-web document provides information about a product.
+            - text: >- #human
+                A non-web document provides information about a product.
           expectations:
-            - text: The information meets clause 10.
-              text_kind: contributor-analysis
+            - text: >- #human
+                This information in a non-web document meets clause 10 (overlaps WCAG 2.2).
         - id: product-information-in-non-web-software
           applicability_conditions:
-            - technology: open_non_web_software
-            - text: Non-web software provides information about a product.
+            - technology: open_non_web_software #TODO rationale: why only open?
+            - text: >- #human
+                Non-web software provides information about a product.
           expectations:
-            - text: The information meets clause 11.
-              text_kind: contributor-analysis
+            - text: >- #human
+                This information in non-web software meets clause 11 (overlaps WCAG 2.2).
 
-  en301549v411_12_2:
+  en301549v410_12_2:
     identifier: "12.2"
     name: Accessibility information about services
-    source_document: en301549v411
+    source_document: en301549v410
     fragment_class: clause
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=107
@@ -240,24 +233,27 @@ fragments:
         - id: service-information-in-web-content
           applicability_conditions:
             - technology: web
-            - text: Web content provides information about a service.
+            - text: >- #human
+                Web content provides information about a service.
           expectations:
-            - text: The information meets clause 9.
-              text_kind: contributor-analysis
+            - text: >- #human
+                This information in web content meets clause 9 (overlaps WCAG 2.2).
         - id: service-information-in-non-web-document
           applicability_conditions:
             - technology: non_web_document
-            - text: A non-web document provides information about a service.
+            - text: >- #human
+                A non-web document provides information about a service.
           expectations:
-            - text: The information meets clause 10.
-              text_kind: contributor-analysis
+            - text: >- #human
+                This information in a non-web document meets clause 10 (overlaps WCAG 2.2).
         - id: service-information-in-non-web-software
           applicability_conditions:
-            - technology: open_non_web_software
-            - text: Non-web software provides information about a service.
+            - technology: open_non_web_software #TODO rationale: why only open?
+            - text: >- #human
+                Non-web software provides information about a service.
           expectations:
-            - text: The information meets clause 11.
-              text_kind: contributor-analysis
+            - text: >- #human
+                This information in non-web software meets clause 11 (overlaps WCAG 2.2).
 
   en301549v321_11_8_2:
     identifier: "11.8.2"
@@ -268,102 +264,113 @@ fragments:
       cases:
         - id: creates-web-content
           applicability_conditions:
-            - text: A content creation tool creates web content.
+            - text: >- #human
+                A content creation tool (defined in [clause 3.1 *Terms* 'authoring tool'](en301549v321_3_1_authoring_tool)) creates web content.
           expectations:
-            - text: >-
-                The tool enables and guides users to create content meeting
-                clause 9, to the extent described in clause 11.8.1.
-              text_kind: contributor-analysis
+            - text: >- #human
+                The content creation tool enables its users to create web content that meets clause 9 (equivalent to WCAG 2.1), to the extent described in [clause 11.8.1](en301549v321_11_8_1).
+            - text: >- #human
+                The content creation tool guides its users to create web content that meets clause 9 (overlaps WCAG 2.1), to the extent described in [clause 11.8.1](en301549v321_11_8_1).
         - id: creates-non-web-documents
           applicability_conditions:
-            - text: A content creation tool creates non-web document content.
+            - text: >- #human
+                A content creation tool (defined in [clause 3.1 *Terms* 'authoring tool'](en301549v321_3_1_authoring_tool)) creates non-web document content.
           expectations:
-            - text: >-
-                The tool enables and guides users to create content meeting
-                clause 10, to the extent described in clause 11.8.1.
-              text_kind: contributor-analysis
+            - text: >- #human
+                The content creation tool enables its users to create non-web document content that meets clause 10 (overlaps WCAG 2.1), to the extent described in [clause 11.8.1](en301549v321_11_8_1).
+            - text: >- #human
+                The content creation tool guides its users to create non-web document content that meets clause 10 (overlaps WCAG 2.1), to the extent described in [clause 11.8.1](en301549v321_11_8_1).
 
-  en301549v411_5_10_2:
+  en301549v410_5_10_2:
     identifier: "5.10.2"
     name: Accessible content creation
-    source_document: en301549v411
+    source_document: en301549v410
     fragment_class: clause
     guideline:
       cases:
         - id: creates-web-content
           applicability_conditions:
-            - text: An authoring tool creates web content.
+            - text: >- #human
+                A content creation tool (defined in [clause 3.1 *Terms* 'authoring tool'](en301549v410_3_1_authoring_tool)) creates web content.
           expectations:
-            - text: >-
-                The tool enables and guides users to create content meeting
-                clause 9, to the extent described in clause 5.10.1.
-              text_kind: contributor-analysis
+            - text: >- #human
+                The content creation tool enables its users to create web content that meets clause 9 (overlaps WCAG 2.2), to the extent described in [clause 5.10.1](en301549v410_5_10_1).
+            - text: >- #human
+                The content creation tool guides its users to create web content that meets clause 9 (overlaps WCAG 2.2), to the extent described in [clause 5.10.1](en301549v410_5_10_1).
         - id: creates-non-web-documents
           applicability_conditions:
-            - text: An authoring tool creates non-web document content.
+            - text: >- #human
+                A content creation tool (defined in [clause 3.1 *Terms* 'authoring tool'](en301549v410_3_1_authoring_tool)) creates non-web document content.
           expectations:
-            - text: >-
-                The tool enables and guides users to create content meeting
-                clause 10, to the extent described in clause 5.10.1.
-              text_kind: contributor-analysis
-        - id: creates-non-web-software
+            - text: >- #human
+                The content creation tool enables its users to create non-web document content that meets clause 10 (overlaps WCAG 2.2), to the extent described in [clause 5.10.1](en301549v410_5_10_1).
+            - text: >- #human
+                The content creation tool guides its users to create non-web document content that meets clause 10 (overlaps WCAG 2.2), to the extent described in [clause 5.10.1](en301549v410_5_10_1).
+        - id: creates-non-web-software-content
           applicability_conditions:
-            - text: An authoring tool creates non-web software content.
+            - text: >- #human
+                A content creation tool (defined in [clause 3.1 *Terms* 'authoring tool'](en301549v410_3_1_authoring_tool)) creates non-web software content.
           expectations:
-            - text: >-
-                The tool enables and guides users to create content meeting
-                clause 11, to the extent described in clause 5.10.1.
-              text_kind: contributor-analysis
+            - text: >- #human
+                The content creation tool enables its users to create non-web software content that meets clause 11 (overlaps WCAG 2.2), to the extent described in [clause 5.10.1](en301549v410_5_10_1).
+            - text: >- #human
+                The content creation tool guides its users to create non-web software content that meets clause 11 (overlaps WCAG 2.2), to the extent described in [clause 5.10.1](en301549v410_5_10_1).
 
   en301549v321_5_1_3_14:
     identifier: "5.1.3.14"
     name: Spoken languages
     source_document: en301549v321
     fragment_class: clause
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=26
     guideline:
       applicability_conditions:
         - technology: closed_functionality
-        - text: Speech output is provided as non-visual access to closed functionality.
+        - text: >- #human
+            "Speech output is provided as non-visual access to closed functionality."
       expectations:
         - id: match-spoken-and-visual-language
-          text: >-
-            The human language of speech output is the same as the human
-            language of the visual content, subject to exceptions in the source.
-          text_kind: paraphrase
+          text: >- #human
+            The human language of speech output is the same as the human language of the visual content. See the source clause for exceptions.
 
-  en301549v411_5_1_3_14:
+  en301549v410_5_1_3_14:
     identifier: "5.1.3.14"
     name: Spoken languages
-    source_document: en301549v411
+    source_document: en301549v410
     fragment_class: clause
     guideline:
       applicability_conditions:
         - technology: closed_functionality
-        - text: >-
-            ICT includes closed functionality, and speech output is provided as
-            non-visual access to that closed functionality.
+        - text: >- #human
+            "Speech output is provided as non-visual access to closed functionality."
       expectations:
-        - id: match-spoken-and-visual-language
-          text: >-
-            The human language of speech output is the same as the human
-            language of the visual content, subject to exceptions in the source.
-          text_kind: paraphrase
+          text: >- #human
+            The human language of speech output is the same as the human language of the visual content. See the source clause for exceptions.
 
-  wcag2ict_A_3_26:
-    identifier: A_3.26
+  wcag2ict_A_3_3_1_2:
+    identifier: "A_3_3.1.2"
     name: 3.1.2 Language of Parts
     source_document: wcag2ict
     fragment_class: fragment
+    uri: >-
+      https://www.w3.org/TR/wcag2ict/#success-criteria-problematic-for-closed-functionality
+    retrieved: 2026-08-02
+    fragment_text: >- #human verbatim
+      3.1.2 Language of Parts — Depends upon language information in a programmatically determinable form intended to drive correct pronunciation. Where another mechanism achieves correct pronunciation for ICT with closed functionality, such as self-voicing, the intent of this success criterion would be met.
     guideline:
       applicability_conditions:
         - technology: closed_functionality
-        - text: >-
-            Consider criterion-by-criterion applicability and alternate
-            accessibility provisions instead of assuming WCAG applies.
-          text_kind: contributor-analysis
       expectations:
-        - text: Pronunciation is correct.
-          text_kind: paraphrase
+        - text: >- #human
+            Built-in speech is available for nonvisual access. Pronunciation is correct.
+          rationale:
+            arguments_for:
+              - text: >- #human
+                  This SC is problematic because it depends on assistive technology. A built-in equivalent would help meet the intent.[(NOTE 1)](note1),[(WCAG2ICT NOTE 1)](wcag2ict|note1)
+    citations:
+      - id: note1
+        text: >- #human
+          Fragment as written.
 
   en301549v321_11_3_1_2:
     identifier: "11.3.1.2"
@@ -371,21 +378,32 @@ fragments:
     source_document: en301549v321
     fragment_class: clause
     non_expectation:
-      text: >-
-        The note says that a language-of-parts requirement would be impossible
-        for software.
-      text_kind: paraphrase
+      text: >- #human
+        Void because "language of parts" would be impossible for software.
 
-  en301549v411_11_3_1_2:
+  en301549v410_11_3_1_2:
     identifier: "11.3.1.2"
     name: Language of Parts (Void)
-    source_document: en301549v411
+    source_document: en301549v410
     fragment_class: clause
     non_expectation:
-      text: >-
-        The note says that a language-of-parts requirement would be impossible
-        for software.
-      text_kind: paraphrase
+      text: >- #human
+        Void because "language of parts" would be impossible for software.
+
+# These citations draw from multiple sources.
+citations:
+
+  "wcag2ict|note1":
+    - title: >- #human
+        What to do when a WCAG success criterion assumes the presence of assistive technology
+    - text: >- #human
+        asdf
+    - text: >- #human
+        "Some [WCAG success] criteria discuss [making] content compatible with assistive technologies. Where ICT with closed functionality doesn’t support use of assistive technology or the platform does not have an accessibility API, providing equivalent information and operation through another mechanism, such as functions built into the software that behave like assistive technology, would help meet the intent of these success criteria." [WCAG2ICT Annex A: Success Criteria Problematic for Closed Functionality](wcag2ict_a).
+      retrieved: 2026-08-02
+    - text: >- #human
+        "Where the wide range of assistive technologies or user agents are not available... something else needs to be provided or be required to facilitate accessibility as intended by WCAG 2." [WCAG2ICT Comments on Closed Functionality](wcag2ict_0_5).
+      retrieved: 2026-08-02
 
 relationships:
   - id: en301549v321-documentation-is-accessible
@@ -419,7 +437,7 @@ relationships:
             - >- #human
               Practical experience with real-world ICT.
       expectations:
-        relationship: same
+        relationship: equivalent
         rationale:
           arguments_for:
             - >- #human
@@ -428,53 +446,62 @@ relationships:
   - id: en301549-v321-v410-language-of-parts-speech-output
     subjects:
       - en301549v321_5_1_3_14
-      - en301549v411_5_1_3_14
+      - en301549v410_5_1_3_14
     aspects:
       applicability:
-        relationship: same
+        relationship: equivalent
         similarities:
           - >- #human
-            The [phrase in v4](en301549v411_5_1_3_14) is more precise but conveys the same intent as in [v3.2.1](en301549v321_5_1_3_14).
+            The [phrase in v4](en301549v410_5_1_3_14) is more precise but conveys the same intent as in [v3.2.1](en301549v321_5_1_3_14).
       expectations:
-        relationship: same
+        relationship: equivalent
         similarities:
           - >- #human
             The words are identical.
 
-  #TODO These are less similar than some others marked similar. Is that an issue?
   #TODO Better would be showing similarities between the programmatic group and the pronunciation group of fragments. See if I can implement this in the fragments themselves.
   #TODO check YAML syntax for the similarities.
   - id: programmatic-language-vs-spoken-language
-    type: similar
     subjects:
       - wcag22_3_1_2
-      - en301549v411_5_1_3_14
+      - en301549v410_5_1_3_14
     aspects:
       applicability:
         relationship: see_fragments
       expectations:
-        relationship: similar
+        relationship: custom
         similarities:
           - text: >- #human
-              According to [Understanding SC 3.1.2](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html), part of the intent is "Screen readers can use the pronunciation rules of the language of the text." (Retrieved 2026-07-12)Understanding WCAG 2.2 SC 3.1.2 identifies correct screen-reader pronunciation as part of the criterion's intent.
+              According to [Understanding SC 3.1.2](note1), part of the intent is "Screen readers can use the pronunciation rules of the language of the text."
             citations:
               - note1
                 uri: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html
                 retrieved: 2026-07-12
-          - >- #human
-            According to [WCAG2ICT "Problematic for closed"](wcag2ict_A_3_26), the intent of WCAG 3.1.2 is correct pronunciation.
+          - text: >- #human
+              According to [WCAG2ICT "Problematic for closed"](wcag2ict_A_3_26), the intent of WCAG 3.1.2 is correct pronunciation.
         differences:
-          - 
+          - TODO
 
+  - id: en301549_v3_v4_accessible_content_creation
+    type: todo
+    subjects:
+      - en301549v321_11_8_2
+      - en301549v410_5_10_2
+    note: >- #human
+      WCAG 2.1 versus 2.2.
+      V3 clause 11.8.1 is equivalent to v4 clause 5.10.1 with minor editorial differences.
+      V3 does not address a content creation tool that creates non-web software content.
+  
   - id: open-content-vs-authoring-open-content
     type: todo
     subjects:
       - - wcag22_3_1_2
         - wcag2ict_3_1_2
       - - en301549v321_11_8_2
-        - en301549v411_5_10_2
+        - en301549v410_5_10_2
     note: >- #human
       I want to write a special kind of relationship between an authoring tool requirement evaluated on the authored content, and the same or similar requirement on content that's not authored content.
+      WCAG 2.1 versus 2.2.
 
 non_expectations:
   - source_document: bik_bitv_test_app

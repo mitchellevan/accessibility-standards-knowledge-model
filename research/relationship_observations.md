@@ -8,7 +8,7 @@ I might call them "accessibility sources" which can include standards, regulatio
 
 **Relationships** among standards, focusing on Section 508, EN 301 549, and WCAG. Examples:
 
-* Including WCAG by reference. Except for some ICT types for some criteria.
+* Incorporating WCAG by reference. Except for some ICT types for some criteria.
 * Clauses in two standards say the same thing.
 * Clauses in two standards are similar or overlapping.
 
@@ -22,6 +22,36 @@ Similarities and differences can be:
 
 * By definition or in practice
 * Based on normative or informative text
+
+(continued after learning from the Language of Parts example, and starting the YAML)
+
+Kinds of relationships:
+
+* Relationship: Equivalent
+  * Incorporation by reference (IBR)
+  * Same words
+  * Minor editorial differences
+  * Different terms refer to the same thing. (This should have a rationale.)
+* Relationship: Overlapping. A and B have something in common which is equivalent.
+  * In practice the thing in common is notable. (This judgment should have a rationale.)
+  * There is also something different — A has something not in B, and/or B has something not in A.
+  * Option: in practice a difference is only hypothetical. (If there is no rationale, it's a call to the community to find an example.)
+  * Option: in practice a difference is not only hypothetical. (This should have a rationale, such as a known example.)
+* Relationship: Custom. There is a compare-and-contrast between A and B that does not cleanly fit the other relationship types.
+* Relationship: Different. (TBD: will we use this?) Use this to call attention to pairings that might seem to have something in common but actually do not substantially overlap.
+* Relationship: Nonexistent. A does not contain an equivalent of B.
+  * Example: EN 301 549 does not have a language of parts requirement for open software.
+
+Challenges to investigate:
+
+* For a single fragment (e.g., clause or success criterion), some 'expectation' relationships will vary by ICT type.
+* Do we want to state relationships between fragments, between applicability conditions, between expectations, or between cases (of expectations)?
+* Where there are stated lower-level relationships (e.g., cases), do we want to automatically or manually summarize them as a higher-level relationship? Example: 1 out of 3 cases is equivalent, so the overall fragment is overlapping.
+
+References between expectations:
+
+*  Use the fragment token e.g. "wcag22_3_1_2" as the relationship key. When another fragment (e.g., wcag2ict_3_1_2) identifies its "expectations" as having a relationship with fragment "wcag22_3_1_2", it means that it is a relationship between the two fragments' respective expectations. The parallel numbering pattern also helps.
+* Other cases won't have a parallel numbering pattern. An app can easily expose the names of the document and fragment in the relationship target. If a contributor wants to make the relationship target more human-readable, they can use a comment - either a YAML inline comment or a relationship comment. The former if its redundant to information already stored in the model; the latter if it would provide clarity via an app.
 
 ## Applicability
 
@@ -109,18 +139,18 @@ b) a non-web format that conforms to clause 10.
   * 10.3.1.2 *Language of parts:* Same as v4 with only minor editorial differences.
   * [12.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=84) *Accessible documentation*
     * Applicability condition 1: Product documentation is provided in any format with the ICT, including non-digital.
-    * Expectation 1: The product documentation is made available in web format or non-web document format.
+    * Expectation 1: The product documentation is made available in web format or a non-web document format.
     * Applicability condition 2: Product documentation in web format is provided with the ICT.
-    * Expectation 2: The product documentation meets clause 9 (same as WCAG 2.1).
+    * Expectation 2: The product documentation meets clause 9 (equivalent to WCAG 2.1).
     * Applicability condition 3: Product documentation in a non-web document format is provided with the ICT.
-    * Expectation 3: The product documentation meets clause 9 (+- WCAG 2.1).
+    * Expectation 3: The product documentation meets clause 10 (overlaps with WCAG 2.1).
   * [12.2.4](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=85) *Accessible documentation*
     * Applicability condition 1: Documentation is provided in any format by support services, including non-digital.
-    * Expectation 1: The documentation is made available in web format or non-web document format.
+    * Expectation 1: The documentation is made available in web format or a non-web document format.
     * Applicability condition 2: Documentation in web format is provided by support services.
-    * Expectation 2: The documentation meets clause 9 (same as WCAG 2.1).
+    * Expectation 2: The documentation meets clause 9 (equivalent to WCAG 2.1).
     * Applicability condition 3: Documentation in a non-web document format is provided by support services.
-    * Expectation 3: The documentation meets clause 9 (+- WCAG 2.1).
+    * Expectation 3: The documentation meets clause 10 (overlaps with WCAG 2.1).
   * Relationship of v3 clauses 12.1.2 and 12.2.4 [done: rendered into YAML en301549v321-documentation-is-accessible]
     * Applicability is similar.
       * They differ mainly by how the documentation is provided. In practice these may overlap, e.g. online documentation could be linked from a web-based product and also provided by support services.
@@ -129,17 +159,17 @@ b) a non-web format that conforms to clause 10.
 * EN 301 549 v4:
   * [9.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=67) *Language of parts*
     * Applicability condition: web
-    * Expectation: includes WCAG SC 3.1.2 by reference.
+    * Expectation: incorporates WCAG SC 3.1.2 by reference.
   * [10.3.1.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=82) *Language of parts*
     * Applicability condition: non-web document
     * Expectation: The human language of each phrase is programmatically identified. (Paraphrased)
   * [12.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=106) *Accessibility information about products*
     * Applicability condition 1: Web content provides information about a product.
-    * Expectation 1: This information in web content meets clause 9 (+- WCAG 2.2).
+    * Expectation 1: This information in web content meets clause 9 (overlaps WCAG 2.2).
     * Applicability condition 2: A non-web document provides information about a product.
-    * Expectation 2: This information in a non-web document meets clause 10 (+- WCAG 2.2).
+    * Expectation 2: This information in a non-web document meets clause 10 (overlaps WCAG 2.2).
     * Applicability condition 3: Non-web software provides information about a product.
-    * Expectation 3: This information in non-web software meets clause 11 (+- WCAG 2.2).
+    * Expectation 3: This information in non-web software meets clause 11 (overlaps WCAG 2.2).
       * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
   * [12.2](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf#page=107) *Accessibility information about services*
     * Like 12.1: s/product/service/
@@ -193,15 +223,15 @@ b) a non-web format that conforms to clause 10.
   * 5.10.2 *Accessible content creation*
     * Case a
       * Applicability condition 1: A content creation tool (defined in clause 3.1 *Terms* 'authoring tool') that creates web content.
-      * Expectation 1a: The content creation tool enables its users to create web content that meets clause 9 (+- WCAG 2.2), to the extent described in clause 5.10.1.
+      * Expectation 1a: The content creation tool enables its users to create web content that meets clause 9 (overlaps WCAG 2.2), to the extent described in clause 5.10.1.
       * Expectation 1b: s/enables/guides/
     * Case b
       * Applicability condition 2: A content creation tool (defined in clause 3.1 *Terms* 'authoring tool') that creates non-web document content.
-      * Expectation 2a: The content creation tool enables its users to create non-web document content that meets clause 10 (+- WCAG 2.2), to the extent described in clause 5.10.1.
+      * Expectation 2a: The content creation tool enables its users to create non-web document content that meets clause 10 (overlaps WCAG 2.2), to the extent described in clause 5.10.1.
       * Expectation 2b: s/enables/guides/
     * Case c
       * Applicability condition 3: A content creation tool (defined in clause 3.1 *Terms* 'authoring tool') that creates non-web software content.
-      * Expectation 3a: The content creation tool enables its users to create non-web software content that meets clause 11 (+- WCAG 2.2), to the extent described in clause 5.10.1.
+      * Expectation 3a: The content creation tool enables its users to create non-web software content that meets clause 11 (overlaps WCAG 2.2), to the extent described in clause 5.10.1.
       * Expectation 3b: s/enables/guides/
       * Remember that clause 11 does not include a language-of-parts guideline for non-web software. See "Non-expectations".
   * 5.10.3 *Preservation of accessibility information in transformations*
@@ -236,14 +266,40 @@ b) a non-web format that conforms to clause 10.
   * Expectation: Same.
     * Rationale: The words are identical.
 * WCAG2ICT fragment A_3.26: "3.1.2 Language of Parts — Depends upon language information in a programmatically determinable form intended to drive correct pronunciation. Where another mechanism achieves correct pronunciation for ICT with closed functionality, such as self-voicing, the intent of this success criterion would be met."
-  * Applicability condition: Don't use WCAG; use other accessibility guidelines that apply to closed functionality.
+  * Applicability condition: (draft, not used quite like this in the model) Don't use WCAG; use other accessibility guidelines that apply to closed functionality.
     * Rationale: WCAG2ICT fragment A_3.0: "For non-web software on ICT with closed functionality, those who implement this document (WCAG2ICT) should consider the applicability of individual WCAG 2 success criteria on a criterion-by-criterion basis. Alternate accessibility provisions might be needed to cover the user needs addressed by the following success criteria"
   * Expectation: Pronunciation is correct. (Paraphrased.)
+  * See more below.
 * EAA
   * Source document URI: https://eur-lex.europa.eu/eli/dir/2019/882
   * EAA Annex I(I)(2)(a) "do so via more than one sensory channel; this shall include providing alternatives to vision, auditory, speech and tactile elements"
   * EAA Annex I(I)(2)(o)(i) Self-service terminals: "provide for text-to-speech technology"
   * Rationale: EN 301 549 v4 Table ZB.2 maps its clause 5.1.3.14 "Spoken languages" to the aforementioned EAA source fragments (provisions).
+
+#### More about WCAG2ICT problematic for closed
+
+Comments on Closed Functionality
+https://www.w3.org/TR/wcag2ict/#comments-on-closed-functionality
+WCAG2ICT identifier "_0_5"
+
+> As noted in the Introduction, WCAG 2 assumes the presence of a “user agent” such as a browser, media player, or assistive technology as a means to access web content. Many of the success criteria in WCAG 2 assume web content will be accessed by ICT where assistive technologies can be connected to it or installed on it. The assistive technologies then present the web content to people with disabilities in an accessible form.
+>
+> ICT with closed functionality does not allow the use of some assistive technologies for some or all of the ICT's functions. In many cases, such ICT also lacks a “user agent” or its equivalent. To the extent the ICT is closed, following the WCAG success criteria by themselves will not ensure that non-web software is accessible. Where the wide range of assistive technologies or user agents are not available, as they are for web content, to address the intent of these success criteria, something else needs to be provided or be required to facilitate accessibility as intended by WCAG 2. It is outside the WCAG2ICT Task Force Work Statement to say what additional measures are needed, but WCAG2ICT points out which success criteria depend on assistive technologies — and therefore which success criteria would be problematic in the context of ICT with closed functionality.
+>
+> ... WCAG2ICT does provide considerations for applying WCAG success criteria to non-web software on ICT with closed functionality. WCAG2ICT also indicates where and why success criteria might be problematic for non-web software due to the underlying assumptions built into the WCAG success criteria. See Appendix A: Success Criteria Problematic for Closed Functionality for a list of success criteria for which this is relevant.
+
+A. Success Criteria Problematic for Closed Functionality
+https://www.w3.org/TR/wcag2ict/#success-criteria-problematic-for-closed-functionality
+WCAG2ICT identifier "A"
+> ... Some criteria discuss making information available in text (which can be read by assistive technologies), making it “programmatically determinable” (rendered by a user agent and readable by assistive technologies), or doing something else to make content compatible with assistive technologies. Where ICT with closed functionality doesn’t support use of assistive technology or the platform does not have an accessibility API, providing equivalent information and operation through another mechanism, such as functions built into the software that behave like assistive technology, would help meet the intent of these success criteria.
+>
+> ... Alternate accessibility provisions might be needed to cover the user needs addressed by [these] success criteria
+
+A. again, but for other SCs
+
+> [Some] success criteria would apply to ICT with closed functionality either if they are partially closed or if they allow for the connection of some types of devices. As an example, Success Criterion 2.1.1 Keyboard would apply to ICT that is closed to screen readers, but have a physical keyboard, a connector for standard keyboards, or allow the installation of alternate keyboards. While these criteria, as written, are not always applicable to ICT with closed functionality, most of them can inform and aid development of built-in features needed to make ICT with closed functionality accessible.
+>
+> ... Alternate accessibility provisions might be needed to cover the user needs addressed by [these] success criteria
 
 ### Relationships
 

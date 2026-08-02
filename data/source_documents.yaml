@@ -13,6 +13,8 @@ source_documents:
       Technologies (WCAG2ICT)
     short_name: WCAG2ICT
     uri: https://www.w3.org/TR/wcag2ict/
+    comment: >-
+      In WCAG2ICT, each WCAG-numbered fragment includes both the WCAG 2 original and the WCAG2ICT interpretation. Thus each citation of a WCAG-numbered WCAG2ICT fragment should be understood to be a citation of the WCAG Success Criterion, as interpreted by WCAG2ICT.
 
   en301549v321:
     name: >-
@@ -22,7 +24,7 @@ source_documents:
     uri: >-
       https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
 
-  en301549v411:
+  en301549v410:
     name: >-
       EN 301 549 V4.1.0 (2026-06) Accessibility requirements for ICT products
       and services

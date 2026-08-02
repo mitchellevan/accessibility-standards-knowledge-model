@@ -35,7 +35,7 @@ EN 301 549 V4.1.0
 
 en301549v321
 
-en301549v411
+en301549v410
 
 Rationale for the identifiers:
 
@@ -75,7 +75,7 @@ Examples from version 4.1.0:
 | -               | Introduction                                                                  | h1           | -            | p                    | fragment | _0.4.4     | When the present document is used for most purposes...                        | example of citing a source fragment     |
 | 1               | Scope                                                                         | h1           | -            | p                    | fragment | 1_3        | The present document is not intended...                                       | applicability condition                 |
 | 3.1             | Terms                                                                         | h2           | -            | -                    | clause   | 3.1        | Terms                                                                         |                                         |
-| 3.1             | Terms                                                                         | h2           | -            | p                    | fragment | 3.1_0      | For the purposes of...                                                        | inclusion by reference: ETSI EG 201 013 |
+| 3.1             | Terms                                                                         | h2           | -            | p                    | fragment | 3.1_0      | For the purposes of...                                                        | IBR: ETSI EG 201 013 |
 | 3.1             | Terms                                                                         | h2           | access space | article              | term     | 3.1        | access space                                                                  | defined term                            |
 | 4               | Functional performance                                                        | h1           | -            | -                    | clause   | 4          | Functional performance                                                        |                                         |
 | 4.2.1           | Usage without vision                                                          | h3           | -            | -                    | clause   | 4.2.1      | Usage without vision                                                          | guideline                               |
