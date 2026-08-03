@@ -26,6 +26,10 @@ Accessibility specialists:
 
 * When you're already familiar with one source document, like WCAG, learn how it relates to other documents, like EN 301 549.
 
+Writers of accessibility standards and guidelines:
+
+* Discover precedents across existing accessibility standards and guides.
+
 All roles:
 
 * Some documents about accessibility are behind a paywall. ASKM can index and paraphrase such guidelines, helping people discover when getting the original source would be relevant to them.
