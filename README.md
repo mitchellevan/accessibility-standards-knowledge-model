@@ -24,7 +24,7 @@ Files and parts of files are marked up with `ai-` attributes indicating where AI
 
 <div style="display: flex; align-items: center; white-space: nowrap; gap: 0.5rem; padding: 8px;">
   <div style="font-family: IBM Plex Sans; font-weight: 400; font-size: 16px; line-height: 22px; letter-spacing: 0px;">
-    <a rel="noopener noreferrer" href="https://aiattribution.github.io/statements/AIA-Ph-Hin-R-?model=ChatGPT-v1.0" data-cy="recommended-attribution-statement-text" target="_blank" style="font-family: IBM Plex Sans; font-weight: 400; font-size: 16px; line-height: 22px; letter-spacing: 0px;">AIA Primarily human, Human-initiated, Reviewed, ChatGPT v1.0 </a>
+    <a rel="noopener noreferrer" href="https://aiattribution.github.io/statements/AIA-Ph-Hin-R-v1.0" data-cy="recommended-attribution-statement-text" target="_blank" style="font-family: IBM Plex Sans; font-weight: 400; font-size: 16px; line-height: 22px; letter-spacing: 0px;">AIA Primarily human, Human-initiated, Reviewed v1.0 </a>
   </div>
   <div style="display: flex; gap: 0.5rem;">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
