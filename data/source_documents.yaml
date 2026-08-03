@@ -13,7 +13,7 @@ source_documents:
       Technologies (WCAG2ICT)
     short_name: WCAG2ICT
     uri: https://www.w3.org/TR/wcag2ict/
-    comment: >-
+    comment: >- #human
       In WCAG2ICT, each WCAG-numbered fragment includes both the WCAG 2 original and the WCAG2ICT interpretation. Thus each citation of a WCAG-numbered WCAG2ICT fragment should be understood to be a citation of the WCAG Success Criterion, as interpreted by WCAG2ICT.
 
   en301549v321:
