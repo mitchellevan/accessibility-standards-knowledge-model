@@ -29,6 +29,23 @@ Move the backlog, the icebox, and some of the inline TODOs into GitHub issues.
 
 Cite W3C's permissive copyright notices.
 
+Add 'practitioner role' with an initially limited effort to populte it with content.
+* Include probably all of these examples, favoring those that take less time to populate:
+  * Map a couple of WCAG SCs to roles, straight from [WAI ARRM](https://www.w3.org/WAI/planning/arrm/tasks/).
+  * The ASKM contributor writes the role info, where there is currently no outside source. With rationale.
+  * The ASKM contributor writes the role info, conflicting with an outside source. With rationale.
+  * Role info is 'unclassified'.
+* What's the structure?
+  * Borrow all the concepts I can from [WAI ARRM](https://www.w3.org/WAI/planning/arrm/tasks/).
+  * Is 'practitioner role' a special property of a guideline, or could it be a new kind of relationship? Example: front-end developers are expected to develop accessible content. WCAG SC 3.1.2 Language of Parts has an instance relationship with the role expectation.
+* Motivation: The ASKM data should support faceted search with role as one of the fields. This serves one of the top-level value propositions of the project (README.md).
+* Don't over-promise the relationships between roles and guidelines. They should convey only that this practitioner role often needs to use a guideline. The intention is to make a search filter do something useful.
+
+Add 'digital feature' (name TBD)
+* Get from the 'Task' column of [WAI ARRM](https://www.w3.org/WAI/planning/arrm/tasks/).
+* Search for 'types of authoring tools' in [ATAG Overview](https://www.w3.org/WAI/standards-guidelines/atag/).
+* Initial assumption: this will be similar in structure to, but orthogonal to,'practitioner role'.
+
 Split language_of_parts YAML file into its source documents.
 
 Normative vs. informative
