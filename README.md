@@ -4,7 +4,7 @@
 
 </div>
 
-<div ai-disclosure="human-only"> <!-- The rest of this page is human-written. See "AI disclosures for individual files" below. >
+<div ai-disclosure="human-only"> <!-- The rest of this page is human-written. See "AI disclosures for individual files" below. -->
 
 Accessibility is not a checklist. It's what happens when people can use technology.
 
