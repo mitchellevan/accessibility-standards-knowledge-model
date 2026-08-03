@@ -10,6 +10,8 @@ Authoring Tool Accessibility Guidelines (ATAG)
 
 <span lang="de">[Barrierefreie Gestaltung von User Interface-Elementen — Überwachungsstelle des Bundes für Barrierefreiheit von Informationstechnik](https://handreichungen.bfit-bund.de/barrierefreie-uie/)</span>
 
+<span lang="de">[BIT inklusiv: Prüfverfahren](https://www.bit-inklusiv.de/testverfahren/)</span>
+
 BITV
 
 [BIK BITV-Test (App)](https://bitvtest.de/pruefverfahren/bitv-20-app)
@@ -22,9 +24,13 @@ BITV
 
 [European Accessibility Act](https://eur-lex.europa.eu/eli/dir/2019/882) (EAA)
 
+[Making Content Usable for People with Cognitive and Learning Disabilities](https://www.w3.org/TR/coga-usable/)
+
 Section 508 (US)
 
 User Agent Accessibility Guidelines (UAAG)
+
+WCAG2ICT
 
 [WCAG2ICT-Test (App) (BIK)](https://bitvtest.de/pruefverfahren/bitv-20-app)
 
@@ -33,5 +39,6 @@ User Agent Accessibility Guidelines (UAAG)
 ## Accessibility evaluation practices
 
 [EN/CLC/ETSI Guidelines for public procurement of ICT products and services in the EU; Accessibility award criteria and conformity assessment](https://www.etsi.org/deliver/etsi_tr/101500_101599/101551/02.01.01_60/tr_101551v020101p.pdf)
+[WCAG Evaluation Methodology (WCAG-EM) 2.0](https://www.w3.org/TR/wcag-em-2/)
 
 </div>
