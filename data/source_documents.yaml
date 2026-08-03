@@ -1,42 +1,7 @@
-# AI reorganized human-authored source-document information without changing its meaning.
+# AI reorganized human-authored source-document information without changing its meaning. Human reviewed.
 ai-disclosure: ai-assisted
 
 source_documents:
-  wcag22:
-    name: Web Content Accessibility Guidelines (WCAG) 2.2
-    short_name: WCAG 2.2
-    uri: https://www.w3.org/TR/WCAG22/
-
-  wcag2ict:
-    name: >-
-      Guidance on Applying WCAG 2 to Non-Web Information and Communications
-      Technologies (WCAG2ICT)
-    short_name: WCAG2ICT
-    uri: https://www.w3.org/TR/wcag2ict/
-    comment: >- #human
-      In WCAG2ICT, each WCAG-numbered fragment includes both the WCAG 2 original and the WCAG2ICT interpretation. Thus each citation of a WCAG-numbered WCAG2ICT fragment should be understood to be a citation of the WCAG Success Criterion, as interpreted by WCAG2ICT.
-
-  en301549v321:
-    name: >-
-      EN 301 549 V3.2.1 (2021-03) Accessibility requirements for ICT products
-      and services
-    short_name: EN 301 549 V3.2.1
-    uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
-
-  en301549v410:
-    name: >-
-      EN 301 549 V4.1.0 (2026-06) Accessibility requirements for ICT products
-      and services
-    short_name: EN 301 549 V4.1.0
-    uri: >-
-      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf
-
-  eaa:
-    name: European Accessibility Act
-    short_name: EAA
-    uri: https://eur-lex.europa.eu/eli/dir/2019/882
-
   bik_bitv_test_app:
     name: BIK BITV-Test (App)
     uri: https://bitvtest.de/pruefverfahren/bitv-20-app
@@ -48,3 +13,35 @@ source_documents:
   bik_wcag2ict_test_app:
     name: WCAG2ICT-Test (App) (BIK)
     uri: https://bitvtest.de/pruefverfahren/bitv-20-app
+
+  eaa:
+    short_name: EAA
+    name: European Accessibility Act
+    uri: https://eur-lex.europa.eu/eli/dir/2019/882
+
+  en301549v321:
+    short_name: EN 301 549 V3.2.1
+    name: >-
+      EN 301 549 V3.2.1 (2021-03) Accessibility requirements for ICT products and services
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
+
+  en301549v410:
+    short_name: EN 301 549 V4.1.0
+    name: >-
+      EN 301 549 V4.1.0 (2026-06) Accessibility requirements for ICT products and services
+    uri: >-
+      https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.00_30/en_301549v040100va.pdf
+
+  wcag22:
+    short_name: WCAG 2.2
+    name: Web Content Accessibility Guidelines (WCAG) 2.2
+    uri: https://www.w3.org/TR/WCAG22/
+
+  wcag2ict:
+    short_name: WCAG2ICT
+    name: >-
+      Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)
+    uri: https://www.w3.org/TR/wcag2ict/
+    comment: >- #human
+      In WCAG2ICT, each WCAG-numbered fragment includes both the WCAG 2 original and the WCAG2ICT interpretation. Thus each citation of a WCAG-numbered WCAG2ICT fragment should be understood to be a citation of the WCAG Success Criterion, as interpreted by WCAG2ICT.

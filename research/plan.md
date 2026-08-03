@@ -34,7 +34,7 @@ Write a playbook for adding a source document. Here are initial thoughts. I'll i
 * Start a file in "docs/sources" folder where I can gather notes.
 * Summarize why I'm using this document at all.
 * Check the copyright policy for the document, to see if copyright allows more than fair use.
-* Add an entry in source_documents.yaml.
+* Add an entry in source_documents.yaml, alphabetized by short-name or name.
 * If it's not already in archive.org, add it.
 * Record the archive.org link in source_documents.yaml.
 * Start a file in the "source_documents" folder.
