@@ -30,6 +30,16 @@ Normative vs. informative
 * Decide how these become normative vs. informative expectations.
 * Do documents differ in the weight carried by normative vs. informative? E.g., necessary for conformance (where conformance is the result), or necessary for compliance (where it's a legal or policy document), or maybe something else.
 
+Write a playbook for adding a source document. Here are initial thoughts. I'll iterate and refine the playbook with each new document I add.
+* Start a file in "docs/sources" folder where I can gather notes.
+* Summarize why I'm using this document at all.
+* Check the copyright policy for the document, to see if copyright allows more than fair use.
+* Add an entry in source_documents.yaml.
+* If it's not already in archive.org, add it.
+* Record the archive.org link in source_documents.yaml.
+* Start a file in the "source_documents" folder.
+* (Continue with fragments.)
+
 Establish all identifiers for each key source document.
 * So ASKM-internal references won't churn.
 * This can be done manually or with utility code (q.v.).
@@ -59,6 +69,8 @@ Publish a stable URL for objects in ASKM.
 Publish an API for reading the ASKM data.
 
 ## Ice box
+
+Ask publishers for permission to copy, where it would go beyond fair use and be of value to users of the model.
 
 Change from YAML to a different format for the system of record? Defer this indefinitely; only if YAML becomes too limiting.
 
