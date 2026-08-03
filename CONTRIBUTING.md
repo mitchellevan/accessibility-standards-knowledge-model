@@ -2,9 +2,15 @@
 
 # Contribution Guide for the Accessibility Standards Knowledge Model (ASKM)
 
-## How to use GitHub
+## Contributing code and content
 
-This repo works in a typical GithUb way, with the owner approving pull requests. (Details to come.)
+This repo works in a typical GitHub way, with the owner approving pull requests.
+
+Or feel free to report an issue.
+
+## Writing guide
+
+See docs/design_principles.md
 
 </div>
 <div ai-disclosure="ai-assisted" ai-assisted-percent="40">

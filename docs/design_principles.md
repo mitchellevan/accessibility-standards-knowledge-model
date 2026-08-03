@@ -4,11 +4,14 @@
 
 All knowledge in ASKM should be clearly attributed to its provenance.
 
-Most of the knowledge here should derive from outside sources.
+* Most of the knowledge here should cite outside sources.
+* Where an author of ASKM has added their own knowledge, that knowledge should also be attributed.
+* An author may use AI tools to help create ASKM content, provided that the resulting content discloses how the AI tool was used. Human review should be the final step in all cases.
 
-Where an author of ASKM has added their own knowledge, that knowledge should also be attributed.
+The subject matter of ASKM is accessibility evaluation.
 
-The subject matter of ASKM is accessibility evaluation. Remember: evaluations are only predictions of what real-world users will experience. True accessibility is the quality of user experiences, not the results of expert evaluations.
+* Quality depends on evaluation at every stage of design and development, not just testing at the end.
+* Evaluations are only predictions of what real-world users will experience. True accessibility is the quality of user experiences, not the results of expert evaluations.
 
 ## Identifiers of source fragments
 

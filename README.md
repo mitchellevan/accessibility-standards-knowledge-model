@@ -10,11 +10,25 @@ Accessibility is not a checklist. It's what happens when people can use technolo
 
 On the other hand, standards and regulations do look like lists. This knowledge model shows how those lists relate to each other.
 
+## Status of this project
+
+This project is in its early stages, gathering examples to drive development of a knowledge schema.
+
 ## Proposed benefits
 
-If you're familiar with one source document, like WCAG, learn how it relates to other documents, like EN 301 549.
+ASKM is a data source to help people get accessibility knowledge when it's most relevant to them. The ASKM data enables apps to support use cases like the following.
 
-When a document is behind a paywall, ASKM can paraphrase its guidelines and encourage people to use the source.
+Designers, developers, and content creators:
+
+* When you're working on a particular technology or a product function, you can find the relevant accessibility best practices, conformance requirements, and regulations.
+
+Accessibility specialists:
+
+* When you're already familiar with one source document, like WCAG, learn how it relates to other documents, like EN 301 549.
+
+All roles:
+
+* Some documents about accessibility are behind a paywall. ASKM can index and paraphrase such guidelines, helping people discover when getting the original source would be relevant to them.
 
 ## AI disclosures for individual files
 
