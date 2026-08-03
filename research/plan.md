@@ -25,6 +25,12 @@ This stage could be characterized as example-driven schema development.
 
 ## Backlog
 
+Move the backlog, the icebox, and some of the inline TODOs into GitHub issues.
+
+Cite W3C's permissive copyright notices.
+
+Split language_of_parts YAML file into its source documents.
+
 Normative vs. informative
 * Mark normative vs. informative fragments.
 * Decide how these become normative vs. informative expectations.
