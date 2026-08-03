@@ -44,6 +44,20 @@ Develop a utility to extract fragment stubs from a document.
 * Results of the extraction will include information determined by the source, with little or no per-fragment judgment necessary: identifier, name, URI. These elements will constitute the fragment stub in the model.
 * Reminder: respect copyright.
 
+Align with EARL. For conceptual and programmatic compatibility. https://www.w3.org/WAI/standards-guidelines/earl/
+* Classify ASKM objects as `earl:TestCriterion`, `earl:TestRequirement`, and `earl:TestCase`.
+* When summarizing a whole source documents, describe which kinds of `earl` objects it contains.
+* Refer to names and descriptions as `dct:title` and `dct:description`, or gloss those classes.
+* Don't overload terms that mean something different in EARL, such as `subject`.
+
+Publish a stable URL for objects in ASKM.
+* This would help others cite ASKM, including for example an EARL report.
+* TBD whether ASKM itself could be used as a test suite, in the EARL sense. It's not a primary goal of ASKM, but it could be a secondary result.
+* Step 1: write or generate IDs for objects.
+* Step 2: create a website generator for objects.
+
+Publish an API for reading the ASKM data.
+
 ## Ice box
 
 Change from YAML to a different format for the system of record? Defer this indefinitely; only if YAML becomes too limiting.

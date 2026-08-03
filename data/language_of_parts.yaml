@@ -1,7 +1,7 @@
 # AI generated structure; human-reviewed. AI copied values and text from human-only research; human-reviewed.
 ai-disclosure: ai-assisted
 
-#TODO make it clear what the scope of the language is
+#TODO make it clear what the scope of the language is. Enable language tagging at more levels in the model.
 language: en
 
 imports:
