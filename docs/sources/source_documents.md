@@ -43,8 +43,8 @@ WCAG2ICT
 
 ## Potentially relevant
 
-DIN 18040, Germany. Independent guidance about it, with link the standard: https://nullbarriere.de/din18040-1.htm
+DIN 18040, Germany, built environment. Independent guidance about it, with link the standard: https://nullbarriere.de/din18040-1.htm
 
-DIN EN 17210, Germany: https://nullbarriere.de/din17210.htm
+DIN EN 17210, Germany, built environment: https://nullbarriere.de/din17210.htm
 
 </div>
