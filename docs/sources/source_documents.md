@@ -61,6 +61,8 @@ Beyond EN 301 549...
 
 ## Potentially relevant
 
+[29 U.S.C. §794d–1. Reports on accessibility of electronic information to individuals with disabilities](https://www.section508.gov/manage/laws-and-policies/section-508-law/#794d-1)
+
 BFIT-Bund guides
 
 * Example of BFIT-Bund guide: <span lang="de">[Barrierefreie Gestaltung von User Interface-Elementen — Überwachungsstelle des Bundes für Barrierefreiheit von Informationstechnik](https://handreichungen.bfit-bund.de/barrierefreie-uie/)</span>
@@ -76,6 +78,8 @@ Original 508 Standards (2000): https://www.access-board.gov/ict/#original508
 
 Part 1195—standards for accessible medical diagnostic equipment
 https://www.ecfr.gov/current/title-36/chapter-XI/part-1195
+
+### Collections
 
 United States Access Board - Archive.org
 archive.org/details/ArchiveIt-Collection-3252
