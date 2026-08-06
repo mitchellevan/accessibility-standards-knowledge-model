@@ -41,4 +41,10 @@ WCAG2ICT
 [EN/CLC/ETSI Guidelines for public procurement of ICT products and services in the EU; Accessibility award criteria and conformity assessment](https://www.etsi.org/deliver/etsi_tr/101500_101599/101551/02.01.01_60/tr_101551v020101p.pdf)
 [WCAG Evaluation Methodology (WCAG-EM) 2.0](https://www.w3.org/TR/wcag-em-2/)
 
+## Potentially relevant
+
+DIN 18040, Germany. Independent guidance about it, with link the standard: https://nullbarriere.de/din18040-1.htm
+
+DIN EN 17210, Germany: https://nullbarriere.de/din17210.htm
+
 </div>
