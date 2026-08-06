@@ -63,8 +63,15 @@ Law or regulations (2x). Referenced by name.
 
 >  The guidelines for telecommunications equipment and customer premises equipment covered by Section 255 of the Communications Act as set forth in 255 Chapters 1 and 2 (36 CFR part 1194, Appendix B), and Chapters 3 through 7 (36 CFR part 1193, Appendix C).
 
+### E202.2 Legacy ICT
 
-###  E202.3 National Security Systems
+Standard. Referenced by name and identifier (Appendix D) in the same web page.
+
+> Any component or portion of existing ICT that complies with an earlier standard issued pursuant to Section 508 of the Rehabilitation Act of 1973, as amended (as republished in Appendix D), and that has not been altered on or after January 18, 2018, shall not be required to be modified to conform to the Revised 508 Standards.
+
+Original 508 Standards (2000), a.k.a. Appendix D: https://www.access-board.gov/ict/#original508
+
+### E202.3 National Security Systems
 
 https://www.access-board.gov/ict/#E202.3
 

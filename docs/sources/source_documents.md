@@ -70,4 +70,14 @@ DIN 18040, Germany, built environment. Independent guidance about it, with link 
 
 DIN EN 17210, Germany, built environment: https://nullbarriere.de/din17210.htm
 
+Original 508 Standards (2000): https://www.access-board.gov/ict/#original508
+
+* Referenced from Section 508, q.v.
+
+Part 1195—standards for accessible medical diagnostic equipment
+https://www.ecfr.gov/current/title-36/chapter-XI/part-1195
+
+United States Access Board - Archive.org
+archive.org/details/ArchiveIt-Collection-3252
+
 </div>
