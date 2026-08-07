@@ -1,4 +1,4 @@
-<div ai-disclosure="human-only">
+<div ai-disclosure="ai-assisted" ai-assisted-percent="5"> <!-- See inline comments for AI-assistance details. -->
 
 ## ICT accessibility guidelines and standards
 
@@ -66,6 +66,20 @@ BFIT-Bund guides
 * Example of BFIT-Bund guide: <span lang="de">[Barrierefreie Gestaltung von User Interface-Elementen — Überwachungsstelle des Bundes für Barrierefreiheit von Informationstechnik](https://handreichungen.bfit-bund.de/barrierefreie-uie/)</span>
 * All BFIT-Bund guides: https://handreichungen.bfit-bund.de/
 
+CVAA
+* Identifier: Pub. L. 111-260
+* Popular name: Twenty-First Century Communications and Video Accessibility Act of 2010
+* See the collection "United states laws".
+* What's useful: Not the Public Law (the Act), but the statutes that it updated, and the FCC regulations that flowed from the statutes.
+* Primary statutes: <!-- Verbatim from AI. Lightly human-reviewed for credibility, not fact-checked. -->
+  * 47 U.S.C. § 255 — Accessibility of telecommunications and interconnected VoIP.
+  * 47 U.S.C. §§ 617–618 — Accessibility of advanced communications services and equipment.
+  * 47 U.S.C. §§ 613, 303, 330, etc., if your scope includes captioning, video programming, or hearing-aid compatibility.
+  * 47 U.S.C. § 153 — Definitions (because many obligations depend on these terms).
+* Examples of resulting relevant FCC regulations: <!-- Verbatim from AI. Lightly human-reviewed for credibility, not fact-checked. -->
+  * 47 CFR Part 14 (ACS accessibility)
+  * 47 CFR Part 79 (video accessibility, captions, video description)
+
 DIN 18040, Germany, built environment. Independent guidance about it, with link the standard: https://nullbarriere.de/din18040-1.htm
 
 DIN EN 17210, Germany, built environment: https://nullbarriere.de/din17210.htm
@@ -85,5 +99,16 @@ FCC (US Federal Trade Commission)
 (ICT Testing Baseline Portfolio)[https://ictbaseline.access-board.gov/]
 
 (United States Access Board - Archive.org)[archive.org/details/ArchiveIt-Collection-3252]
+
+United States laws and regulations
+
+* Americans with Disabilities Act of 1990 (ADA)
+  * ADA Title II: 28 CFR Part 35 — Nondiscrimination on the Basis of Disability in State and Local Government Services
+  * ADA Title III: 28 CFR Part 36 — Nondiscrimination on the Basis of Disability by Public Accommodations and in Commercial Facilities
+* Communications Act of 1934
+  * See "CVAA" especially.
+* Rehabilitation Act of 1973
+  * Section 508
+  * Maybe Section 504
 
 </div>
