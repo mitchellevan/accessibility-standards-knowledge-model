@@ -15,7 +15,7 @@ https://www.access-board.gov/ict/#E101.1
 Citation:
 
 * Cited how: By name
-* Citation effect on the present document: TODO
+* Citation effect on the present document: Regulatory context
 
 Cited source document:
 
@@ -31,7 +31,7 @@ Cited source document:
 Citation:
 
 * Cited how: By name
-* Citation effect on the present document: TODO
+* Citation effect on the present document: Regulatory context
 
 Cited source document:
 
@@ -119,7 +119,7 @@ Cited source fragment:
 Citation:
 
 * Cited how: By name
-* Citation effect on the present document: TODO (something like implementing law)
+* Citation effect on the present document: Explain origin
 
 Cited source document:
 
@@ -147,13 +147,12 @@ https://www.access-board.gov/ict/#C103.4
 Citation:
 
 * Cited how: By name
-* Citation effect on the present document: Incorporate content
+* Citation effect on the present document: Explain origin
 
 Cited source document:
 
 * 36 CFR part 1194 (same as above)
 * Document category: Law or regulation
-* Relationship: TODO (something like implementing law)
 * Importance for SDLC roles: Low
 * Paywall: no
 
@@ -282,6 +281,14 @@ Cited source fragment:
 
 ### 412.3.1 Wireless Handsets
 
+https://www.access-board.gov/ict/#412.3.1
+
+> ICT in the form of wireless handsets shall conform to ANSI/IEEE C63.19-2011 (incorporated by reference, see 702.5.1).
+
+702.5.1 ANSI/IEEE C63.19-2011
+
+> American National Standard for Methods of Measurement of Compatibility between Wireless Communications Devices and Hearing Aids, May 27, 2011. ...
+
 Citation:
 
 * Cited how: By name, official IBR
@@ -293,9 +300,20 @@ Cited source document:
 * Document category: Standard
 * Importance for SDLC roles: medium (essential for some, but scope is clear and narrow)
 * Paywall: yes
+* TOC findable: no
+
+(Note: [47 CFR 20.19](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-20/section-20.19) cites three versions of this same ANSI standard.)
 
 ### 412.3.2 Wireline Handsets
 
+https://www.access-board.gov/ict/#412.3.2
+
+> ICT in the form of wireline handsets, including cordless handsets, shall conform to TIA-1083-B (incorporated by reference, see702.9.1).
+
+702.9.1 TIA-1083-B
+
+> Telecommunications—Communications Products—Handset Magnetic Measurement Procedures and Performance Requirements, October 2015. ...
+> 
 Citation:
 
 * Cited how: By name, official IBR
