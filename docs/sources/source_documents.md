@@ -61,8 +61,6 @@ Beyond EN 301 549...
 
 ## Potentially relevant
 
-[29 U.S.C. §794d–1. Reports on accessibility of electronic information to individuals with disabilities](https://www.section508.gov/manage/laws-and-policies/section-508-law/#794d-1)
-
 BFIT-Bund guides
 
 * Example of BFIT-Bund guide: <span lang="de">[Barrierefreie Gestaltung von User Interface-Elementen — Überwachungsstelle des Bundes für Barrierefreiheit von Informationstechnik](https://handreichungen.bfit-bund.de/barrierefreie-uie/)</span>
@@ -74,12 +72,15 @@ DIN EN 17210, Germany, built environment: https://nullbarriere.de/din17210.htm
 
 Original 508 Standards (2000): https://www.access-board.gov/ict/#original508
 
-* Referenced from Section 508, q.v.
+* Referenced from Revised Section 508, q.v.
+* [Comparison Table of WCAG 2.0 to Original 508 Standards](https://www.access-board.gov/ict/wcag2ict.html) — some are still relevant to Revised Section 508
 
 Part 1195—standards for accessible medical diagnostic equipment
 https://www.ecfr.gov/current/title-36/chapter-XI/part-1195
 
 ### Collections
+
+FCC (US Federal Trade Commission)
 
 (ICT Testing Baseline Portfolio)[https://ictbaseline.access-board.gov/]
 

@@ -32,6 +32,7 @@ Writers of accessibility standards and guidelines:
 
 All roles:
 
+* When a document cites information from another documents, the ASKM can integrate those sources into a time-saving single view.
 * Some documents about accessibility are behind a paywall. ASKM can index and paraphrase such guidelines, helping people discover when getting the original source would be relevant to them.
 
 ## AI disclosures for individual files
