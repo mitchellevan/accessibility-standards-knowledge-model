@@ -40,7 +40,7 @@ Potential limitations:
 
 * If any source has a fragment that's not numbered in the source document, followed by a fragment numbered 0 in the source document, then a different approach will be needed.
 
-## Names of source fragments
+## Titles of source fragments
 
 Many source documents are protected by copyright that restricts copying from the source. See the [Contribution Guide](../CONTRIBUTING.MD) on respecting copyright.
 
@@ -50,5 +50,7 @@ Many source documents are protected by copyright that restricts copying from the
 | When citing a fragment without its own heading: cite a parent heading, page number, sequential paragraph number, quoted text to the extent allowed by policy, or paraphrase. | Quote the start of the paragraph. This makes it simple for model contributors, and easier for users to follow the citation to the original. |
 
 Not all fragments need to be named in advance. "Reserved" fragments are not currently used in ASKM relationships or commentary, but help explain ASKM's identifier numbering scheme.
+
+Copying a verbatim heading is the default assumption, and does not require a rationale. Rearrangement or paraphrasing should be explained in a rationale.
 
 </div>

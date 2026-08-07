@@ -322,6 +322,11 @@ Citation:
 Cited source document:
 
 * Identifier: TIA-1083-B
+* Official portal
+  * Portal title: TIA Catalog
+  * Portal URL: https://store.accuristech.com/tia
+* Official URL: https://store.accuristech.com/standards/tia-ansi-tia-1083-b?product_id=2592691
+* Copyright: "All rights reserved"
 * Document category: Standard
 * Importance for SDLC roles: medium (essential for some, but scope is clear and narrow)
 * Paywall: yes
