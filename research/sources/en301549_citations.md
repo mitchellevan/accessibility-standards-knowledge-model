@@ -29,14 +29,111 @@ TODO find links and confirm paywalls, cont'd
 * Paywall: no
 
 [i.5] ETSI EG 201 013: "Human Factors (HF); Definitions, abbreviations and symbols".
+* Cited source document
+  * [ETSI EG 201 013 V1.1.1 (1997-04)](https://www.etsi.org/deliver/etsi_eg/201000_201099/201013/01.01.01_60/eg_201013v010101p.pdf)
+  * Paywall: no
+* Cited source fragments
+  * activation
+    * Further citations in the cited source document: ETS 300 738
+  * control (action)
+  * deactivation
+    * Further citations in the cited source document: ETS 300 738
+  * disability
+  * erasure
+  * fallback
+  * feedback
+    * Further citations in the cited source document: ITU-T Recommendation F.902
+  * hard of hearing
+  * hearing impairment
+  * impairment
+  * indication
+  * invocation
+    * Further citations in the cited source document: ETS 300 738
+  * pictogram
+  * prompts
+  * provision
+    * Further citations in the cited source document:
+      * subscriber
+        * Further citations in the cited source document: ETSI TCR-TR 008:1993
+          * Citation effect on the present document: Explain origin
+      * ETS 300 738
+  * registration (registered)
+    * Further citations in the cited source document: ETS 300 738
+  * scenario
+  * tone
+  * usability
+    * Further citations in the cited source document
+      * effectiveness
+      * efficiency
+      * satisfaction
+      * ETR 095
+      * ETR 116
+  * user
+    * Further citations in the cited source document: ITU-T Recommendation I.112
+      * Citation effect on the present document: Explain origin
+  * user requirements
+* Custom: Summary of further citations in the cited source document, rolling up to EN 301 549
+  * [1] ETS 300 738: "Human Factors (HF); Minimum Man-Machine Interface (MMI) to public network based supplementary services".
+  * [3] ITU-T Recommendation F.902: "Interactive services design guidelines".
+  * [11] ETR 095: "Human Factors (HF); Guide for usability evaluations of telecommunications systems and services".
+  * [12] ETR 116: "Human Factors (HF); Human factors guidelines for ISDN Terminal equipment design".
 
 [i.6] ETSI ES 202 975: "Human Factors (HF); Requirements for relay services".
+* Cited source document
+  * [ETSI ES 202 975 V3.1.1 (2026-05)](https://www.etsi.org/deliver/etsi_es/202900_202999/202975/03.01.01_60/es_202975v030101p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.1.1 Voice communication interoperability
+    * Applies to ICT type categories: Telephony
+  * 6.2.10 RTT interoperability
+    * Applies to ICT type categories: Telephony
+  * 13.1.1 Relay services requirements
+    * Applies to ICT type categories: Relay service
+  * 13.1.2.2 Use of the primary user destination address in relayed communications:
+    * Applies to ICT type categories: Relay service
+    * Cited source fragments: 6.3
+  * 13.1.2.3 Conveying of caller identifier in relayed communications for primary relay users
+    * Applies to ICT type categories: Relay service
+    * Cited source fragments: 6.3
+  * 13.1.2.6 Relay service support requested by the primary user for emergency communications
+    * Applies to ICT type categories: Relay service
+    * Cited source fragments: 6.3
 
 [i.7] ETSI ETS 300 767: "Human Factors (HF); Telephone Prepayment Cards; Tactile Identifier".
+* Cited source document
+  * [ETSI ETS 300 767 ed.1 (1997-07)](https://www.etsi.org/deliver/etsi_i_ets/300700_300799/300767/01_60/ets_300767e01p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document
+    * ISO 7810 (1995): "Identification cards - Physical characteristics"
+      * Paywall: yes - TODO library
+      * Aids understanding of 4, 6
+    * [ETSI ETR 165 ed.1 (1995-01)](https://www.etsi.org/deliver/etsi_etr/100_199/165/01_60/etr_165e01p.pdf) Human Factors (HF); Recommendation for a tactile identifier on machine readable cards for telecommunication terminals
+      * Paywall: no
+      * Aids understanding of 4
+* Citations
+  * 8.4.3 Keys, tickets and cards
+    * Applies to ICT type categories: Hardware
 
 [i.11] ETSI TS 126 114: "Universal Mobile Telecommunications System (UMTS); LTE; 5G; IP Multimedia Subsystem (IMS); Multimedia Telephony; Media handling and interaction (3GPP TS 26.114)".
+* Cited source document
+  * Identifier and URL: [ETSI TS 126 114 V19.3.0 (2026-04)](https://www.etsi.org/deliver/etsi_ts/126100_126199/126114/19.03.00_60/ts_126114v190300p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.1.1 Voice communication interoperability
+    * Applies to ICT type categories: Telephony
+  * 6.2.10 RTT interoperability
+    * Applies to ICT type categories: Telephony
 
 [i.12] ETSI TS 122 173: "Digital cellular telecommunications system (Phase 2+) (GSM); Universal Mobile Telecommunications System (UMTS); LTE; IP Multimedia Core Network Subsystem (IMS) Multimedia Telephony Service and supplementary services; Stage 1 (3GPP TS 22.173)".
+* Cited source document
+  * Identifier and URL: [ETSI TS 122 173 V19.0.0 (2025-10)](https://www.etsi.org/deliver/etsi_ts/122100_122199/122173/19.00.00_60/ts_122173v190000p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.2.10 RTT interoperability
+    * Applies to ICT type categories: Telephony
 
 [i.13] IETF RFC 4103 (2005): "RTP Payload for Text Conversation".
 
@@ -104,6 +201,13 @@ TODO find links and confirm paywalls, cont'd
 * Paywall: no
 
 [i.43] ETSI TR 126 982: "5G; Implementation guidelines for Multiparty RTT (3GPP TR 26.982)".
+* Cited source document
+  * Identifier and URL: [ETSI TR 126 982 V19.0.0 (2025-10)](https://www.etsi.org/deliver/etsi_tr/126900_126999/126982/19.00.00_60/tr_126982v190000p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.2.10 RTT interoperability
+    * Applies to ICT type categories: Telephony
 
 [i.44] GSMA PRD IR.92: "IMS Profile for Voice and SMS".
 
@@ -112,10 +216,33 @@ TODO find links and confirm paywalls, cont'd
 [i.46] GSMA NG.114: "IMS Profile for Voice, Video and Messaging over 5GS".
 
 [i.47] ETSI TS 103 478: "Emergency Communications (EMTEL); Pan-European Mobile Emergency Application".
+* Cited source document
+  * Identifier and URL: [ETSI TS 103 478 V1.3.1 (2025-07)](https://www.etsi.org/deliver/etsi_ts/103400_103499/103478/01.03.01_60/ts_103478v010301p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.1.1 Voice communication interoperability
+    * Applies to ICT type categories: Telephony
 
 [i.48] ETSI TS 103 479: "Emergency Communications (EMTEL); Core elements for network independent access to emergency services".
+* Cited source document
+  * Identifier and URL: [ETSI TS 103 479 V1.3.1 (2025-09)](https://www.etsi.org/deliver/etsi_ts/103400_103499/103479/01.03.01_60/ts_103479v010301p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.1.1 Voice communication interoperability
+    * Applies to ICT type categories: Telephony
+  * 6.2.10 RTT interoperability
+    * Applies to ICT type categories: Telephony
 
 [i.49] ETSI TS 103 871: "Emergency Communications (EMTEL); PEMEA Real-Time Text Extension".
+* Cited source document
+  * Identifier and URL: [ETSI TS 103 871 V1.2.1 (2024-08)](https://www.etsi.org/deliver/etsi_ts/103800_103899/103871/01.02.01_60/ts_103871v010201p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.2.10 RTT interoperability
+    * Applies to ICT type categories: Telephony
 
 [i.50] IETF RFC 3261: "SIP: Session Initiation Protocol", J. Rosenberg et al., 2005.
 
@@ -128,14 +255,32 @@ TODO find links and confirm paywalls, cont'd
 [i.54] ISO/IEC 17549-1:2022: "Information technology — User interface requirements and recommendations on menu navigation: Part 1: Framework".
 
 [i.55] ETSI TS 126 226: "Digital cellular telecommunications system (Phase 2+) (GSM); Universal Mobile Telecommunications System (UMTS); Cellular text telephone modem; General description (3GPP TS 26.226)".
+* Cited source document
+  * Identifier and URL: [ETSI TS 126 226 V19.0.0 (2025-10)](https://www.etsi.org/deliver/etsi_ts/126200_126299/126226/19.00.00_60/ts_126226v190000p.pdf)
+  * Paywall: no
+  * Further citations in the cited source document: yes
+* Citations
+  * 6.2.10 RTT interoperability
+    * Applies to ICT type categories: Telephony
+
 
 [i.56] ETSI EN 303 919: "Emergency Communications (EMTEL); Accessibility and Interoperability of Emergency Communications
+* Work Programme: https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?WKI_ID=67004
+* Paywall: no
+* Citations
+  * 13.1.3.4 Relay service support during emergency communications initiated by the PSAP
+    * Cited source fragments: 9 and 10
+    * Citation effect on the present document: Aid understanding
+    * Applies to ICT type categories: Relay service
 
 [i.57] IETF RFC 8831: "WebRTC Data Channels".
 
 [i.58] W3C® Recommendation (8 October 2024): "WebRTC: Real-Time Communication in Browsers".
 
 [i.59] ETSI TR 103 708: "Human Factors (HF); Real-Time Text (RTT) in Multiparty Conference Calling".
+* Cited source document
+  * Identifier and URL: [ETSI TR 103 708 V1.1.1 (2022-08)](https://www.etsi.org/deliver/etsi_tr/103700_103799/103708/01.01.01_60/tr_103708v010101p.pdf)
+  * Paywall: no
 
 [i.60] ISO/IEC 23859:2023: "Information technology — User interfaces — Requirements and recommendations on making written text easy to read and understand".
 
@@ -152,6 +297,9 @@ TODO find links and confirm paywalls, cont'd
 * Paywall: no
 
 [i.66] ETSI TR 104 060: "Human Factors (HF); Guidance on how to apply the EN 301 549 to digital television products".
+* Cited source document
+  * [ETSI TR 104 060 V1.2.1 (2026-06)](https://www.etsi.org/deliver/etsi_tr/104000_104099/104060/01.02.01_60/tr_104060v010201p.pdf)
+  * Paywall: no
 
 [i.69] ISO/TR 22411:2021: "Ergonomics data for use in the application of ISO/IEC Guide 71:2014".
 
@@ -171,6 +319,9 @@ TODO find links and confirm paywalls, cont'd
 [i.76] IETF RFC 6386 (2011): "VP8 Data Format and Decoding Guide".
 
 [i.77] ETSI ES 204 009: "Human Factors (HF); Requirements for interoperable total conversation services".
+* Cited source document
+  * [ES 204 009 V1.1.1 (2025-08)](https://www.etsi.org/deliver/etsi_es/204000_204099/204009/01.01.01_60/es_204009v010101p.pdf)
+  * Paywall: no
 
 [i.78] ADA Accessibility Standards: "[Americans with Disabilities Act - Accessibility Standards](https://www.access-board.gov/ada/)", 2010.
 * Paywall: no
@@ -179,6 +330,7 @@ TODO find links and confirm paywalls, cont'd
 
 [i.80] [ETSI ETS 300 381 (Edition 1) (December 1994)](https://www.etsi.org/deliver/etsi_i_ets/300300_300399/300381/01_60/ets_300381e01p.pdf): "Telephony for hearing impaired people; Inductive coupling of telephone earphones to hearing aids".
 * Paywall: no
+* Cited source fragment: Annex C
 
 [i.81] [Directive (EU) 2018/1972](https://eur-lex.europa.eu/eli/dir/2018/1972/oj/eng) of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code (Recast) (Text with EEA relevance).
 * Paywall: no
@@ -197,35 +349,27 @@ TODO find links and confirm paywalls, cont'd
 [i.87] IETF RFC 8825: "Overview: Real-Time Protocols for Browser-Based Applications", 2021.
 
 [i.88] ETSI TS 126 441: "Universal Mobile Telecommunications System (UMTS); LTE; 5G; Codec for Enhanced Voice Services (EVS); General overview (3GPP TS 26.441)".
+* Cited source document
+  * [ETSI TS 126 441 V19.0.0 (2025-10)](https://www.etsi.org/deliver/etsi_ts/126400_126499/126441/19.00.00_60/ts_126441v190000p.pdf)
+* Citations
+  * 6.1.1 Voice communication interoperability
+    * Importance for SDLC roles: TODO research needed. In clause 6.1.1, Note 1 lists current (as of 2026) specifications for several technologies.
+    * Applies to ICT type categories: Telephony
 
 [i.89] ETSI TS 103 945: "Emergency Communications (EMTEL); PEMEA Audio Video Extension"
-
-## MODEL CITATIONS FROM SECTION 508
-
-Inverted structure.
-
-TODO once I've use this model for some citations in EN 301 549, I'll delete this "model citations" section.
-
-### 29 U.S.C. § 794d
-
-Cited source document:
-
-* [29 U.S.C. § 794d](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section794d&num=0&edition=prelim)
-* Document category: Law or regulation
-* Paywall: no
-
-Citations:
-
-* [E101.1 Purpose](https://www.access-board.gov/ict/#E101.1)
-  * Citation effect on the present document: Regulatory context
-  * Importance for SDLC roles: Low
-
-### 47 U.S.C. § 255
-
-Cited source document:
-
-* [47 U.S.C. 255](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title47-section255&num=0&edition=prelim)
-* Document category: Law or regulation
-* Paywall: no
+* Cited source document:
+  * Identifier and URL: [TS 103 945 V1.1.1 (2023-11)](https://www.etsi.org/deliver/etsi_ts/103900_103999/103945/01.01.01_60/ts_103945v010101p.pdf)
+  * Title: Emergency Communications (EMTEL); PEMEA Audio Video Extension
+  * Official portal
+    * Portal title: TODO
+    * Portal URL: https://www.etsi.org/standards/
+  * Document category: Standard
+  * Paywall: no
+* Citations
+  * 6.1.1 Voice communication interoperability
+    * Cited how: By name
+    * Citation effect on the present document: TBD
+    * Importance for SDLC roles: TBD
+    * Applies to ICT type categories: Telephony
 
 </div>
