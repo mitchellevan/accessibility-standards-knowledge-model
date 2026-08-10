@@ -20,10 +20,61 @@ TODO find links and confirm paywalls, cont'd
 "2.2 Informative references":
 
 [i.1] ANSI/IEEE C63.19 (2019): "American National Standard Methods of Measurement of Compatibility between Wireless Communication Devices and Hearing Aids".
+* Cited source document
+  * Research status: Obtain: TODO. Found only the 2011 version on 2026-08-10 in ANSI IEEE reading room. Not found on 2026-08-10 in the IEEE reading room.
+  * Note: The 2019 version is a major revision, no longer using the "M/T" performance classifications. Rationale: https://docs.fcc.gov/public/attachments/FCC-21-28A1.pdf
+* Citations
+  * 8.2.2.2 Wireless communication devices
+    * Applies to ICT type categories: Telephony
 
 [i.2] ANSI/TIA-4965: "Telecommunications telephone terminal equipment receive volume control requirements for digital and analogue wireline handset terminals".
+* Cited source document
+  * Identifier: ANSI/TIA-1083-B
+  * Title: Telecommunications — Telephone Terminal Equipment — Receive Volume Control Requirements for Digital and Analog Wireline Handset Terminals
+  * Publication date: 2012-10
+  * Official portal (see in Section 508)
+  * Official URL: https://store.accuristech.com/standards/tia-ansi-tia-4965?product_id=3089139
+  * Copyright: "All rights reserved"
+  * Document category: Standard
+  * Paywall: yes
+  * Research status:
+    * Obtain: TODO
+    * Index all fragments: yes
+    * Index relevant fragments: TODO
+    * Index citations: yes
+  * Further citations
+    * ANSI/IEEE 269-2010
+      * Research status: Obtain: TODO. Not found 2026-08-10 in [IEEE reading room](https://ieeexplore.ieee.org/browse/standards/reading-room/page). Not found 2026-08-10 in [ANSI IEEE reading room](https://ibr.ansi.org/Standards/ieee.aspx).
+    * IEEE 1652-2008
+      * Research status: Obtain: TODO. Not found 2026-08-10 in IEEE reading room. Not found 2026-08-10 in ANSI IEEE reading room.
+    * ITU-T Recommendation G.711 (1988)
+    * ITU-T Recommendation P.57 (2011)
+    * ITU-T Recommendation P.58 (2011)
+* Citations
+  * 8.2.1.1 Speech volume gain
+    * Applies to ICT type categories: Telephony
+  * C.8.2.1.1 Speech volume gain
+    * Applies to ICT type categories: Telephony
 
 [i.3] ANSI/TIA-5050: "Telecommunications Communications Products Receive Volume Control Requirements for Wireless (Mobile) Devices".
+* Cited source document
+  * Identifier: TIA-5050
+  * Title: Telecommunications — Communications Products — Receive Volume Control Requirements for Wireless (Mobile) Devices
+  * Publication date: 2018-01
+  * Official portal (see in Section 508)
+  * Official URL: https://store.accuristech.com/standards/tia-ansi-tia-5050?product_id=2594201
+  * Copyright: "All rights reserved"
+  * Document category: Standard
+  * Paywall: yes
+  * Research status:
+    * Obtain: TODO
+    * Index relevant fragments: TODO
+    * Index citations: TODO
+* Citations
+  * 8.2.1.1 Speech volume gain
+    * Applies to ICT type categories: Telephony
+  * C.8.2.1.1 Speech volume gain
+    * Applies to ICT type categories: Telephony
 
 [i.4] [European Commission M 376 - EN](https://www.anec.eu/attachments/M376.pdf): "Standardisation Mandate to CEN, CENELEC and ETSI in support of European accessibility requirements for public procurement of products and services in the ICT domain".
 * Paywall: no
@@ -34,43 +85,43 @@ TODO find links and confirm paywalls, cont'd
   * Paywall: no
 * Cited source fragments
   * activation
-    * Further citations in the cited source document: ETS 300 738
+    * Further citations: ETS 300 738
   * control (action)
   * deactivation
-    * Further citations in the cited source document: ETS 300 738
+    * Further citations: ETS 300 738
   * disability
   * erasure
   * fallback
   * feedback
-    * Further citations in the cited source document: ITU-T Recommendation F.902
+    * Further citations: ITU-T Recommendation F.902
   * hard of hearing
   * hearing impairment
   * impairment
   * indication
   * invocation
-    * Further citations in the cited source document: ETS 300 738
+    * Further citations: ETS 300 738
   * pictogram
   * prompts
   * provision
-    * Further citations in the cited source document:
+    * Further citations:
       * subscriber
-        * Further citations in the cited source document: ETSI TCR-TR 008:1993
-          * Citation effect on the present document: Explain origin
+        * Further citations: ETSI TCR-TR 008:1993
+          * Citation effect: Explain origin
       * ETS 300 738
   * registration (registered)
-    * Further citations in the cited source document: ETS 300 738
+    * Further citations: ETS 300 738
   * scenario
   * tone
   * usability
-    * Further citations in the cited source document
+    * Further citations
       * effectiveness
       * efficiency
       * satisfaction
       * ETR 095
       * ETR 116
   * user
-    * Further citations in the cited source document: ITU-T Recommendation I.112
-      * Citation effect on the present document: Explain origin
+    * Further citations: ITU-T Recommendation I.112
+      * Citation effect: Explain origin
   * user requirements
 * Custom: Summary of further citations in the cited source document, rolling up to EN 301 549
   * [1] ETS 300 738: "Human Factors (HF); Minimum Man-Machine Interface (MMI) to public network based supplementary services".
@@ -82,7 +133,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * [ETSI ES 202 975 V3.1.1 (2026-05)](https://www.etsi.org/deliver/etsi_es/202900_202999/202975/03.01.01_60/es_202975v030101p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.1.1 Voice communication interoperability
     * Applies to ICT type categories: Telephony
@@ -104,13 +155,18 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * [ETSI ETS 300 767 ed.1 (1997-07)](https://www.etsi.org/deliver/etsi_i_ets/300700_300799/300767/01_60/ets_300767e01p.pdf)
   * Paywall: no
-  * Further citations in the cited source document
+  * Further citations
     * ISO 7810 (1995): "Identification cards - Physical characteristics"
-      * Paywall: yes - TODO library
-      * Aids understanding of 4, 6
+      * Paywall: yes
+      * Reading room: Not found. Not in [ANSI/ISO reading room](https://ibr.ansi.org/Standards/iso.aspx) as of 2026-08-10.
+      * Citation effect: Aid understanding of 4, 6
+      * Research status:
+        * Obtain: TODO TU library
+        * Index relevant fragments: TODO
+        * Index citations: TODO
     * [ETSI ETR 165 ed.1 (1995-01)](https://www.etsi.org/deliver/etsi_etr/100_199/165/01_60/etr_165e01p.pdf) Human Factors (HF); Recommendation for a tactile identifier on machine readable cards for telecommunication terminals
       * Paywall: no
-      * Aids understanding of 4
+      * Citation effect: Aid understanding of 4
 * Citations
   * 8.4.3 Keys, tickets and cards
     * Applies to ICT type categories: Hardware
@@ -119,7 +175,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * Identifier and URL: [ETSI TS 126 114 V19.3.0 (2026-04)](https://www.etsi.org/deliver/etsi_ts/126100_126199/126114/19.03.00_60/ts_126114v190300p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.1.1 Voice communication interoperability
     * Applies to ICT type categories: Telephony
@@ -130,7 +186,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * Identifier and URL: [ETSI TS 122 173 V19.0.0 (2025-10)](https://www.etsi.org/deliver/etsi_ts/122100_122199/122173/19.00.00_60/ts_122173v190000p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.2.10 RTT interoperability
     * Applies to ICT type categories: Telephony
@@ -138,6 +194,12 @@ TODO find links and confirm paywalls, cont'd
 [i.13] IETF RFC 4103 (2005): "RTP Payload for Text Conversation".
 
 [i.14] ISO/IEC 17007:2009: "Conformity assessment — Guidance for drafting normative documents suitable for use for conformity assessment".
+* Cited source document
+  * Paywall: yes
+  * Research status:
+    * Obtain: yes, retrieved 2026-08-06 from TU Berlin Nautos
+    * Index relevant fragments: TODO
+    * Index citations: TODO
 
 [i.15] ISO 9241-11:2018: "Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts".
 
@@ -156,6 +218,13 @@ TODO find links and confirm paywalls, cont'd
 [i.22] Recommendation ITU-T V.18 (2000): "Operational and interworking requirements for DCEs operating in the text telephone mode".
 
 [i.23] TIA-1083-B (2015): "Telecommunications Communications Product; Handset Magnetic Measurement Procedures and Performance Requirements".
+* Cited source document
+  * See in Section 508.
+* Citations
+  * 6.1.1 Voice communication interoperability
+    * Applies to ICT type categories: Telephony
+  * 8.2.2.1 Fixed-line devices and handsets
+    * Applies to ICT type categories: Telephony
 
 [i.25] W3C® Group Note (11 December 2025): "[Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict-22/)".
 * Paywall: no
@@ -204,7 +273,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * Identifier and URL: [ETSI TR 126 982 V19.0.0 (2025-10)](https://www.etsi.org/deliver/etsi_tr/126900_126999/126982/19.00.00_60/tr_126982v190000p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.2.10 RTT interoperability
     * Applies to ICT type categories: Telephony
@@ -219,7 +288,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * Identifier and URL: [ETSI TS 103 478 V1.3.1 (2025-07)](https://www.etsi.org/deliver/etsi_ts/103400_103499/103478/01.03.01_60/ts_103478v010301p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.1.1 Voice communication interoperability
     * Applies to ICT type categories: Telephony
@@ -228,7 +297,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * Identifier and URL: [ETSI TS 103 479 V1.3.1 (2025-09)](https://www.etsi.org/deliver/etsi_ts/103400_103499/103479/01.03.01_60/ts_103479v010301p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.1.1 Voice communication interoperability
     * Applies to ICT type categories: Telephony
@@ -239,7 +308,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * Identifier and URL: [ETSI TS 103 871 V1.2.1 (2024-08)](https://www.etsi.org/deliver/etsi_ts/103800_103899/103871/01.02.01_60/ts_103871v010201p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.2.10 RTT interoperability
     * Applies to ICT type categories: Telephony
@@ -258,7 +327,7 @@ TODO find links and confirm paywalls, cont'd
 * Cited source document
   * Identifier and URL: [ETSI TS 126 226 V19.0.0 (2025-10)](https://www.etsi.org/deliver/etsi_ts/126200_126299/126226/19.00.00_60/ts_126226v190000p.pdf)
   * Paywall: no
-  * Further citations in the cited source document: yes
+  * Further citations: yes
 * Citations
   * 6.2.10 RTT interoperability
     * Applies to ICT type categories: Telephony
@@ -270,7 +339,7 @@ TODO find links and confirm paywalls, cont'd
 * Citations
   * 13.1.3.4 Relay service support during emergency communications initiated by the PSAP
     * Cited source fragments: 9 and 10
-    * Citation effect on the present document: Aid understanding
+    * Citation effect: Aid understanding
     * Applies to ICT type categories: Relay service
 
 [i.57] IETF RFC 8831: "WebRTC Data Channels".
@@ -368,7 +437,7 @@ TODO find links and confirm paywalls, cont'd
 * Citations
   * 6.1.1 Voice communication interoperability
     * Cited how: By name
-    * Citation effect on the present document: TBD
+    * Citation effect: TBD
     * Importance for SDLC roles: TBD
     * Applies to ICT type categories: Telephony
 

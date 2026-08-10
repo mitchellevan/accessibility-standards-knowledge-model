@@ -293,14 +293,14 @@ Citation:
 
 * Cited how: By name, official IBR
 * Citation effect on the present document: Incorporate content
+* Applies to ICT type categories: Telephony
 
 Cited source document:
 
 * Identifier: ANSI/IEEE C63.19-2011
 * Document category: Standard
-* Importance for SDLC roles: medium (essential for some, but scope is clear and narrow)
 * Paywall: yes
-* TOC findable: no
+* Research status: Obtain: TODO. Found the 2011 version on 2026-08-10 in [ANSI IEEE reading room](https://ibr.ansi.org/Standards/ieee.aspx).
 
 (Note: [47 CFR 20.19](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-20/section-20.19) cites three versions of this same ANSI standard.)
 
@@ -313,11 +313,12 @@ https://www.access-board.gov/ict/#412.3.2
 702.9.1 TIA-1083-B
 
 > Telecommunications—Communications Products—Handset Magnetic Measurement Procedures and Performance Requirements, October 2015. ...
-> 
+
 Citation:
 
 * Cited how: By name, official IBR
 * Citation effect on the present document: Incorporate content
+* Applies to ICT type categories: Telephony
 
 Cited source document:
 
@@ -328,8 +329,12 @@ Cited source document:
 * Official URL: https://store.accuristech.com/standards/tia-ansi-tia-1083-b?product_id=2592691
 * Copyright: "All rights reserved"
 * Document category: Standard
-* Importance for SDLC roles: medium (essential for some, but scope is clear and narrow)
 * Paywall: yes
+* Research status:
+  * Obtain: TODO
+  * Index all fragments: yes
+  * Index relevant fragments: TODO
+  * Index citations: TODO
 
 ### 412.4 Digital Encoding of Speech
 
@@ -387,6 +392,7 @@ Cited source document:
 * Document category: Standard
 * Importance for SDLC roles: TBD
 * Paywall: yes, with free online option that appears solid
+* Reading room: Not found. Not in [ANSI/HFES reading room](https://ibr.ansi.org/Standards/hfes.aspx) as of 2026-08-10.
 
 Source fragments:
 
