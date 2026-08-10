@@ -59,6 +59,14 @@ Beyond EN 301 549...
 [EN/CLC/ETSI Guidelines for public procurement of ICT products and services in the EU; Accessibility award criteria and conformity assessment](https://www.etsi.org/deliver/etsi_tr/101500_101599/101551/02.01.01_60/tr_101551v020101p.pdf)
 [WCAG Evaluation Methodology (WCAG-EM) 2.0](https://www.w3.org/TR/wcag-em-2/)
 
+[NIST Special Publication 2000-01: ABC's of Conformity Assessment](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.2000-01.pdf)
+* NIST is under the U.S. Department of Commerce.
+* This document is not specific to accessibility.
+* Using ISO definitions, this document gives an overview of concepts such as:
+  * Performance standards and design standards
+  * Testing, inspection, and audit
+  * Attestation: supplier's declaration of conformity (SDOC); certification
+
 ## Potentially relevant
 
 BFIT-Bund guides
@@ -92,7 +100,7 @@ Original 508 Standards (2000): https://www.access-board.gov/ict/#original508
 Part 1195—standards for accessible medical diagnostic equipment
 https://www.ecfr.gov/current/title-36/chapter-XI/part-1195
 
-### Collections
+## Collections
 
 FCC (US Federal Trade Commission)
 
@@ -111,4 +119,7 @@ United States laws and regulations
   * Section 508
   * Maybe Section 504
 
+United States IBR
+* [IBR (NIST.gov)](https://www.nist.gov/standardsgov/standards-incorporated-reference)
+  * [NIST Standards Incorporated by Reference (SIBR) Database](https://sibr.nist.gov/) - "Voluntary consensus standards, government-unique standards, industry standards, and international standards referenced in the [CFR]."
 </div>
