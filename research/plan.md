@@ -52,6 +52,11 @@ Normative vs. informative
 * Mark normative vs. informative fragments.
 * Decide how these become normative vs. informative expectations.
 * Do documents differ in the weight carried by normative vs. informative? E.g., necessary for conformance (where conformance is the result), or necessary for compliance (where it's a legal or policy document), or maybe something else.
+* Informative function (of a relationship between informative content and normative content):
+  * Conformance example — shows something that would meet or not meet a normative expectation, ranging from negative to narrow pass/fail to best practice
+  * Explanation — Aids understanding of the scope or meaning of normative content.
+  * Background — Says why the normative text matters, or where it came from.
+  * Aside — A note that does not inform any normative expectations, but the point might matter to readers for other reasons.
 
 Write a playbook for adding a source document. Here are initial thoughts. I'll iterate and refine the playbook with each new document I add.
 * Start a file in "docs/sources" folder where I can gather notes.
