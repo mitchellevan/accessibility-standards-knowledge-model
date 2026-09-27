@@ -100,7 +100,15 @@ Original 508 Standards (2000): https://www.access-board.gov/ict/#original508
 Part 1195—standards for accessible medical diagnostic equipment
 https://www.ecfr.gov/current/title-36/chapter-XI/part-1195
 
-## Collections
+## Collections - Europe
+
+https://www.etsi.org/standards
+
+https://harmonized.standards.eu/ — National versions of CEN/CENELEC standards.
+
+* Example: https://www.harmonisierte-normen-in-europa.de/ — DIN Germany. As of 2026 I don't see the new standards for EAA, which are still in draft. Worth checking back.
+
+## Collections - US
 
 FCC (US Federal Trade Commission)
 
@@ -122,4 +130,9 @@ United States laws and regulations
 United States IBR
 * [IBR (NIST.gov)](https://www.nist.gov/standardsgov/standards-incorporated-reference)
   * [NIST Standards Incorporated by Reference (SIBR) Database](https://sibr.nist.gov/) - "Voluntary consensus standards, government-unique standards, industry standards, and international standards referenced in the [CFR]."
+ 
+## Collections - Global
+
+https://www.iso.org/obp/ui/
+
 </div>
