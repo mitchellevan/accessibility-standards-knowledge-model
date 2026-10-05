@@ -12,11 +12,11 @@ On the other hand, standards and regulations do look like lists. This knowledge 
 
 ## Status of this project
 
-This project is in its early stages, gathering examples to drive development of a knowledge schema.
+This project is in its early stages, gathering examples to drive development of a knowledge schema. Implementation should be tied to a practical project, such as a digital commons or a commercial application.
 
 ## Proposed benefits
 
-ASKM is a data source to help people get accessibility knowledge when it's most relevant to them. The ASKM data enables apps to support use cases like the following.
+ASKM is a data source to help people discover standards knowledge when it's most relevant to them. The ASKM data enables apps to support use cases like the following.
 
 Designers, developers, and content creators:
 
