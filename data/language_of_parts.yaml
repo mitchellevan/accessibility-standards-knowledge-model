@@ -474,7 +474,7 @@ relationships:
           - text: >- #human
               According to [Understanding SC 3.1.2](note1), part of the intent is "Screen readers can use the pronunciation rules of the language of the text."
             citations:
-              - note1
+              - id: note1
                 uri: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html
                 retrieved: 2026-07-12
           - text: >- #human
