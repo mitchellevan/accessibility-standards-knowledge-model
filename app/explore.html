@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="ai-disclosure" content="ai-assisted"> <!-- Code is AI generated. Web page static content is human reviewed. Standards data is mixed, see source files. -->
+<!-- https://w3c-cg.github.io/ai-content-disclosure/ -->
+
+<title>ASKM Explorer</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #555555; --line: #c8c8c8;
+    --card: #f6f6f4; --accent: #0b5cad; --tag-bg: #e3ecf7; --tag-fg: #0a3d73;
+    --err-bg: #fdecea; --err-fg: #8a1c11; --focus: #b35c00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161616; --fg: #ececec; --muted: #b4b4b4; --line: #4a4a4a;
+      --card: #222222; --accent: #8cc1ff; --tag-bg: #1f3550; --tag-fg: #cfe4ff;
+      --err-bg: #3d1a16; --err-fg: #ffc4bb; --focus: #ffb366;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 1rem/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header, main { max-width: 52rem; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 1rem; border-bottom: 1px solid var(--line); }
+  .site { font-weight: 700; font-size: 1.05rem; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  h1:focus { outline: none; }
+  h1:focus-visible { outline: 3px solid var(--focus); }
+  nav ol { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem; padding: 0; margin: .35rem 0 .75rem; }
+  nav li:not(:last-child)::after { content: "›"; margin-left: .35rem; color: var(--muted); }
+  h1 { font-size: 1.6rem; margin: 1.25rem 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 1.5rem 0 .4rem; }
+  h3 { font-size: 1.05rem; margin: 1rem 0 .3rem; }
+  .meta, .muted { color: var(--muted); }
+  .meta { margin: 0 0 .75rem; }
+  table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+  th, td { text-align: left; padding: .45rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  form { margin-top: 1.25rem; }
+  fieldset { margin: 0; padding: .75rem 1rem 1rem; border: 1px solid var(--line); border-radius: 6px; background: var(--card); }
+  legend { font-weight: 700; font-size: 1.1rem; padding: 0 .35rem; }
+  .fields { display: grid; gap: .75rem 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+  label { display: block; font-weight: 600; margin-bottom: .2rem; }
+  select, input[type="search"] {
+    font: inherit; width: 100%; padding: .4rem .5rem; color: var(--fg); background: var(--bg);
+    border: 1px solid var(--muted); border-radius: 4px; }
+  ul.provisions { list-style: none; padding: 0; margin: .5rem 0 0; }
+  ul.provisions li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+  .tags { list-style: none; padding: 0; margin: 0 0 .5rem; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .tags li { background: var(--tag-bg); color: var(--tag-fg); border-radius: 999px; padding: .1rem .6rem; font-size: .9rem; }
+  .case { border-left: 3px solid var(--line); padding-left: .75rem; margin: .5rem 0; }
+  blockquote { margin: .5rem 0; padding: .5rem .75rem; border-left: 3px solid var(--accent); background: var(--card); }
+  details { margin-top: .35rem; }
+  summary { cursor: pointer; color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  ul.related > li { margin-bottom: .5rem; }
+  .table-wrap { overflow-x: auto; }
+  .table-wrap table { margin-top: .25rem; min-width: 36rem; }
+  .table-wrap th[scope="row"] { font-weight: 600; }
+  .table-wrap td ul { margin: 0; padding-left: 1rem; }
+  tr.self { background: var(--card); }
+  section.compare { border-left: 3px solid var(--accent); padding: .1rem 0 .1rem .9rem; margin: .75rem 0 1.25rem; }
+  section.compare h4 { margin: .3rem 0 .4rem; font-size: 1rem; }
+  section.compare p { margin: .3rem 0; }
+  .error { background: var(--err-bg); color: var(--err-fg); padding: .75rem 1rem; border-radius: 6px; margin-top: 1rem; }
+  .error pre { white-space: pre-wrap; margin: .5rem 0 0; }
+</style>
+</head>
+<body>
+<header>
+  <a class="site" href="#/">ASKM Explorer</a>
+  <nav aria-label="Breadcrumb"><ol id="crumbs"></ol></nav>
+</header>
+<main id="view"><p role="status">Loading data…</p></main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script>
+"use strict";
+const DATA_DIR = "../data/";
+const MAIN_FILE = "language_of_parts.yaml";
+
+// ---------- helpers ----------
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const arr = (v) => v == null ? [] : Array.isArray(v) ? v : [v];
+const textOf = (v) => v == null ? "" : typeof v === "string" ? v : (v.text ?? "");
+const byClause = new Intl.Collator("en", { numeric: true }).compare;
+const LINK_RE = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+
+const M = { fragments: {}, sources: {}, tech: {}, relationships: [], related: {} };
+
+const techName = (t) => (M.tech[t] && M.tech[t].name) || t;
+const docName = (d) => (M.sources[d] && (M.sources[d].short_name || M.sources[d].name)) || d;
+const frag = (id) => M.fragments[id];
+const fragLabel = (id) => frag(id) ? `${frag(id).identifier} ${frag(id).name}` : id;
+const fragFullLabel = (id) => frag(id) ? `${docName(frag(id).source_document)} ${fragLabel(id)}` : id;
+const docHref = (d, query) => `#/doc/${encodeURIComponent(d)}${query ? "?" + query : ""}`;
+const fragHref = (id) => `#/doc/${encodeURIComponent(frag(id).source_document)}/${encodeURIComponent(frag(id).identifier)}`;
+const docFragments = (d) => Object.keys(M.fragments)
+  .filter((id) => frag(id).source_document === d)
+  .sort((a, b) => byClause(frag(a).identifier, frag(b).identifier));
+
+// "[label](target)": link if target is a known fragment or a URL; otherwise keep only the label.
+function inline(s) {
+  return esc(s).replace(LINK_RE, (m, label, target) =>
+    frag(target) ? `<a href="${fragHref(target)}">${label}</a>`
+    : /^https?:/.test(target) ? `<a href="${target}">${label}</a>` : label);
+}
+
+function fragmentTech(f) {
+  const g = f.guideline || {};
+  const conds = [...arr(g.applicability_conditions), ...arr(g.cases).flatMap((c) => arr(c.applicability_conditions))];
+  return [...new Set(conds.map((c) => c && c.technology).filter(Boolean))];
+}
+
+// ---------- data loading ----------
+async function loadYaml(name) {
+  let res;
+  try { res = await fetch(DATA_DIR + name); }
+  catch (e) { throw new Error(`Could not fetch ${name}. Open this page through a local web server, not as a file.`); }
+  if (!res.ok) throw new Error(`Could not fetch ${name} (HTTP ${res.status}).`);
+  const text = await res.text();
+  // json: true lets a repeated key override the earlier one (as Python does) instead of failing.
+  try { return jsyaml.load(text, { json: true }); }
+  catch (e) { throw new Error(`YAML error in ${name}:\n${e.message}`); }
+}
+
+// Build, for each fragment, the list of related fragments from two kinds of evidence:
+// explicit relationships, and fragment links inside text.
+function indexRelated() {
+  const add = (from, to, item) => {
+    if (from === to || !frag(from) || !frag(to)) return;
+    (M.related[from] ||= []).push({ to, ...item });
+  };
+  for (const r of M.relationships) {
+    // Subjects may be single ids, or groups (arrays) that are related to the other groups.
+    const groups = arr(r.subjects).map(arr);
+    groups.forEach((ga, i) => groups.forEach((gb, j) => {
+      if (groups.length > 1 && i === j && ga.length > 1 && groups.some((g) => g.length > 1)) return;
+      for (const a of ga) for (const b of gb) add(a, b, { kind: "relationship", rel: r });
+    }));
+  }
+  for (const [id, f] of Object.entries(M.fragments)) {
+    const targets = new Set([...JSON.stringify(f).matchAll(LINK_RE)].map((m) => m[2]));
+    for (const t of targets) {
+      add(id, t, { kind: "cites" });
+      add(t, id, { kind: "cited-by" });
+    }
+  }
+}
+const relatedCount = (id) => new Set((M.related[id] || []).map((r) => r.to)).size;
+
+// ---------- views ----------
+const view = document.getElementById("view");
+
+function setCrumbs(items) {
+  document.getElementById("crumbs").innerHTML = items.map((it, i) => i === items.length - 1
+    ? `<li><span aria-current="page">${esc(it.label)}</span></li>`
+    : `<li><a href="${it.href}">${esc(it.label)}</a></li>`).join("");
+}
+
+function viewHome() {
+  const counts = {};
+  for (const f of Object.values(M.fragments)) counts[f.source_document] = (counts[f.source_document] || 0) + 1;
+  const docs = Object.keys(M.sources).sort((a, b) => (counts[b] || 0) - (counts[a] || 0) || docName(a).localeCompare(docName(b)));
+  setCrumbs([{ label: "Documents" }]);
+  view.innerHTML = `<h1 tabindex="-1">Source documents</h1>
+    <p>Browse the Accessibility Standards Knowledge Model (ASKM). See how WCAG and other accessibility standards relate to each other.</p>
+    <p class="meta">Choose a document to see its provisions that ASKM covers so far.</p>
+    <table>
+      <thead><tr><th scope="col">Document</th><th scope="col" class="num">Provisions covered</th></tr></thead>
+      <tbody>${docs.map((d) => `<tr>
+        <td>${counts[d] ? `<a href="${docHref(d)}">${esc(docName(d))}</a>` : esc(docName(d))}
+          ${M.sources[d].short_name ? `<div class="muted">${esc(M.sources[d].name)}</div>` : ""}</td>
+        <td class="num">${counts[d] || 0}</td></tr>`).join("")}</tbody>
+    </table>`;
+  return "Source documents";
+}
+
+function viewDocument(d, params) {
+  const src = M.sources[d];
+  if (!src) return viewNotFound(`No source document with the id “${d}”.`);
+  const ids = docFragments(d);
+  const techs = [...new Set(ids.flatMap((id) => fragmentTech(frag(id))))];
+  setCrumbs([{ label: "Documents", href: "#/" }, { label: docName(d) }]);
+  view.innerHTML = `<h1 tabindex="-1">${esc(docName(d))}</h1>
+    <p class="meta">${esc(src.name)}${src.uri ? ` · <a href="${esc(src.uri)}">Open the source document</a>` : ""}</p>
+    <form id="filters" role="search">
+     <fieldset><legend>Filter</legend><div class="fields">
+      <div><label for="f-tech">Technology</label>
+        <select id="f-tech"><option value="">Any technology</option>
+        ${techs.map((t) => `<option value="${esc(t)}">${esc(techName(t))}</option>`).join("")}</select></div>
+      <div><label for="f-text">Text contains</label><input id="f-text" type="search" autocomplete="off"></div>
+     </div></fieldset>
+    </form>
+    <h2><span id="status" role="status"></span></h2>
+    <ul class="provisions" id="list"></ul>`;
+
+  const tech = document.getElementById("f-tech"), text = document.getElementById("f-text");
+  tech.value = techs.includes(params.get("tech")) ? params.get("tech") : "";
+  text.value = params.get("q") || "";
+
+  const renderList = () => {
+    const q = text.value.trim().toLowerCase();
+    const shown = ids.filter((id) => (!tech.value || fragmentTech(frag(id)).includes(tech.value))
+      && (!q || JSON.stringify(frag(id)).toLowerCase().includes(q)));
+    document.getElementById("list").innerHTML = shown.map((id) => {
+      const n = relatedCount(id);
+      return `<li><a href="${fragHref(id)}">${esc(fragLabel(id))}</a>
+        <span class="muted"> · ${n} related</span></li>`;
+    }).join("");
+    const noun = ids.length === 1 ? "provision" : "provisions";
+    const verb = shown.length === 1 ? "matches" : "match";
+    document.getElementById("status").textContent =
+      `${shown.length} of ${ids.length} ${noun} ${verb} the filter`;
+    // Keep filters in the URL without adding history entries, so Back leaves the document.
+    const p = new URLSearchParams();
+    if (tech.value) p.set("tech", tech.value);
+    if (q) p.set("q", text.value.trim());
+    history.replaceState(null, "", docHref(d, p.toString()));
+  };
+  let t;
+  const form = document.getElementById("filters");
+  form.addEventListener("input", () => { clearTimeout(t); t = setTimeout(renderList, 250); });
+  form.addEventListener("submit", (e) => e.preventDefault());
+  renderList();
+  return docName(d);
+}
+
+// Applicability: technology conditions as "Applies to", text conditions as "Applies when".
+const UNSPECIFIED = '<span class="muted">Unspecified</span>';
+function renderConditions(list) {
+  const items = arr(list);
+  const techs = items.filter((c) => c && c.technology).map((c) => esc(techName(c.technology)));
+  const texts = items.filter((c) => c && !c.technology).map((c) => inline(textOf(c))).filter(Boolean);
+  const when = texts.length > 1 ? `<ul>${texts.map((t) => `<li>${t}</li>`).join("")}</ul>`
+    : texts.length ? texts[0] : UNSPECIFIED;
+  return `<p><strong>Applies to:</strong> ${techs.length ? techs.join("; ") : UNSPECIFIED}</p>
+    <p><strong>Applies when:</strong> ${when}</p>`;
+}
+
+function renderExpectations(list) {
+  const items = arr(list);
+  if (!items.length) return "";
+  return `<p><strong>Expectations</strong></p><ul>${items.map((e) => {
+    const args = arr(e && e.rationale && e.rationale.arguments_for);
+    const why = args.length ? `<details><summary>Rationale</summary><ul>${args.map((a) =>
+      `<li>${inline(textOf(a))}</li>`).join("")}</ul></details>` : "";
+    return `<li>${inline(textOf(e))}${why}</li>`;
+  }).join("")}</ul>`;
+}
+
+// ---------- related provisions, grouped by how they compare ----------
+
+// Expectations written as "[label](id) → expectations" mean "the same expectations as id".
+const SAME_AS_RE = /^\s*\[[^\]]+\]\(([^)\s]+)\)\s*→\s*expectations\s*$/;
+function sameAsTargets(f) {
+  const g = (f && f.guideline) || {};
+  const exps = [...arr(g.expectations), ...arr(g.cases).flatMap((c) => arr(c.expectations))];
+  const out = {};
+  for (const e of exps) {
+    const m = textOf(e).match(SAME_AS_RE);
+    if (m) out[m[1]] = arr(e && e.rationale && e.rationale.arguments_for).map(textOf);
+  }
+  return out; // { targetId: [rationale texts] }
+}
+
+const appliesTo = (id) => {
+  const t = fragmentTech(frag(id));
+  return t.length ? t.map(techName).join("; ") : UNSPECIFIED;
+};
+const cap = (s) => s ? s[0].toUpperCase() + s.slice(1) : s;
+const vocab = (v) => String(v || "").replace(/_/g, " ");
+const notesOf = (rel, key) => Object.values(rel.aspects || {})
+  .flatMap((a) => arr(a && a[key])).map(textOf).filter((s) => s && s !== "TODO");
+const argsOf = (rel) => Object.values(rel.aspects || {})
+  .flatMap((a) => arr(a && a.rationale && a.rationale.arguments_for)).map(textOf).filter(Boolean);
+
+function groupRelated(id) {
+  const same = new Map(), differ = new Map(), todo = [], refs = new Map();
+  const mine = sameAsTargets(frag(id));
+  for (const it of M.related[id] || []) {
+    const o = it.to;
+    if (it.kind === "cites" && mine[o]) {
+      same.set(o, { how: "Same: this provision’s expectations refer to it", basis: mine[o] });
+    } else if (it.kind === "cited-by" && sameAsTargets(frag(o))[id]) {
+      same.set(o, { how: "Same: its expectations refer to this provision", basis: sameAsTargets(frag(o))[id] });
+    } else if (it.kind === "relationship" && it.rel.type === "todo") {
+      if (!todo.some((t) => t.rel === it.rel)) todo.push({ rel: it.rel, others: [] });
+      todo.find((t) => t.rel === it.rel).others.push(o);
+    } else if (it.kind === "relationship") {
+      const r = it.rel, exp = r.aspects && r.aspects.expectations;
+      if (exp && exp.relationship === "equivalent") {
+        const app = r.aspects.applicability && r.aspects.applicability.relationship;
+        same.set(o, {
+          how: `Equivalent${app ? ` (applicability: ${vocab(app)})` : ""}`,
+          basis: [...notesOf(r, "similarities").map((s) => "Similar: " + s),
+                  ...notesOf(r, "differences").map((s) => "Different: " + s), ...argsOf(r)],
+        });
+      } else {
+        differ.set(o, { rel: r });
+      }
+    } else {
+      refs.set(o, it.kind);
+    }
+  }
+  for (const o of same.keys()) { differ.delete(o); refs.delete(o); }
+  for (const o of differ.keys()) refs.delete(o);
+  return { same, differ, todo, refs };
+}
+
+const provLink = (o) => `<a href="${fragHref(o)}">${esc(fragFullLabel(o))}</a>`;
+const sortIds = (ids) => [...ids].sort((a, b) =>
+  docName(frag(a).source_document).localeCompare(docName(frag(b).source_document))
+  || byClause(frag(a).identifier, frag(b).identifier));
+
+function renderRelated(id) {
+  const { same, differ, todo, refs } = groupRelated(id);
+  const n = new Set([...same.keys(), ...differ.keys(), ...todo.flatMap((t) => t.others), ...refs.keys()]).size;
+  if (!n) return `<h2>Related provisions</h2><p>None recorded yet.</p>`;
+  let html = `<h2>${n} related provision${n === 1 ? "" : "s"}</h2>`;
+
+  if (same.size) {
+    html += `<h3 id="g-same">Same requirement, possibly different scope</h3>
+    <div class="table-wrap" role="region" aria-labelledby="g-same" tabindex="0"><table>
+      <thead><tr><th scope="col">Provision</th><th scope="col">Applies to</th>
+        <th scope="col">Expectations</th><th scope="col">Basis</th></tr></thead>
+      <tbody>
+        <tr class="self"><th scope="row">${esc(fragFullLabel(id))} <span class="muted">(this page)</span></th>
+          <td>${appliesTo(id)}</td><td class="muted">—</td><td class="muted">—</td></tr>
+        ${sortIds(same.keys()).map((o) => { const s = same.get(o); return `<tr>
+          <th scope="row">${provLink(o)}</th><td>${appliesTo(o)}</td><td>${esc(s.how)}</td>
+          <td>${s.basis.length ? `<ul>${s.basis.map((b) => `<li>${inline(b)}</li>`).join("")}</ul>`
+            : '<span class="muted">Not stated</span>'}</td></tr>`; }).join("")}
+      </tbody></table></div>`;
+  }
+
+  if (differ.size) {
+    html += `<h3>Different requirement, related</h3>${sortIds(differ.keys()).map((o) => {
+      const r = differ.get(o).rel, sim = notesOf(r, "similarities"), dif = notesOf(r, "differences");
+      return `<section class="compare" aria-labelledby="c-${esc(o)}">
+        <h4 id="c-${esc(o)}">${provLink(o)}</h4>
+        <p><strong>Applies to:</strong> ${appliesTo(o)}</p>
+        <p><strong>Similarities</strong></p>
+        ${sim.length ? `<ul>${sim.map((s) => `<li>${inline(s)}</li>`).join("")}</ul>` : `<p class="muted">Not yet written.</p>`}
+        <p><strong>Differences</strong></p>
+        ${dif.length ? `<ul>${dif.map((s) => `<li>${inline(s)}</li>`).join("")}</ul>` : `<p class="muted">Not yet written.</p>`}
+      </section>`; }).join("")}`;
+  }
+
+  if (todo.length) {
+    html += `<h3>Noted, not yet analyzed</h3><ul class="related">${todo.map((t) =>
+      `<li>${sortIds(new Set(t.others)).map(provLink).join(", ")}
+        ${t.rel.note ? `<div class="muted">${inline(t.rel.note)}</div>` : ""}</li>`).join("")}</ul>`;
+  }
+
+  if (refs.size) {
+    html += `<h3>Referenced in text</h3><ul class="related">${sortIds(refs.keys()).map((o) =>
+      `<li>${provLink(o)} <span class="muted">· ${refs.get(o) === "cites"
+        ? "referenced in the text of this provision" : "references this provision in its text"}</span></li>`).join("")}</ul>`;
+  }
+  return html;
+}
+
+function viewFragment(d, ident) {
+  const id = Object.keys(M.fragments).find((k) => frag(k).source_document === d && String(frag(k).identifier) === ident);
+  if (!id) return viewNotFound(`No provision “${ident}” in ${docName(d)}.`);
+  const f = frag(id), g = f.guideline || {}, src = M.sources[d];
+  const tech = fragmentTech(f);
+  const link = f.uri || (src && src.uri);
+  let body = "";
+  if (f.fragment_text) body += `<blockquote><p>${esc(f.fragment_text)}</p><p class="muted">Verbatim from the source</p></blockquote>`;
+  if (f.non_expectation) body += `<p><strong>No expectation.</strong> ${inline(textOf(f.non_expectation))}</p>`;
+  // With cases, applicability lives in each case; otherwise show it once for the provision.
+  if (!arr(g.cases).length) body += renderConditions(g.applicability_conditions);
+  body += renderExpectations(g.expectations);
+  arr(g.cases).forEach((c, i) => {
+    body += `<div class="case"><p><strong>Case ${i + 1}</strong>${c.id ? ` <span class="muted">(${esc(c.id)})</span>` : ""}</p>
+      ${renderConditions(c.applicability_conditions)}${renderExpectations(c.expectations)}</div>`;
+  });
+  setCrumbs([{ label: "Documents", href: "#/" }, { label: docName(d), href: docHref(d) }, { label: fragLabel(id) }]);
+  view.innerHTML = `<h1 tabindex="-1">${esc(fragFullLabel(id))}</h1>
+    <p class="meta">${esc(f.fragment_class || "fragment")}${link ? ` · <a href="${esc(link)}">Open in ${esc(docName(d))}</a>` : ""}</p>
+    ${tech.length ? `<ul class="tags" aria-label="Technologies">${tech.map((t) => `<li>${esc(techName(t))}</li>`).join("")}</ul>` : ""}
+    ${body}${renderRelated(id)}`;
+  return fragFullLabel(id);
+}
+
+function viewNotFound(msg) {
+  setCrumbs([{ label: "Documents", href: "#/" }, { label: "Not found" }]);
+  view.innerHTML = `<h1 tabindex="-1">Not found</h1><p>${esc(msg)}</p><p><a href="#/">Go to the list of documents</a></p>`;
+  return "Not found";
+}
+
+// ---------- routing ----------
+let firstRoute = true;
+function route() {
+  const [path, query = ""] = location.hash.replace(/^#/, "").split("?");
+  const parts = path.split("/").filter(Boolean).map(decodeURIComponent);
+  const params = new URLSearchParams(query);
+  let title;
+  if (parts[0] === "doc" && parts.length === 2) title = viewDocument(parts[1], params);
+  else if (parts[0] === "doc" && parts.length === 3) title = viewFragment(parts[1], parts[2]);
+  else if (parts.length === 0) title = viewHome();
+  else title = viewNotFound("That address doesn’t match a page.");
+  document.title = `${title} – ASKM Explorer`;
+  window.scrollTo(0, 0);
+  // Move focus to the new heading so screen reader and keyboard users land on the new view.
+  if (!firstRoute) view.querySelector("h1").focus();
+  firstRoute = false;
+}
+
+async function init() {
+  try {
+    const main = await loadYaml(MAIN_FILE);
+    const imports = await Promise.all(arr(main.imports).map(loadYaml));
+    for (const d of [main, ...imports]) {
+      Object.assign(M.sources, d.source_documents || {});
+      Object.assign(M.tech, d.technology_types || {});
+    }
+    M.fragments = main.fragments || {};
+    M.relationships = arr(main.relationships);
+    indexRelated();
+  } catch (e) {
+    view.innerHTML = `<div class="error" role="alert"><strong>Data could not be loaded.</strong><pre>${esc(e.message)}</pre></div>`;
+    return;
+  }
+  window.addEventListener("hashchange", route);
+  route();
+}
+init();
+</script>
+</body>
+</html>
