@@ -37,7 +37,7 @@ All roles:
 
 ## AI disclosures for individual files
 
-Files and parts of files are marked up with `ai-` attributes indicating where AI assistance was used. These attributes follow an early draft of <a href="https://w3c-cg.github.io/ai-content-disclosure/">AI Content Disclosure for HTML</a>. The attributes are not currently human-readable, but are available in the <a href="https://github.com/mitchellevan/accessibility-standards-knowledge-model">project source files in GitHub</a>.
+Files and parts of files are marked up with `ai-` attributes indicating where AI assistance was used. These attributes follow an early draft of <a href="https://w3c-cg.github.io/ai-content-disclosure/">AI Content Disclosure for HTML</a>. The attributes are not currently human-readable in YAML, but are available in the <a href="https://github.com/mitchellevan/accessibility-standards-knowledge-model">project source files in GitHub</a>.
 
 ## AI disclosure for the whole project
 
