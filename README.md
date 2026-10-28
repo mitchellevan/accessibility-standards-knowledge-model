@@ -10,7 +10,7 @@ Accessibility is not a checklist. It's what happens when people can use technolo
 
 On the other hand, standards and regulations do look like lists. This knowledge model shows how those lists relate to each other.
 
-[ASKM Explorer]([url](https://mitchellevan.github.io/accessibility-standards-knowledge-model/app/))
+[ASKM Explorer](https://mitchellevan.github.io/accessibility-standards-knowledge-model/app/)
 
 ## Status of this project
 
