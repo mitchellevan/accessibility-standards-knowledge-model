@@ -26,13 +26,13 @@
   body { margin: 0; background: var(--bg); color: var(--fg);
          font: 1rem/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
   header, main { max-width: 52rem; margin: 0 auto; padding: 0 16px; }
-  header { padding-top: 1rem; border-bottom: 1px solid var(--line); }
+  header { padding-top: 1rem; padding-bottom: .75rem; border-bottom: 1px solid var(--line); }
   .site { font-weight: 700; font-size: 1.05rem; }
   a { color: var(--accent); }
   :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
   h1:focus { outline: none; }
   h1:focus-visible { outline: 3px solid var(--focus); }
-  nav ol { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem; padding: 0; margin: .35rem 0 .75rem; }
+  nav ol { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem; padding: 0; margin: .35rem 0 0; }
   nav li:not(:last-child)::after { content: "›"; margin-left: .35rem; color: var(--muted); }
   h1 { font-size: 1.6rem; margin: 1.25rem 0 .25rem; }
   h2 { font-size: 1.25rem; margin: 1.5rem 0 .4rem; }
@@ -75,7 +75,7 @@
 <body>
 <header>
   <a class="site" href="#/">ASKM Explorer</a>
-  <nav aria-label="Breadcrumb"><ol id="crumbs"></ol></nav>
+  <nav id="breadcrumb" aria-label="Breadcrumb" hidden><ol id="crumbs"></ol></nav>
 </header>
 <main id="view"><p role="status">Loading data…</p></main>
 
@@ -98,7 +98,12 @@ const M = { fragments: {}, sources: {}, tech: {}, relationships: [], related: {}
 const techName = (t) => (M.tech[t] && M.tech[t].name) || t;
 const docName = (d) => (M.sources[d] && (M.sources[d].short_name || M.sources[d].name)) || d;
 const frag = (id) => M.fragments[id];
-const fragLabel = (id) => frag(id) ? `${frag(id).identifier} ${frag(id).name}` : id;
+// Per docs/design_principles.md, "_" in an identifier means the fragment is not numbered in the source,
+// so the identifier is ASKM's own and is not shown as if it were a clause number.
+const isUnnumbered = (f) => String(f.identifier ?? "").includes("_");
+const fragLabel = (id) => !frag(id) ? id
+  : isUnnumbered(frag(id)) ? `${frag(id).name} (unnumbered fragment)`
+  : `${frag(id).identifier} ${frag(id).name}`;
 const fragFullLabel = (id) => frag(id) ? `${docName(frag(id).source_document)} ${fragLabel(id)}` : id;
 const docHref = (d, query) => `#/doc/${encodeURIComponent(d)}${query ? "?" + query : ""}`;
 const fragHref = (id) => `#/doc/${encodeURIComponent(frag(id).source_document)}/${encodeURIComponent(frag(id).identifier)}`;
@@ -160,6 +165,8 @@ const relatedCount = (id) => new Set((M.related[id] || []).map((r) => r.to)).siz
 const view = document.getElementById("view");
 
 function setCrumbs(items) {
+  // A breadcrumb with only the current page adds nothing, so hide it (and its landmark).
+  document.getElementById("breadcrumb").hidden = items.length < 2;
   document.getElementById("crumbs").innerHTML = items.map((it, i) => i === items.length - 1
     ? `<li><span aria-current="page">${esc(it.label)}</span></li>`
     : `<li><a href="${it.href}">${esc(it.label)}</a></li>`).join("");
@@ -386,7 +393,7 @@ function viewFragment(d, ident) {
   });
   setCrumbs([{ label: "Documents", href: "#/" }, { label: docName(d), href: docHref(d) }, { label: fragLabel(id) }]);
   view.innerHTML = `<h1 tabindex="-1">${esc(fragFullLabel(id))}</h1>
-    <p class="meta">${esc(f.fragment_class || "fragment")}${link ? ` · <a href="${esc(link)}">Open in ${esc(docName(d))}</a>` : ""}</p>
+    <p class="meta">${esc(f.fragment_class || "fragment")}${isUnnumbered(f) ? ` · ASKM identifier: ${esc(f.identifier)}` : ""}${link ? ` · <a href="${esc(link)}">Open in ${esc(docName(d))}</a>` : ""}</p>
     ${tech.length ? `<ul class="tags" aria-label="Technologies">${tech.map((t) => `<li>${esc(techName(t))}</li>`).join("")}</ul>` : ""}
     ${body}${renderRelated(id)}`;
   return fragFullLabel(id);

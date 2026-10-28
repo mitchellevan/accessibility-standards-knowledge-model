@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="ai-disclosure" content="ai-assisted"> <!-- Code is AI generated. Text reuses human-written wording from the README and the explorer page; not yet human-reviewed on this page. -->
+<meta name="ai-disclosure" content="ai-assisted"> <!-- Code is AI generated. Text reuses human-written wording from the README; not yet human-reviewed on this page. -->
 <!-- https://w3c-cg.github.io/ai-content-disclosure/ -->
 
 <title>Accessibility Standards Knowledge Model (ASKM)</title>
@@ -28,10 +28,10 @@
   p { margin: 0 0 1rem; }
   a { color: var(--accent); }
   :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-  ul.links { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: .75rem; }
-  ul.links li { padding: .9rem 1rem; border: 1px solid var(--line); border-radius: 6px; background: var(--card); }
-  ul.links a { font-weight: 600; font-size: 1.1rem; }
-  ul.links p { margin: .25rem 0 0; color: var(--muted); }
+  p.primary { margin: 2rem 0 1.5rem; }
+  p.primary a { display: inline-block; padding: .75rem 1.25rem; border: 2px solid var(--accent); border-radius: 6px;
+                background: var(--card); font-weight: 700; font-size: 1.25rem; }
+  p.secondary { font-size: .95rem; }
 </style>
 </head>
 <body>
@@ -39,11 +39,8 @@
   <h1>Accessibility Standards Knowledge Model (ASKM)</h1>
   <p>Accessibility is not a checklist. It's what happens when people can use technology.</p>
   <p>On the other hand, standards and regulations do look like lists. This knowledge model shows how those lists relate to each other.</p>
-  <ul class="links">
-    <li><a href="explore.html">ASKM Explorer</a>
-      <p>Browse the Accessibility Standards Knowledge Model (ASKM). See how WCAG and other accessibility standards relate to each other.</p></li>
-    <li><a href="https://github.com/mitchellevan/accessibility-standards-knowledge-model">ASKM on GitHub</a></li>
-  </ul>
+  <p class="primary"><a href="explore.html">ASKM Explorer</a></p>
+  <p class="secondary"><a href="https://github.com/mitchellevan/accessibility-standards-knowledge-model">ASKM on GitHub</a></p>
 </main>
 </body>
 </html>
