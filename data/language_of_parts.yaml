@@ -478,7 +478,7 @@ relationships:
                 uri: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html
                 retrieved: 2026-07-12
           - text: >- #human
-              According to [WCAG2ICT "Problematic for closed"](wcag2ict_A_3_26), the intent of WCAG 3.1.2 is correct pronunciation.
+              According to [WCAG2ICT "Problematic for closed"](wcag2ict_A_3_3_1_2), the intent of WCAG 3.1.2 is correct pronunciation.
         differences:
           - TODO
 
