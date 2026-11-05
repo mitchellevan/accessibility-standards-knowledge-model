@@ -32,4 +32,8 @@ ASKM encourages its users to consult the original sources. When an accessibility
 
 ASKM should not include substantial portions of copyright-protected sources.
 
+## Issue tracking
+
+Anybody can submit an issue. Maintainers triage issues by labeling them "next" or "later". A pinned issue means it's being worked on.
+
 </div>
