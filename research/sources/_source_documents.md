@@ -42,6 +42,9 @@ Beyond EN 301 549...
 
 [Making Content Usable for People with Cognitive and Learning Disabilities](https://www.w3.org/TR/coga-usable/)
 
+[ETSI TS 103 919 V1.1.1 (2024-08)](https://www.etsi.org/deliver/etsi_ts/103900_103999/103919/01.01.01_60/ts_103919v010101p.pdf) — Harmonised standard for the accessibility and interoperability of emergency communications and for the answering of emergency communications by the public safety answering point (PSAPs) (including to the single European Emergency number 122)
+* Available from ETSI at no cost.
+
 ### Section 508 (US)
 
 ...
@@ -57,6 +60,10 @@ Beyond EN 301 549...
 ## Accessibility evaluation practices
 
 [EN/CLC/ETSI Guidelines for public procurement of ICT products and services in the EU; Accessibility award criteria and conformity assessment](https://www.etsi.org/deliver/etsi_tr/101500_101599/101551/02.01.01_60/tr_101551v020101p.pdf)
+* Supersedes older 101551 and 101552.
+* Part of the standardization mandate for the EAA.
+* Available from ETSI at no cost.
+
 [WCAG Evaluation Methodology (WCAG-EM) 2.0](https://www.w3.org/TR/wcag-em-2/)
 
 [NIST Special Publication 2000-01: ABC's of Conformity Assessment](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.2000-01.pdf)
